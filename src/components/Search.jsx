@@ -37,7 +37,7 @@ function Search(props) {
 const styles = {
     s: css`
         display: flex;
-        background: black;
+        background: silver;
         width: 100%;
         height: 20%; 
     `,
