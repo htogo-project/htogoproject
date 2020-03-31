@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import { css } from 'emotion'
+import { css } from 'emotion';
+import { FaSearch } from 'react-icons/fa';
+
 
 
 function Search(props) {
@@ -23,6 +25,7 @@ function Search(props) {
         <div className={styles.s}>
             <div className={styles.search}>
                 <input type="text" placeholder="Search ZipCode" name="search" onChange={handleChange} onClick={handleClickIB}/>
+                <button onClick={handleClick} type="submit"><i> <FaSearch /> </i></button>
                 <p>{message}</p>
             </div>
         </div>
