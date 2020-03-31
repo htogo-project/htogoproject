@@ -7,7 +7,7 @@ function List(props) {
     let arr = [];
     if (props.value.length === 5 && typeof (Number(props.value)) === "number") {
         for (var i = 0; i < datas.length; i++) {
-            if (datas[i].Address.includes(props.value)) {
+            if (datas[i].Address.includes(props.value) || datas[i].Address === "Delivery") {
                 arr.push(datas[i])
             }
         }
@@ -20,7 +20,7 @@ function List(props) {
                             <th>Type</th>
                             <th>Address</th>
                             <th>Phone Number</th>
-                            <th>Opening Hours</th>
+                            <th>Info</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,52 +30,13 @@ function List(props) {
                                 <td>{data.Type}</td>
                                 <td>{data.Address}</td>
                                 <td>{data.Phone}</td>
-                                <td>{data.Opening}</td>
+                                <td>{data.Info}</td>
                             </tr>)}
                     </tbody>
                 </table>
             </div>
         )
-    }
-    if (props.value.length === 5 && typeof (Number(props.value)) === "number" && props.cousine.length > 0) {
-        for (var i = 0; i < datas.length; i++) {
-            if (datas[i].Address.includes(props.value) && datas[i].Type.includes(props.cousine)) {
-                arr.push(datas[i])
-            }
-        }
-        return (
-            <div className={styles.wrapper}>
-                <table className={styles.header}>
-                    <thead>
-                        <tr>
-                            <th>Restaurant</th>
-                            <th>Type</th>
-                            <th>Address</th>
-                            <th>Phone Number</th>
-                            <th>Opening Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {arr.map((data) =>
-                            <tr key={data.Index.toString()} className={styles.restaurant}>
-                                <td>{data.Restaurant}</td>
-                                <td>{data.Type}</td>
-                                <td>{data.Address}</td>
-                                <td>{data.Phone}</td>
-                                <td>{data.Opening}</td>
-                            </tr>)}
-                    </tbody>
-
-                </table>
-            </div>
-        )
-    }
-
-
-
-
-    else {
+    } else {
         return (
             <div className={styles.wrapper}>
                 <table className={styles.header}>
@@ -86,7 +47,7 @@ function List(props) {
                             <th>Type</th>
                             <th>Address</th>
                             <th>Phone Number</th>
-                            <th>Opening Hours</th>
+                            <th>Info</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -96,7 +57,7 @@ function List(props) {
                                 <td>{data.Type}</td>
                                 <td>{data.Address}</td>
                                 <td>{data.Phone}</td>
-                                <td>{data.Opening}</td>
+                                <td>{data.Info}</td>
                             </tr>)}
                     </tbody>
                 </table>
@@ -111,6 +72,7 @@ const styles = {
     wrapper: css`
         display:flex;
         justify-content: center;
+        width: 100%;
 
     `,
     header: css`
@@ -124,9 +86,10 @@ const styles = {
     `,
     restaurant: css`
         background-color: white;
-        color: green;
-        border: 2px solid black;
-        padding: 8px;
+        color: black;
+        td {
+            padding: 5px;
+        }
     `
 }
 

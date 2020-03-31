@@ -24,8 +24,8 @@ function Search(props) {
     return (
         <div className={styles.s}>
             <div className={styles.search}>
-                <input type="text" placeholder="Search ZipCode" name="search" onChange={handleChange} onClick={handleClickIB}/>
-                <button onClick={handleClick} type="submit"><i> Search </i></button>
+                <input className={styles.input}type="text" placeholder="Search ZipCode" name="search" onChange={handleChange} onClick={handleClickIB}/>
+                <button className={styles.button} onClick={handleClick} type="submit"><i> Search </i></button>
                 <p>{message}</p>
             </div>
         </div>
@@ -36,10 +36,20 @@ function Search(props) {
 
 const styles = {
     s: css`
-    display: flex;
-    background: silver;
-    width: 100%;
-    height: 20%; 
+        display: flex;
+        background: black;
+        width: 100%;
+        height: 20%; 
+    `,
+    input: css`
+        width: 300px;
+        height: 50px; 
+        margin-left: 5%;
+        margin-top: 10px;
+    `,
+    button: css`
+        margin-left: 5%;
+        margin-top: 10px;
     `
 }
 
