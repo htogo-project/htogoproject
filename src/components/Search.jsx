@@ -25,7 +25,7 @@ function Search(props) {
         <div className={styles.s}>
             <div className={styles.search}>
                 <input className={styles.input}type="text" placeholder="Search ZipCode" name="search" onChange={handleChange} onClick={handleClickIB}/>
-                <button className={styles.button} onClick={handleClick} type="submit"><i> Search </i></button>
+                {/* <button className={styles.button} onClick={handleClick} type="submit"><i> Search </i></button> */}
                 <p>{message}</p>
             </div>
         </div>
