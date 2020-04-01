@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   res.send('hi');
 })
 
-app.post('/api/v1', (req,res) => {
+app.get('/api/v1', (req,res) => {
 
   var data = req.body;
 

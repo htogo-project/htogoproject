@@ -7,7 +7,6 @@ function Contact(props) {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
-    // const [sent, setSent] = useState(false);
 
     const send = (event) => {
         event.preventDefault();
@@ -18,7 +17,7 @@ function Contact(props) {
         };
 
 
-        axios.post('/api/v1', data)
+        axios.get('/api/v1', data)
         .then( res => {
             setName("");
             setMessage("");
