@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { css } from 'emotion'
-import node from '../node'
+import axios from 'axios';
 import nodemailer from 'nodemailer'
 
 // var nodemailer = require('nodemailer');
@@ -14,26 +14,36 @@ var transporter = nodemailer.createTransport({
    });
 
 function Contact(props) {
-    const [email, setEmail] = useState("");
-    const [name, setName] = useState("");
-    const [message, setMessage] = useState("");
+    const [email, setEmail] = useState("Your e-mail");
+    const [name, setName] = useState("Your name");
+    const [message, setMessage] = useState("What would you like to add/remove or update?");
+    // const [sent, setSent] = useState(false);
 
+    const cleanForm = () => {
+        console.log("cuuuuussdsdauu")
 
-    const mailOptions = {
-        from: {email}, // sender address
-        to: 'shirazipatricia@gmail.com', // list of receivers
-        subject: {name}, // Subject line
-        html: {message}// plain text body
-      };
-
+        setName("");
+        setMessage("");
+        setEmail("");
+    }
     const send = (event) => {
-        event.preventDefault()
-        transporter.sendMail(mailOptions, function (err, info) {
-        if(err)
-          console.log(err)
-        else
-          console.log(info);
-     });
+        event.preventDefault();
+        const data = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+
+        axios.post('/api/v1', data)
+        .then( res => {
+            console.log("cuuuuuuu")
+            cleanForm()
+        })
+        .catch( () => {
+          console.log('Message not sent')
+        })
+  
     }
 
      const handleChangeName = (event) => {
@@ -55,11 +65,11 @@ function Contact(props) {
             <div className={styles.container}>
                 <form action="/action_page.php">
                     <label > Name</label>
-                    <input onChange={handleChangeName}className={styles.same} type="text" name="firstname" placeholder="Your name.." />
+                    <input onChange={handleChangeName}className={styles.same} type="text" name="firstname" placeholder={name} />
                     <label > E-mail</label>
-                    <input onChange={handleChangeEmail} className={styles.same} type="text" name="lastname" placeholder="Your email" />
+                    <input onChange={handleChangeEmail} className={styles.same} type="text" name="email" placeholder={email} />
                     <label > Message</label>
-                    <textarea onChange={handleChangeMessage} className={styles.same}  name="subject" placeholder="What would you like to add/remove or update?" ></textarea>
+                    <textarea onChange={handleChangeMessage} className={styles.same}  name="subject" placeholder={message} ></textarea>
                     <button onClick={send}className={styles.b} type="submit" value="Submit"> Send </button> 
                 </form>
             </div>
