@@ -15,7 +15,8 @@
     "nodemailer": "^6.4.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "smtp": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
