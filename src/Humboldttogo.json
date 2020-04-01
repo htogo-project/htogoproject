@@ -6,7 +6,9 @@
     "Address": "773 8th St, Arcata, CA, 95521",
     "Phone": "707 822 1900",
     "Info": "Take out",
-    "Website": ""
+    "Website": "places.singleplatform.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 2,
@@ -15,7 +17,9 @@
     "Address": "1041 H St, Arcata, CA, 95521",
     "Phone": "(707) 630-5059",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://www.miabellacakes.com/",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 3,
@@ -24,7 +28,9 @@
     "Address": "517 F St, Eureka CA, 95501",
     "Phone": "(707) 497-6320",
     "Info": "Take out",
-    "Website": ""
+    "Website": "http://www.humboldtcidercompany.com/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 4,
@@ -33,7 +39,9 @@
     "Address": "3750 Harris Street, Suite G, Eureka, 95503",
     "Phone": "(707) 572-5129",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://boardroomeureka.com/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 5,
@@ -42,7 +50,9 @@
     "Address": "3525 Janes Rd, Arcata, CA, 95521",
     "Phone": "707-822-4600",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://fiesta-grill-cantina.business.site/",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 6,
@@ -51,7 +61,9 @@
     "Address": "409 Main St, Ferndale CA, 95536",
     "Phone": "(707) 786-4180",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://www.facebook.com/PoppaJoes/",
+    "City": "Ferndale",
+    "Keywords": ""
   },
   {
     "Index": 7,
@@ -60,7 +72,9 @@
     "Address": "1901 Heindon Rd , Arcata CA, 95521",
     "Phone": "(707) 822-0091",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://tonisrestaurant.com/",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 8,
@@ -69,34 +83,42 @@
     "Address": "1709 5th Street, Eureka, 95501",
     "Phone": "(707) 443-4227",
     "Info": "Take out",
-    "Website": ""
+    "Website": "http://www.sammysbbqcatering.com/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 9,
-    "Restaurant": "Surfiside Burger Shack",
+    "Restaurant": "Surfside Burger Shack",
     "Type": "Burgers",
     "Address": "445 5th St, Eureka, 95501",
     "Phone": "(707) 268-1295",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://surfsideburgershack.com/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 10,
-    "Restaurant": "Bayfront",
+    "Restaurant": "Bayfront Restaurant",
     "Type": "Japonese and Italian",
     "Address": "1 F St. Eureka, 95501",
     "Phone": "(707) 443-7489",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://www.facebook.com/bayfronteureka/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 11,
-    "Restaurant": "Smokin Barrels Burgers & BBQ",
+    "Restaurant": "Smokin' Barrels Burgers & BBQ",
     "Type": "Burgers & BBQ",
     "Address": "1095 S. Fortuna Blvd. Ste. E Fortuna, 95540",
     "Phone": "(707) 725-9100",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://www.facebook.com/smokinbarrels2018/",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 12,
@@ -105,16 +127,20 @@
     "Address": "1468 Main St\nFortuna, 95540",
     "Phone": "(707) 725-3459",
     "Info": "Take out",
-    "Website": ""
+    "Website": "https://www.hunanfortuna.com/",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 13,
     "Restaurant": "Tres Picosos",
     "Type": "Mexican",
-    "Address": "3502 Broadway St, 95503",
+    "Address": "3502 Broadway St, Eureka, 95503",
     "Phone": "(707) 268-8255",
     "Info": "Take out",
-    "Website": ""
+    "Website": "http://treschilespicosos.com/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 14,
@@ -123,7 +149,9 @@
     "Address": "1777 Norton Rd, McKinleyville, 95519",
     "Phone": "(707) 839-2342",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 15,
@@ -132,16 +160,20 @@
     "Address": "1552 City Center Rd\nMcKinleyville,  95519",
     "Phone": "(707) 839-1222",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 16,
     "Restaurant": "Japonese Spot Inc",
     "Type": "Japonese",
-    "Address": "Suite 101, 670 9th Street, 95521",
+    "Address": "Suite 101, 670 9th Street, Arcata, 95521",
     "Phone": "(707) 822-1221",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 17,
@@ -149,8 +181,10 @@
     "Type": "Sandwiches and BBQ",
     "Address": "5427 State Hwy 36 \nCarlotta, California 95528",
     "Phone": "(707) 851-3501",
-    "Info": "Take out/Curbside",
-    "Website": ""
+    "Info": "Take out\nCurbside",
+    "Website": "",
+    "City": "Carlotta",
+    "Keywords": ""
   },
   {
     "Index": 18,
@@ -158,8 +192,10 @@
     "Type": "Various",
     "Address": "5000 Valley West Blvd \nArcata, California 95521",
     "Phone": "(707) 822-6141",
-    "Info": "Take out/Curbside",
-    "Website": ""
+    "Info": "Take out\nCurbside",
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 19,
@@ -168,7 +204,9 @@
     "Address": "828 I St \nArcata, California 95521",
     "Phone": "(707) 630-5100",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 20,
@@ -177,7 +215,9 @@
     "Address": "2834 F St \nEureka, California 95501",
     "Phone": "(707) 798-6184",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 21,
@@ -185,8 +225,10 @@
     "Type": "Burgers - Pasta - Salads",
     "Address": "603 E St\nEureka, California, 95501",
     "Phone": "(707) 445-8783",
-    "Info": "Take out/Curbside",
-    "Website": ""
+    "Info": "Take out\nCurbside",
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 22,
@@ -195,7 +237,9 @@
     "Address": "4200 Broadway St. Eureka, 95503",
     "Phone": "(707) 443-0615",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 23,
@@ -203,8 +247,10 @@
     "Type": "California/French Fusion",
     "Address": "1436 2nd St.\nEureka, California",
     "Phone": "(707) 443-7339",
-    "Info": "Eureka - Take out/Delivery(Eureka to Arcata w/ $100min)",
-    "Website": ""
+    "Info": "Eureka\nTake out\nDelivery\n(Eureka to Arcata\n w/ $100min)",
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 24,
@@ -212,17 +258,21 @@
     "Type": "Various",
     "Address": "1658 Patricks Point Dr\nTrinidad, California, 95501",
     "Phone": "(707) 677-0230",
-    "Info": "Trinidad - Curbside/Delivery",
-    "Website": ""
+    "Info": "Trinidad -\nCurbside\nDelivery",
+    "Website": "",
+    "City": "Trinidad",
+    "Keywords": ""
   },
   {
     "Index": 25,
     "Restaurant": "Humboldt Soup Company",
     "Type": "Soups",
-    "Address": "95501 - 95502 - 95503 - 95524 - 95564",
+    "Address": "1019 Myrtle Avenue, Eureka, CA 95501",
     "Phone": "(707) 268-8298",
-    "Info": "Eureka - Take out",
-    "Website": ""
+    "Info": "Eureka \nTake out",
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 26,
@@ -231,16 +281,20 @@
     "Address": "550 South G St. #4\nArcata, CA 95521",
     "Phone": "707-826-RCBC(7222)",
     "Info": "Take out",
-    "Website": "https://redwoodcurtainbrewing.com/pages/contact-us"
+    "Website": "https://redwoodcurtainbrewing.com/pages/contact-us",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 27,
     "Restaurant": "Clean Queen Meal Prep",
     "Type": "Various",
-    "Address": "Delivery to Eureka, Arcata, Mckinleyville, Humboldt 95501 - 95502 - 95503 - 95524 - 95564 - 95521 - 95519 - 95540",
-    "Phone": "www.cleanqueenmealprep.com",
-    "Info": "order online",
-    "Website": ""
+    "Address": "Delivery to Eureka, Arcata, Mckinleyville,...",
+    "Phone": "",
+    "Info": "www.cleanqueenmealprep.com",
+    "Website": "",
+    "City": "Eureka, Arcata, Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 28,
@@ -248,8 +302,10 @@
     "Type": "Burgers, Fish and Chips, Tacos / Mexican",
     "Address": "550 S. G Street\nArcata, California, 95521",
     "Phone": "(707) 572-6019",
-    "Info": "Eureka & Arcata - Take out",
-    "Website": ""
+    "Info": "Eureka\nArcata\nTake out",
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 29,
@@ -258,16 +314,20 @@
     "Address": "2297 Harrison Ave \nEureka, California 95501",
     "Phone": "(707) 442-1336",
     "Info": "Eureka (Harrison & Old town) Arcata (Wildberries) & Mckinleyville (Safeway shopping center) - Take out/Curbside Delivery - Eureka w/ $20 min",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 30,
-    "Restaurant": "Humboldt Smokhouse",
+    "Restaurant": "Humboldt Smokehouse",
     "Type": "BBQ",
     "Address": "310 5th St \nEureka, California 95501",
     "Phone": "(707) 497-6261",
     "Info": "Take-Out and Delivery. Wholesale Meats Delivery and Pickup.",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 31,
@@ -276,7 +336,9 @@
     "Address": "1360 G St\nArcata, California, 95521",
     "Phone": "(707) 630-5021",
     "Info": "Arcata - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 32,
@@ -285,7 +347,9 @@
     "Address": "320 Main St \nFortuna, California 95540",
     "Phone": "(707) 725-3700",
     "Info": "Fortuna - Take out/Curbside\nDelivery: Fortuna-Rio Dell-Scotia-Hydesville-Ferndale",
-    "Website": ""
+    "Website": "",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 33,
@@ -294,7 +358,9 @@
     "Address": "3023 F St \n Eureka, California 95501",
     "Phone": "(707) 442-6967",
     "Info": "Take out / Open daily 11am - 7pm",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 34,
@@ -303,7 +369,9 @@
     "Address": "600 F St, Ste 9 \nArcata, California 95521",
     "Phone": "(707) 825-0900",
     "Info": "Take out Daily 4-9pm",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 35,
@@ -312,7 +380,9 @@
     "Address": "421 3rd st\nEureka, California",
     "Phone": "(707) 273-5129",
     "Info": "Eureka - Take out/Curbside\nDelivery: Eureka to Fields Landing",
-    "Website": "http://madronetaphouse.com/?fbclid=IwAR1zbOCl6a24pK7casD46-pmJasvAGW6zn7bE__MCHW92vc1C3D1oDMdrOs"
+    "Website": "http://madronetaphouse.com/?fbclid=IwAR1zbOCl6a24pK7casD46-pmJasvAGW6zn7bE__MCHW92vc1C3D1oDMdrOs",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 36,
@@ -321,7 +391,9 @@
     "Address": "665 Samoa Blvd\nArcata, California 95521",
     "Phone": "(707) 822-6199",
     "Info": "Arcata - Curbside Pick up",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 37,
@@ -330,7 +402,9 @@
     "Address": "359 Main St Trinidad, California 95570",
     "Phone": "(707) 677-3077",
     "Info": "Take out/Curbside",
-    "Website": ""
+    "Website": "",
+    "City": "Trinidad",
+    "Keywords": ""
   },
   {
     "Index": 38,
@@ -339,7 +413,9 @@
     "Address": "30 Sunnybrae Ctr \nArcata, California 95521",
     "Phone": "(707) 822-6101",
     "Info": "Arcata - Take out",
-    "Website": "www.latrattoriaarcata.com"
+    "Website": "www.latrattoriaarcata.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 39,
@@ -348,7 +424,9 @@
     "Address": "355 Main St \nTrinidad, California 95570",
     "Phone": "(707) 677-0077",
     "Info": "Trinidad @lighthousegrilltrinidad Take out/Curbside Open every day 11am-8pm",
-    "Website": ""
+    "Website": "",
+    "City": "Trinidad",
+    "Keywords": ""
   },
   {
     "Index": 40,
@@ -357,7 +435,9 @@
     "Address": "1010 Broadway\nEureka, California 95501",
     "Phone": "(707) 443-2786",
     "Info": "Eureka - Take out",
-    "Website": "http://www.pandacafe.net"
+    "Website": "http://www.pandacafe.net",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 41,
@@ -366,7 +446,9 @@
     "Address": "791 G St \nArcata, California 95521",
     "Phone": "(707) 822-5922",
     "Info": "Arcata - Online Orders",
-    "Website": "cafebrioarcata.com"
+    "Website": "cafebrioarcata.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 42,
@@ -375,7 +457,9 @@
     "Address": "5000 Valley West Blvd Ste 19 Arcata, California 95521",
     "Phone": "(707) 826-2121",
     "Info": "Take Out",
-    "Website": "www.kebabcafearcata.com"
+    "Website": "www.kebabcafearcata.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 43,
@@ -384,7 +468,9 @@
     "Address": "1061 I Street\nArcata, California 95521",
     "Phone": "(707) 822-3150",
     "Info": "Eureka & Aracta - Take out/Curbside/Delivery",
-    "Website": "www.losbagels.com"
+    "Website": "www.losbagels.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 44,
@@ -393,7 +479,9 @@
     "Address": "1604 G St \nArcata, California 95521",
     "Phone": "(707) 822-0360",
     "Info": "Arcata - Take out/Delivery",
-    "Website": "wildflowercafebakery.com"
+    "Website": "wildflowercafebakery.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 45,
@@ -402,7 +490,9 @@
     "Address": "1724 Broadway St . Eureka, California 95501-0138",
     "Phone": "(707) 445-9777",
     "Info": "Take out/Curbside 8am-8pm",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 46,
@@ -411,7 +501,9 @@
     "Address": "719 S Fortuna Blvd\nFortuna, California 95540",
     "Phone": "(707) 725-5580",
     "Info": "Fortuna - Take out/Delivery (Fortuna to Scotia)",
-    "Website": "http://www.menupix.com/california/restaurants/5560698/Peppers-Fortuna-CA?fbclid=IwAR3qUDYwiImXLYg1PnMrK6AgNfAqKYxgirPLaotssQc5f4uPaY3QNCXoNYg"
+    "Website": "http://www.menupix.com/california/restaurants/5560698/Peppers-Fortuna-CA?fbclid=IwAR3qUDYwiImXLYg1PnMrK6AgNfAqKYxgirPLaotssQc5f4uPaY3QNCXoNYg",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 47,
@@ -420,7 +512,9 @@
     "Address": "1151 Main St. Fortuna, California 95540",
     "Phone": "(707) 682-6187",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 48,
@@ -429,7 +523,9 @@
     "Address": "1718 4th St \nEureka, California 95501",
     "Phone": "(707) 407-3848",
     "Info": "Take out",
-    "Website": "lapatriamgrestaurant.com"
+    "Website": "lapatriamgrestaurant.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 49,
@@ -438,7 +534,9 @@
     "Address": "4241 Fieldbrook Road\nMcKinleyville, California 95519",
     "Phone": "(707) 839-4140",
     "Info": "Wine delivery",
-    "Website": "www.fieldbrookwinery.com"
+    "Website": "www.fieldbrookwinery.com",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 50,
@@ -447,7 +545,9 @@
     "Address": "435 N Fortuna Blvd\nFortuna, California",
     "Phone": "(707) 725-2431",
     "Info": "Fortuna - Take out/Delivery (Fortuna to Hydesville)",
-    "Website": ""
+    "Website": "",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 51,
@@ -456,7 +556,9 @@
     "Address": "420 E California Ave\nArcata, California 95521",
     "Phone": "(707) 822-3453",
     "Info": "Take out",
-    "Website": "www.blondiesfoodanddrink.com"
+    "Website": "www.blondiesfoodanddrink.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 52,
@@ -465,7 +567,9 @@
     "Address": "2320 Central Ave, Ste F, McKinleyville, California 95519",
     "Phone": "(707) 738-8225",
     "Info": "Take out",
-    "Website": "www.humboldtregeneration.com"
+    "Website": "www.humboldtregeneration.com",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 53,
@@ -474,7 +578,9 @@
     "Address": "1584 Reasor Rd \nMcKinleyville, California 95519",
     "Phone": "(707) 630-5084",
     "Info": "Mckinleyville - Take out/Curbside",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 54,
@@ -483,7 +589,9 @@
     "Address": "215 W 7th St \nEureka, California 95501-0251",
     "Phone": "(707) 444-9644",
     "Info": "Take out",
-    "Website": "https://www.yelp.com/biz/angelos-pizza-parlor-eureka"
+    "Website": "https://www.yelp.com/biz/angelos-pizza-parlor-eureka",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 55,
@@ -492,7 +600,9 @@
     "Address": "95503, Humboldt Hill, 95501, Eureka and nearby areas.",
     "Phone": "(707) 616-5488",
     "Info": "Cookie Orders",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 56,
@@ -501,7 +611,9 @@
     "Address": "316 E St \nEureka, California 95501",
     "Phone": "(707) 443-7187",
     "Info": "Eureka - Take out/Curbside",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 57,
@@ -510,7 +622,9 @@
     "Address": "1777 Alamar Way \nFortuna, California 95540",
     "Phone": "(707) 725-2739",
     "Info": "Take out",
-    "Website": "www.eelriverbrewing.com"
+    "Website": "www.eelriverbrewing.com",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
     "Index": 58,
@@ -519,7 +633,9 @@
     "Address": "865 9th Street \nArcata, California 95521",
     "Phone": "(707) 630-5148",
     "Info": "Arcata - Take out/Curbside",
-    "Website": "www.campgroundarcata.com"
+    "Website": "www.campgroundarcata.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 59,
@@ -528,7 +644,9 @@
     "Address": "317 5th St\nEureka, California 95501",
     "Phone": "Amigas Burritos",
     "Info": "Take out",
-    "Website": "https://amigas-burritos.hub.biz/"
+    "Website": "https://amigas-burritos.hub.biz/",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 60,
@@ -537,7 +655,9 @@
     "Address": "1911 Truesdale St\nEureka, California",
     "Phone": "(707) 407-3550",
     "Info": "Eureka - Take out/Curbside/Delivery",
-    "Website": "http://www.shamustbones.com"
+    "Website": "http://www.shamustbones.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 61,
@@ -546,7 +666,9 @@
     "Address": "1707 Allard Ave\nEureka, California 95503",
     "Phone": "(707) 442-1610",
     "Info": "Take out 7 days a week\nLocal Delivery (Fri-Mon 9am-1pm $50 min and all senior citizens)",
-    "Website": "www.goldenharvestcafe.com"
+    "Website": "www.goldenharvestcafe.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 62,
@@ -555,7 +677,9 @@
     "Address": "1802 5th St\nEureka, California, 95501",
     "Phone": "(707) 442-2587",
     "Info": "Eureka - Take out",
-    "Website": "pachangamexicana.com"
+    "Website": "pachangamexicana.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 63,
@@ -564,7 +688,9 @@
     "Address": "ridgecrest place\nEureka, California 95503",
     "Phone": "(707) 441-8404",
     "Info": "Eureka takeout / free delivery with $25 purchase",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 64,
@@ -573,7 +699,9 @@
     "Address": "Rio Dell, California, 95562",
     "Phone": "(707) 834-5145",
     "Info": "Rio Dell - Cookies",
-    "Website": ""
+    "Website": "",
+    "City": "Rio Dell",
+    "Keywords": ""
   },
   {
     "Index": 65,
@@ -582,7 +710,9 @@
     "Address": "4636 Fieldbrook Rd \nMcKinleyville, California 95519",
     "Phone": "(707) 633-6097",
     "Info": "Takeout/Curbside",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
     "Index": 66,
@@ -591,7 +721,9 @@
     "Address": "605 Broadway\nEureka, California 95501",
     "Phone": "(707) 443-1700",
     "Info": "Eureka - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
     "Index": 67,
@@ -600,7 +732,9 @@
     "Address": "681 I St \nArcata, California 95521",
     "Phone": "(707) 407-9750",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
     "Index": 68,
@@ -609,7 +743,9 @@
     "Address": "409 Main St\nFerndale, California 95536",
     "Phone": "(707) 786-4180",
     "Info": "Ferndale - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Ferndale",
+    "Keywords": ""
   },
   {
     "Index": 69,
@@ -618,231 +754,272 @@
     "Address": "529 Trinity St \nTrinidad, California 95570",
     "Phone": "(707) 845-5492",
     "Info": "Delivery / Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Trinidad",
+    "Keywords": ""
   },
   {
     "Index": 70,
-    "Restaurant": "Kneeland Glen Farm Stand",
-    "Type": "Soaps, Various",
-    "Address": "5851 Myrtle Ave\nEureka, California 95503",
-    "Phone": "https://www.facebook.com/KneelandGlenFarmstand/",
-    "Info": "Eureka - Pick up",
-    "Website": ""
-  },
-  {
-    "Index": 71,
     "Restaurant": "Six Rivers Brewery",
     "Type": "American, Drinks, Various",
     "Address": "1300 Central Ave\nMcKinleyville, California 95519",
     "Phone": "(707) 839-7580",
     "Info": "Mckinleyville - Growler Fills and Beer Take out.\nCheck Daily for Food availability",
-    "Website": "www.sixriversbrewery.com"
+    "Website": "www.sixriversbrewery.com",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
-    "Index": 72,
+    "Index": 71,
     "Restaurant": "Fregoso's Comida Mexicana",
     "Type": "Mexican",
     "Address": "1504 G St \nArcata, California 95521",
     "Phone": "(707) 630-5083",
     "Info": "Arcata - Take out/Delivery",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 73,
+    "Index": 72,
     "Restaurant": "Hunan Village Restaurant",
     "Type": "Chinese",
     "Address": "1468 Main St \nFortuna, California 95540",
     "Phone": "(707) 725-3459",
     "Info": "Fortuna - Take out only",
-    "Website": ""
+    "Website": "",
+    "City": "Fortuna",
+    "Keywords": ""
   },
   {
-    "Index": 74,
+    "Index": 73,
     "Restaurant": "Tandoori Bites Indian Cuisine",
     "Type": "Indian",
     "Address": "1735 4th St \nEureka, California 95501",
     "Phone": "(707) 443-2080",
     "Info": "Eureka - Take out/Curdside\nDelivery: Fortuna to Mckinleyville/Blue Lake (Min $45 order)",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 75,
+    "Index": 74,
     "Restaurant": "Brick & Fire a bistro",
     "Type": "American, Various",
     "Address": "1630 F St\nEureka, California, 95501",
     "Phone": "(707) 268-8959",
     "Info": "Eureka - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 76,
+    "Index": 75,
     "Restaurant": "Arcata Pizza and Deli",
     "Type": "Pizzas, Burgers, Deli",
     "Address": "1057 H St\nArcata, California 95521",
     "Phone": "(707) 822-4650",
     "Info": "Arcata - Take out/Curbside",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 77,
+    "Index": 76,
     "Restaurant": "Eureka Natural foods",
     "Type": "Market",
     "Address": "2165 Central Ave.\nMcKinleyville, California 95519",
     "Phone": "(707) 839-3636",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
-    "Index": 78,
+    "Index": 77,
     "Restaurant": "Carmela's Mexican Restaurant",
     "Type": "Mexican",
     "Address": "701 Central Ave, McKinleyville, CA 95519",
     "Phone": "(707) 839-2435",
     "Info": "Mckinleyville - Take out/Delivery",
-    "Website": ""
+    "Website": "",
+    "City": "Mckinleyville",
+    "Keywords": ""
   },
   {
-    "Index": 79,
+    "Index": 78,
     "Restaurant": "The Banana Hut Hawaiian BBQ",
     "Type": "Hawaiian",
     "Address": "621 5th St\nEureka, California 95501",
     "Phone": "(707) 444-3447",
     "Info": "Take out/Curbside/Local Delivery",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 80,
+    "Index": 79,
     "Restaurant": "Carmela's Mexican Restaurant Arcata",
     "Type": "Mexican",
     "Address": "1288 G St, Arcata, CA 95521",
     "Phone": "(707) 822-5200",
     "Info": "Arcata - Take out",
-    "Website": "http://www.eatcarmelas.com"
+    "Website": "http://www.eatcarmelas.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 81,
+    "Index": 80,
     "Restaurant": "Cafe Nooner Too",
     "Type": "Various",
     "Address": "2910 E St\nEureka, California 95501",
     "Phone": "(707) 407-3664",
     "Info": "Take out",
-    "Website": "www.cafenooner.com"
+    "Website": "www.cafenooner.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 82,
+    "Index": 81,
     "Restaurant": "A Taste of Bima",
     "Type": "Caribbean",
     "Address": "613 3rd St \nEureka, California 95501",
     "Phone": "(707) 798-6300",
     "Info": "Take out/Curbside/Delivery Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 83,
+    "Index": 82,
     "Restaurant": "Hole in the Wall",
     "Type": "Sandwiches",
     "Address": "590 G St\nArcata, California 95521",
     "Phone": "(707) 822-7407",
     "Info": "Arcata - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 84,
+    "Index": 83,
     "Restaurant": "Bar Nomadic",
     "Type": "Drinks",
     "Address": "Delivery",
     "Phone": "(707) 672-4509",
     "Info": "Bar Box Pick up and Delivery",
-    "Website": ""
+    "Website": "",
+    "City": "Delivery",
+    "Keywords": ""
   },
   {
-    "Index": 85,
+    "Index": 84,
     "Restaurant": "Gyppo Ale Mill",
     "Type": "Brewery, Various",
     "Address": "1661 Upper Pacific Drive \nShelter Cove, California 95589",
     "Phone": "(707) 986-7700",
     "Info": "Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Whitethorn",
+    "Keywords": ""
   },
   {
-    "Index": 86,
+    "Index": 85,
     "Restaurant": "Babe's Pizza & Pasta",
     "Type": "Pizzas and Pasta - Italian",
     "Address": "4015 Walnut Dr \nEureka, California 95503",
     "Phone": "(707) 442-3839",
     "Info": "Eureka - Take out/Curbside/Local Delivery",
-    "Website": "www.babespizzapasta.com"
+    "Website": "www.babespizzapasta.com",
+    "City": "Eureka",
+    "Keywords": ""
   },
   {
-    "Index": 87,
+    "Index": 86,
     "Restaurant": "El Chipotle",
     "Type": "Mexican",
     "Address": "Crescent Way 850\nArcata, California 95521",
     "Phone": "(707) 630-5196",
     "Info": "Arcata - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 88,
+    "Index": 87,
     "Restaurant": "Humbrews / Humboldt Brews",
     "Type": "Drinks and Grill",
     "Address": "856 10th St\nArcata, California, 95521",
     "Phone": "(707) 826-2739",
     "Info": "Arcata - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 89,
+    "Index": 88,
     "Restaurant": "Ferndale Pizza Co.",
     "Type": "Pizzas",
     "Address": "607 Main St Ferndale, California 95536",
     "Phone": "(707) 786-4345",
     "Info": "Tale Out",
-    "Website": ""
+    "Website": "",
+    "City": "Ferndale",
+    "Keywords": ""
   },
   {
-    "Index": 90,
+    "Index": 89,
     "Restaurant": "Szechuan Garden Restaurant Arcata",
     "Type": "Chinese",
     "Address": "752 18th St\nArcata, California, 95521",
     "Phone": "(707) 822-0277",
     "Info": "Arcata - Take out",
-    "Website": "szechuangardentogo.com"
+    "Website": "szechuangardentogo.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 91,
+    "Index": 90,
     "Restaurant": "Plaza Grill",
     "Type": "American, Grill, Various",
     "Address": "791 8th St, Fl 3rd\nArcata, California, 95521",
     "Phone": "(707) 826-0860",
     "Info": "Arcata - Take out",
-    "Website": "www.plazagrillarcata.com"
+    "Website": "www.plazagrillarcata.com",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 92,
+    "Index": 91,
     "Restaurant": "Tomo Japanese Restaurant",
     "Type": "Japanese, sushi",
     "Address": "708 9th St\nArcata, California 95521",
     "Phone": "(707) 822-1414",
     "Info": "Arcata - Take out",
-    "Website": ""
+    "Website": "",
+    "City": "Arcata",
+    "Keywords": ""
   },
   {
-    "Index": 93,
+    "Index": 92,
     "Restaurant": "Septentrio Winery",
     "Type": "Wine, drinks",
     "Address": "Delivery",
     "Phone": "(707) 672-2058",
     "Info": "Arcata - Curbside and Delivery (Fortuna to Trinidad)",
-    "Website": "http://septentriowinery.com"
+    "Website": "http://septentriowinery.com",
+    "City": "Delivery",
+    "Keywords": ""
   },
   {
-    "Index": 94,
+    "Index": 93,
     "Restaurant": "Panda Cafe",
     "Type": "Chinese",
     "Address": "1010 Broadway\nEureka, California 95501",
     "Phone": "(707) 443-2786",
     "Info": "Eureka - Take out",
-    "Website": "http://www.pandacafe.net"
+    "Website": "http://www.pandacafe.net",
+    "City": "Eureka",
+    "Keywords": ""
   }
 ]

@@ -2,36 +2,59 @@ import React, { useState } from 'react';
 import Header from './components/Header'
 import Search from './components/Search'
 import List from './components/List'
+import Add from './components/Add'
+import Contact from './components/Contact'
+
 import { css } from 'emotion'
 
 import './App.css';
 
 function App() {
+  var nodemailer = require('nodemailer');
   const [code, setCode] = useState("");
-  const [type, setType] = useState("");
+  const [delivery, setDelivery] = useState(false)
+  const [add, setAdd] = useState(false)
 
-  return (
+  if (!add) {
+    return (
+      <div>
+        <header>
+          <Header />
+        </header>
+        <div className={styles.bodyApp}>
+          <div>
+            <Search setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
+          </div>
+          {/* <div className={styles.add}>
+            <Add adc={add} setAdc={setAdd} />
+          </div> */}
+          <div>
+            <List value={code} del={delivery} />
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return (
     <div>
       <header>
         <Header />
       </header>
-      <div className={styles.bodyApp}>
-        <div>
-          <Search setValue={setCode} value={code} cousine={type} setCousine={setType} />
-        </div>
-        <div>
-          <List value={code} cousine={type} />
-        </div>
-      </div>
+      <Contact />
     </div>
-  );
+    )
+  }
 }
 
 const styles = {
   bodyApp: css`
-    background-color: #282c34;
     min-height: 100vh;
   `,
+  add: css`
+  position: absolute;
+  margin-botton: 0px;
+  cursor: pointer;
+  `
 }
 
 export default App;

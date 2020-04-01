@@ -5,91 +5,174 @@ import datas from "../Humboldttogo.json"
 
 function List(props) {
     let arr = [];
-    if (props.value.length === 5 && typeof (Number(props.value)) === "number") {
+    if (props.value.length > 0 && !props.del) {
         for (var i = 0; i < datas.length; i++) {
-            if (datas[i].Address.includes(props.value) || datas[i].Address === "Delivery") {
+            if (datas[i].City === props.value) {
                 arr.push(datas[i])
             }
         }
+        if (arr.length === 0) {
+            return (
+                <div className={styles.back}>
+                    <div className={styles.contacts}>
+                        <h3 className={styles.results}> No results yet =(</h3>
+                    </div>
+                </div>
+            )
+        }
         return (
-            <div className={styles.wrapper}>
-                <table className={styles.header}>
-                    <thead>
-                        <tr>
-                            <th>Restaurant</th>
-                            <th>Type</th>
-                            <th>Address</th>
-                            <th>Phone Number</th>
-                            <th>Info</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {arr.map((data) =>
-                            <tr key={data.Index.toString()} className={styles.restaurant}>
-                                <td>{data.Restaurant}</td>
-                                <td>{data.Type}</td>
-                                <td>{data.Address}</td>
-                                <td>{data.Phone}</td>
-                                <td>{data.Info}</td>
-                            </tr>)}
-                    </tbody>
-                </table>
+            <div className={styles.back}>
+                {arr.map((data) =>
+                    <div key={data.Index.toString()} className={styles.contacts}>
+                        <div className={styles.block}>
+                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <h4>{data.Type}</h4>
+                            <h4>Address: {data.Address}</h4>
+                            <h4>Phone: {data.Phone}</h4>
+                            <h4>{data.Info}</h4>
+                        </div>
+                    </div>
+                )}
             </div>
         )
-    } else {
-        return (
-            <div className={styles.wrapper}>
-                <table className={styles.header}>
-                    <thead>
-                        <tr>
+    } if (props.value.length === 0 && props.del) {
+        for (var i = 0; i < datas.length; i++) {
+            if (datas[i].Info.includes("Delivery")) {
+                arr.push(datas[i])
+            }
+        } if (arr.length === 0) {
+            return (
+                <div className={styles.back}>
+                    <div className={styles.contacts}>
+                        <h3 className={styles.results}> No results yet =(</h3>
+                    </div>
+                </div>
+            )
+        } return (
+            <div className={styles.back}>
+                {arr.map((data) =>
+                    <div key={data.Index.toString()} className={styles.contacts}>
+                        <div className={styles.block}>
+                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <h4>{data.Type}</h4>
+                            <h4>Address: {data.Address}</h4>
+                            <h4>Phone: {data.Phone}</h4>
+                            <h4>{data.Info}</h4>
+                        </div>
+                    </div>
+                )}
+            </div>
+        )
+    } if (props.value.length > 0 && props.del) {
+        for (var i = 0; i < datas.length; i++) {
+            if (datas[i].City === props.value && datas[i].Info.includes("Delivery")) {
+                arr.push(datas[i])
+            }
+        }
+        if (arr.length === 0) {
+            return (
+                <div className={styles.back}>
+                    <div className={styles.contacts}>
+                        <h3 className={styles.results}> No results yet =(</h3>
+                    </div>
+                </div>
+            )
+        }
 
-                            <th>Restaurant</th>
-                            <th>Type</th>
-                            <th>Address</th>
-                            <th>Phone Number</th>
-                            <th>Info</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {datas.map((data) =>
-                            <tr key={data.Index.toString()} className={styles.restaurant}>
-                                <td>{data.Restaurant}</td>
-                                <td>{data.Type}</td>
-                                <td>{data.Address}</td>
-                                <td>{data.Phone}</td>
-                                <td>{data.Info}</td>
-                            </tr>)}
-                    </tbody>
-                </table>
+        return (
+            <div className={styles.back}>
+                {arr.map((data) =>
+                    <div key={data.Index.toString()} className={styles.contacts}>
+                        <div className={styles.block}>
+                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <h4>{data.Type}</h4>
+                            <h4>Address: {data.Address}</h4>
+                            <h4>Phone: {data.Phone}</h4>
+                            <h4>{data.Info}</h4>
+                        </div>
+                    </div>
+                )}
             </div>
         )
+    }
+    else {
+        return (
+            <div className={styles.back}>
+                {datas.map((data) =>
+                    <div key={data.Index.toString()} className={styles.contacts}>
+                        <div className={styles.block}>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
+                            <h4>{data.Type}</h4>
+                            <h4>Address: {data.Address}</h4>
+                            <h4>Phone: {data.Phone}</h4>
+                            <h4>{data.Info}</h4>
+                        </div>
+                    </div>
+
+                )}
+            </div>
+        )
+
     }
 }
 
 
-
 const styles = {
     wrapper: css`
-        display:flex;
-        justify-content: center;
-        width: 100%;
+                display:flex;
+                justify-content: center;
+                width: 100%;
+
+            `,
+    header: css`
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                width: 60%;
+            `,
+    restaurant: css`
+                background-color: white;
+                color: black;
+                td {
+                    white-space: wrap;
+                    padding-bottom: 600px;
+                }
+            `,
+    phone: css`
+                width:100px;
+
+            `,
+    block: css`
+            border: 3px outset #F0FFF0;
+            margin-top: 15px;
+            margin-left: 10px;
+            padding: 10px;
+            background-color: white;
+                
+            `,
+    back: css`
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #2F4F4F;
+                `,
+    title: css`
+            color: #778899;
+            font-weight: bold;
+            font-size: 17px;
+            `,
+    contacts: css`
+         width: 80%;
 
     `,
-    header: css`
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #4CAF50;
+    results: css`
         color: white;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        width: 100%;
-    `,
-    restaurant: css`
-        background-color: white;
-        color: black;
-        td {
-            padding: 5px;
-        }
+        margin-left: 30%;
     `
 }
 
