@@ -15,7 +15,7 @@ function Add(props) {
 
     return (
        <div>
-           <button onClick={sendMeAnEmail} className={styles.add}> Add/Update Restaurant</button>
+           <button onClick={sendMeAnEmail} className={styles.add}>o</button>
        </div>
     )
 }
