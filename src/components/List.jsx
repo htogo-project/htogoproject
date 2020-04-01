@@ -5,7 +5,7 @@ import datas from "../Humboldttogo.json"
 
 function List(props) {
     let arr = [];
-    if (props.value.length > 0 && !props.del) {
+    if (props.value.length > 0 && props.value !== "All" && !props.del) {
         for (var i = 0; i < datas.length; i++) {
             if (datas[i].City === props.value) {
                 arr.push(datas[i])
@@ -63,7 +63,7 @@ function List(props) {
                 )}
             </div>
         )
-    } if (props.value.length > 0 && props.del) {
+    } if (props.value.length > 0 && props.value !== "All" && props.del) {
         for (var i = 0; i < datas.length; i++) {
             if (datas[i].City === props.value && datas[i].Info.includes("Delivery")) {
                 arr.push(datas[i])

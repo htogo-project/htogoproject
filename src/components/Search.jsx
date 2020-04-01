@@ -28,13 +28,15 @@ function Search(props) {
                 <div className={styles.dropdown_content}>
                     <a onClick={handleClick} href="#">Arcata</a>
                     <a onClick={handleClick} href="#">Carlotta</a>
-                    <a onClick={handleClick} href="#">Whitethorn</a>
                     <a onClick={handleClick} href="#">Eureka</a>
                     <a onClick={handleClick} href="#">Ferndale</a>
                     <a onClick={handleClick} href="#">Fortuna</a>
                     <a onClick={handleClick} href="#">Mckinleyville</a>
+                    <a onClick={handleClick} href="#">Redway</a>
                     <a onClick={handleClick} href="#">Rio Dell</a>
                     <a onClick={handleClick} href="#">Trinidad</a>
+                    <a onClick={handleClick} href="#">Whitethorn</a>
+                    <a onClick={handleClick} href="#">All</a>
                 </div>
             </div>
             <form action="/action_page.php">
