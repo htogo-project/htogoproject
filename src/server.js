@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send('hi');
 })
 
-app.post('/api/v1', (req,res) => {
+app.post('https://www.humboldtogo.com/api/v1', (req,res) => {
 
   var data = req.body;
 
