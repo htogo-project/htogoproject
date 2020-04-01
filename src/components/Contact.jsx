@@ -17,7 +17,7 @@ function Contact(props) {
         };
 
 
-        axios.get('/api/v1', data)
+        axios.post('/api/v1', data)
         .then( res => {
             setName("");
             setMessage("");
