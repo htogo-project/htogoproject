@@ -22,6 +22,7 @@ function Contact(props) {
             'Content-Type': 'application/json',
         }
       }
+        )
         .then( res => {
             setName("");
             setMessage("");
@@ -30,7 +31,7 @@ function Contact(props) {
         .catch( () => {
           console.log('Message not sent')
         })
-        )
+        
     }
 
      const handleChangeName = (event) => {
