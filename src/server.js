@@ -3,10 +3,12 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const credentials = require('/credentials')
+const port = 8080;
+
 
 const app = express();
+app.use(cors());
 
-const port = 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,7 +19,6 @@ app.use((request, response, next) => {
     next();
   });
 
-app.use(cors());
 
 app.listen(port, () => {
   console.log('We are live on port 8080');
