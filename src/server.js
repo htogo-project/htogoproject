@@ -44,9 +44,7 @@ app.post("/issue-2", cors(issue2options), (req,res) => {
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
-    host: "smtp.example.com",
-    port: 587,
-    secure: false,
+    service: 'gmail',
   auth: {
     user: credentials.password,
     pass: credentials.username
