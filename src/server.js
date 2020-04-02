@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const credentials = require('/credentials')
 
+require('dotenv').config()
 
 const port = 8080;
 
@@ -49,8 +50,8 @@ var smtpTransport = nodemailer.createTransport({
     service: 'gmail',
     secure: false,
   auth: {
-    user: credentials.password,
-    pass: credentials.username
+    user: process.env.PASSWORD,
+    pass: process.env.USERNAME
   }
 });
 
