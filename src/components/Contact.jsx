@@ -20,7 +20,7 @@ function Contact(props) {
         axios.post('/api/v1', data, {
         headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Headers': '*',
+            'Access-Control-Allow-Headers': 'https://www.humboldtogo.com/',
         }
       }
     )
