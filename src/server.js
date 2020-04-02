@@ -37,6 +37,7 @@ app.post("/api/v1", (req,res) => {
   var data = req.body;
 
 const transporter = nodemailer.createTransport({
+  service: "gmail",
   auth: {
     user: process.env.USERNAME,
     pass: process.env.PASSWORD
@@ -45,7 +46,7 @@ const transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from:  data.email,
-  to: '0f2a33fe8249a6bf983e@cloudmailin.net',
+  to: 'shirazipatricia@gmail.com',
   subject: 'HumboldtToGoRequest',
   html: `<p>${data.name}</p>
           <p>${data.email}</p>

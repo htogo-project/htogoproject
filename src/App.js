@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Search from './components/Search'
 import List from './components/List'
 import Add from './components/Add'
-import Contact from './components/Contact'
+import Email from './components/Email'
 
 import { css } from 'emotion'
 
@@ -39,7 +39,7 @@ function App() {
       <header>
         <Header />
       </header>
-      <Contact />
+      <Email adc={add} setAdc={setAdd}/>
     </div>
     )
   }
