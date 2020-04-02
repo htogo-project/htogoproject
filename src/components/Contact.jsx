@@ -17,7 +17,11 @@ function Contact(props) {
         };
 
 
-        axios.post('/api/v1', data)
+        axios.post('/api/v1', data, {
+        headers: {
+            'Content-Type': 'application/json',
+        }
+      }
         .then( res => {
             setName("");
             setMessage("");
@@ -26,7 +30,7 @@ function Contact(props) {
         .catch( () => {
           console.log('Message not sent')
         })
-  
+        )
     }
 
      const handleChangeName = (event) => {
