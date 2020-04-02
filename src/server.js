@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const credentials = require('/credentials')
+
+
 const port = 8080;
 
 
@@ -37,14 +39,15 @@ const issue2options = {
   // credentials: true,
 };
 
-app.options("/issue-2", cors(issue2options));
-app.post("/issue-2", cors(issue2options), (req,res) => {
-  console.info("POST /issue-2");
+app.options("/api/v1", cors(issue2options));
+app.post("/api/v1", cors(issue2options), (req,res) => {
 
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
+    host: "http://www.humboldtogo.com",
     service: 'gmail',
+    secure: false,
   auth: {
     user: credentials.password,
     pass: credentials.username
