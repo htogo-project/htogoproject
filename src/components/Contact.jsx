@@ -17,12 +17,13 @@ function Contact(props) {
         };
 
 
-        axios.post('/issue-2', data, {
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
-    )
+        axios.post('/issue-2', data, { 
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     }
+    //   }
+    // )
+        })
         .then( res => {
             setName("");
             setMessage("");
