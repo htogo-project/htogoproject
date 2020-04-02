@@ -17,7 +17,7 @@ function Contact(props) {
         };
 
 
-        axios.post('/api/v1', data, {
+        axios.post('/issue-2', data, {
         headers: {
             'Content-Type': 'application/json',
         }
