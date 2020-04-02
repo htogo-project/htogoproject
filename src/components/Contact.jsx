@@ -16,21 +16,18 @@ function Contact(props) {
             message: message
         };
 
-
         axios.post('/api/v1', data, { 
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     }
-    //   }
-    // )
+
         })
         .then( res => {
+            console.log( "ressss yaaa")
+
             setName("");
             setMessage("");
             setEmail("");
         })
-        .catch( () => {
-          console.log('Message not sent')
+        .catch( (error) => {
+          console.log(error, 'Message not sent')
         })
         
     }
@@ -53,7 +50,7 @@ function Contact(props) {
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <form action="/action_page.php">
-                    <label > Name</label>
+                    <label > Your name</label>
                     <input onChange={handleChangeName}className={styles.same} type="text" name="firstname" placeholder="Your Name"  value={name} />
                     <label > E-mail</label>
                     <input onChange={handleChangeEmail} className={styles.same} type="text" name="email" placeholder="Your Email"  value={email}/>

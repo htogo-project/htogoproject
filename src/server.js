@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+
+
 const cors = require('cors');
-const credentials = require('/credentials')
 
 require('dotenv').config()
 
@@ -11,7 +12,6 @@ const port = 8080;
 
 const app = express();
 
-app.use(cors());
 
 // app.use((request, response, next) => {
 //     response.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -20,12 +20,14 @@ app.use(cors());
 //   });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(cors());
 
 
 
 
 app.listen(port, () => {
+
   console.log('We are live on port 8080');
 });
 
@@ -34,29 +36,28 @@ app.get('/', (req, res) => {
   res.send('hi');
 })
 
-const issue2options = {
-  // origin: true,
-  methods: ["POST"],
-  // credentials: true,
-};
+// const issue2options = {
+//   // origin: true,
+//   methods: ["POST"],
+//   // credentials: true,
+// };
 
-app.options("/api/v1", cors(issue2options));
-app.post("/api/v1", cors(issue2options), (req,res) => {
+// app.options("/api/v1", cors(issue2options));
+app.post("/api/v1", (req,res) => {
+  console.log( "post yaaa")
 
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
-    host: "http://www.humboldtogo.com",
     service: 'gmail',
-    secure: false,
   auth: {
-    user: process.env.PASSWORD,
-    pass: process.env.USERNAME
+    user: process.env.USERNAME,
+    pass: process.env.PASSWORD
   }
 });
 
 var mailOptions = {
-  from: data.email,
+  from:  data.email,
   to: 'shirazipatricia@gmail.com',
   subject: 'HumboldtToGoRequest',
   html: `<p>${data.name}</p>
@@ -66,6 +67,7 @@ var mailOptions = {
 
 smtpTransport.sendMail(mailOptions,
 (error, response) => {
+  console.log(error, "errorr yaaa")
   if(error) {
     res.send(error)
   }else {
