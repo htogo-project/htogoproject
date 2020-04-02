@@ -13,7 +13,8 @@ function Email(props) {
         <div>
             <button onClick={goBack}> Go Back </button>
             <div className={styles.wrapper}> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shirazipatricia@gmail.com" target="_blank"> E-mail me </a>  
-            <p> to include/update or remove your business from this website.</p>  </div> 
+            <p> at shirazipatricia@gmail.com to include/update or remove your business from this website.</p>   
+            <p> Created by <a href="https://www.patriciashirazi.com/">Patricia Shirazi</a></p> to help the Humboldt community =) </div>
         </div>
     )
 }
