@@ -19,10 +19,9 @@ function Contact(props) {
 
         axios.post('/api/v1', data, {
         headers: {
-            'Content-Type': 'application/json;charset=UTF-8',
-            "Access-Control-Allow-Origin": "*",        }
+            'Content-Type': 'application/json',
+        }
       }
-        )
         .then( res => {
             setName("");
             setMessage("");

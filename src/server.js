@@ -7,11 +7,12 @@ const port = 8080;
 
 
 const app = express();
-app.use(cors());
 
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
+
 
 app.use((request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
