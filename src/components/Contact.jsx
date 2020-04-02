@@ -16,7 +16,7 @@ function Contact(props) {
             message: message
         };
 
-        axios.post('/', data, { 
+        axios.post('/api/v1', data, { 
 
         })
         .then( res => {
