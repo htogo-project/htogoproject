@@ -9,7 +9,7 @@ const app = express();
 const port = 8080;
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use((request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
@@ -33,8 +33,6 @@ app.post('https://www.humboldtogo.com/api/v1', (req,res) => {
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
-  service: 'gmail',
-  type: "SMTP",
   host: 'smtp.gmail.com',
   port: 465,
   auth: {
