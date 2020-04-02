@@ -25,9 +25,9 @@ function App() {
           <div>
             <Search setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
           </div>
-          {/* <div className={styles.add}>
+          <div className={styles.add}>
             <Add adc={add} setAdc={setAdd} />
-          </div> */}
+          </div>
           <div>
             <List value={code} del={delivery} />
           </div>
