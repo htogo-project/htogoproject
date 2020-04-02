@@ -19,10 +19,12 @@ const app = express();
 //     next();
 //   });
 
+app.use(cors());
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(cors());
 
 
 
@@ -44,7 +46,7 @@ app.get('/', (req, res) => {
 // };
 
 // app.options("/api/v1", cors(issue2options));
-app.post("/api/v1", (req,res) => {
+app.post('/api/v1', (req,res) => {
   console.log( "post yaaa")
 
   var data = req.body;
