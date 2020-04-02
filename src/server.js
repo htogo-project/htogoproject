@@ -10,11 +10,11 @@ const app = express();
 
 app.use(cors());
 
-app.use((request, response, next) => {
-    response.header('Access-Control-Allow-Headers', 'Content-Type');
-    response.header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-    next();
-  });
+// app.use((request, response, next) => {
+//     response.header('Access-Control-Allow-Headers', 'Content-Type');
+//     response.header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+//     next();
+//   });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,13 +32,14 @@ app.get('/', (req, res) => {
 })
 
 const issue2options = {
-  origin: true,
+  // origin: true,
   methods: ["POST"],
-  credentials: true,
+  // credentials: true,
 };
 
 app.options("/issue-2", cors(issue2options));
 app.post("/issue-2", cors(issue2options), (req,res) => {
+  console.info("POST /issue-2");
 
   var data = req.body;
 
