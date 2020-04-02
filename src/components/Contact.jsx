@@ -20,6 +20,7 @@ function Contact(props) {
         axios.post('/api/v1', data, {
         headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Headers': '*',
         }
       }
     )
