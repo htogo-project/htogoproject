@@ -22,6 +22,7 @@ function Contact(props) {
             'Content-Type': 'application/json',
         }
       }
+    )
         .then( res => {
             setName("");
             setMessage("");
