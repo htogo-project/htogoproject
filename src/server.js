@@ -11,7 +11,8 @@ const app = express();
 app.use(cors());
 
 app.use((request, response, next) => {
-    response.header('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+    response.header('Access-Control-Allow-Headers', 'Content-Type');
+    response.header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
     next();
   });
 
