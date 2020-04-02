@@ -79,7 +79,7 @@
   {
     "Index": 8,
     "Restaurant": "Bayfront Restaurant",
-    "Type": "Japonese and Italian",
+    "Type": "Japanese and Italian",
     "Address": "1 F St. Eureka, 95501",
     "Phone": "(707) 443-7489",
     "Info": "Take out",
@@ -507,8 +507,8 @@
   },
   {
     "Index": 47,
-    "Restaurant": "Japonese Spot Inc",
-    "Type": "Japonese",
+    "Restaurant": "Sushi Spot Inc",
+    "Type": "Japanese",
     "Address": "1552 City Center Rd\nMcKinleyville,  95519",
     "Phone": "(707) 839-1222",
     "Info": "Take out",
@@ -518,8 +518,8 @@
   },
   {
     "Index": 48,
-    "Restaurant": "Japonese Spot Inc",
-    "Type": "Japonese",
+    "Restaurant": "Sushi Spot Inc",
+    "Type": "Japanese",
     "Address": "Suite 101, 670 9th Street, Arcata, 95521",
     "Phone": "(707) 822-1221",
     "Info": "Take out",
