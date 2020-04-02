@@ -31,7 +31,14 @@ app.get('/', (req, res) => {
   res.send('hi');
 })
 
-app.post('/api/v1', (req,res) => {
+const issue2options = {
+  origin: true,
+  methods: ["POST"],
+  credentials: true,
+};
+
+app.options("/issue-2", cors(issue2options));
+app.post("/issue-2", cors(issue2options), (req,res) => {
 
   var data = req.body;
 
