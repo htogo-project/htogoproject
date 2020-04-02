@@ -19,8 +19,8 @@ function Contact(props) {
 
         axios.post('/api/v1', data, {
         headers: {
-            'Content-Type': "text/plain;charset=utf-8",
-        }
+            'Content-Type': 'application/json;charset=UTF-8',
+            "Access-Control-Allow-Origin": "*",        }
       }
         )
         .then( res => {
