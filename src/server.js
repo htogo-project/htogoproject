@@ -46,36 +46,36 @@ app.get('/', (req, res) => {
 // };
 
 // app.options("/api/v1", cors(issue2options));
-app.post('/api/v1', (req,res) => {
-  console.log( "post yaaa")
+// app.post('/api/v1', (req,res) => {
+//   console.log( "post yaaa")
 
-  var data = req.body;
+//   var data = req.body;
 
-var smtpTransport = nodemailer.createTransport({
-  auth: {
-    user: process.env.USERNAME,
-    pass: process.env.PASSWORD
-  }
-});
+// var smtpTransport = nodemailer.createTransport({
+//   auth: {
+//     user: process.env.USERNAME,
+//     pass: process.env.PASSWORD
+//   }
+// });
 
-var mailOptions = {
-  from:  data.email,
-  to: '0f2a33fe8249a6bf983e@cloudmailin.net',
-  subject: 'HumboldtToGoRequest',
-  html: `<p>${data.name}</p>
-          <p>${data.email}</p>
-          <p>${data.message}</p>`
-};
+// var mailOptions = {
+//   from:  data.email,
+//   to: '0f2a33fe8249a6bf983e@cloudmailin.net',
+//   subject: 'HumboldtToGoRequest',
+//   html: `<p>${data.name}</p>
+//           <p>${data.email}</p>
+//           <p>${data.message}</p>`
+// };
 
-smtpTransport.sendMail(mailOptions,
-(error, response) => {
-  console.log(error, "errorr yaaa")
-  if(error) {
-    res.send(error)
-  }else {
-    res.send('Success')
-  }
-  smtpTransport.close();
-});
+// smtpTransport.sendMail(mailOptions,
+// (error, response) => {
+//   console.log(error, "errorr yaaa")
+//   if(error) {
+//     res.send(error)
+//   }else {
+//     res.send('Success')
+//   }
+//   smtpTransport.close();
+// });
 
-})
+// })
