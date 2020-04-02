@@ -16,12 +16,10 @@ function Contact(props) {
             message: message
         };
 
-        axios.post('/api/v1', data, { 
+        axios.post("/api/v1", data, { 
 
         })
         .then( res => {
-            console.log( "ressss yaaa")
-
             setName("");
             setMessage("");
             setEmail("");

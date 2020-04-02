@@ -10,7 +10,6 @@ import { css } from 'emotion'
 import './App.css';
 
 function App() {
-  var nodemailer = require('nodemailer');
   const [code, setCode] = useState("");
   const [delivery, setDelivery] = useState(false)
   const [add, setAdd] = useState(false)
