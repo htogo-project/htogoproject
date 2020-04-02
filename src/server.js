@@ -52,7 +52,6 @@ app.post('/api/v1', (req,res) => {
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
-    service: 'gmail',
   auth: {
     user: process.env.USERNAME,
     pass: process.env.PASSWORD
@@ -61,7 +60,7 @@ var smtpTransport = nodemailer.createTransport({
 
 var mailOptions = {
   from:  data.email,
-  to: 'shirazipatricia@gmail.com',
+  to: '0f2a33fe8249a6bf983e@cloudmailin.net',
   subject: 'HumboldtToGoRequest',
   html: `<p>${data.name}</p>
           <p>${data.email}</p>
