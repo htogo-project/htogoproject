@@ -39,6 +39,7 @@ function Search(props) {
     }
 
     const handleClick = (event) => {
+        event.preventDefault()
         setCity(event.target.textContent)
         props.setValue(event.target.textContent)
         setShowlist(styles.dropdown_clicked)
@@ -77,8 +78,8 @@ function Search(props) {
                     </div>
                 </div>
                 <form action="/action_page.php">
-                    <input  onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
-                    <label className={styles.label}> Delivery Options</label><br></br>
+                    <input  className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
+                    <label className={styles.label}> Delivery</label><br></br>
                 </form>
                 <div>
                     <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
@@ -114,10 +115,11 @@ const styles = {
         position: relative;
         cursor: pointer;
         outline: none;
-        margin-left:9px;
+        margin-left:2px;
         border: 2px solid grey;
         height: 50px; 
-        width: 90px;
+        width: 120px;
+        background-color:white;
    `,
     dropdown_content: css`
     font-family: Georgia, serif;
@@ -210,7 +212,13 @@ const styles = {
         font-family: Georgia, serif;
         color: white;
         font-weight: bold;
+        margin-left: 1px;
      `,
+     labelInput : css`
+     margin-left: 60px;
+    //  position:absolute;
+    //  left: 50%;
+     `
 }
 
 export default Search;
