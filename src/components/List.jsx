@@ -106,6 +106,9 @@ function List(props) {
                             <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
                             <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
+                            <div>
+                            {/* <span class="yelp-review" data-review-id="4nb519UywchiZ8UbnBRJsQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=ASJfBMdpiLY8e0okFXuspg" rel="nofollow noopener">Kristin W.</a>'s <a href="https://www.yelp.com/biz/sushi-tao-arcata?hrid=4nb519UywchiZ8UbnBRJsQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/0Ad7W3i9gden2cV731lG5w" rel="nofollow noopener">Sushi Tao</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span> */}
+                            </div>
                         </div>
                     </div>
 
@@ -154,7 +157,6 @@ const styles = {
                 
             `,
     back: css`
-            margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;

@@ -23,6 +23,7 @@ function Email(props) {
 const styles = {
     wrapper: css`
         height: 110vh;
+        font-family: Georgia, serif;
         font-size: 24px;
         text-align: center;
         color: white;

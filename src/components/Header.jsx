@@ -1,12 +1,12 @@
 import React from 'react';
 import { css } from 'emotion'
-
+import Logo from '../images/htg.png'
 
 
 function Header() {
     return (
         <div className={styles.header}>
-           <div>HumboldToGo</div> 
+           <img src={Logo}/> 
         </div>
     )
 }
@@ -14,14 +14,9 @@ function Header() {
 
 const styles = {
     header: css`
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    height: 40px;
-    padding: 10px;
-    color: black;
-    margin-left: 40px;
-    `
+    margin-top: 0px;
+    margin-left: 0px;
+    `,
 }
 
 export default Header;
