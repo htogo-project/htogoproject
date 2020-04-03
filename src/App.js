@@ -27,9 +27,6 @@ function App() {
           <div>
             <Search adc={add} setAdc={setAdd} setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
           </div>
-          <div className={styles.add}>
-            <Add adc={add} setAdc={setAdd} />
-          </div>
           <div>
             <List value={code} del={delivery} />
           </div>
@@ -37,6 +34,9 @@ function App() {
         {/* <Route exact path="/contact12">
           <Contact />
         </Route> */}
+          <div className={styles.add}>
+            <Add adc={add} setAdc={setAdd} />
+          </div>
       </div>
     );
   } else {
