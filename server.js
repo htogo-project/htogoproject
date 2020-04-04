@@ -40,6 +40,7 @@ if (!isDev && cluster.isMaster) {
     var data = req.body;
 
     const transporter = nodemailer.createTransport({
+      service: 'gmail',
       auth: {
         user: process.env.USERNAME,
         pass: process.env.PASSWORD

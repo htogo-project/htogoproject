@@ -20,6 +20,7 @@ function Contact(props) {
 
         })
         .then( res => {
+            console.log("sent")
             setName("");
             setMessage("");
             setEmail("");
