@@ -8,7 +8,7 @@ const numCPUs = require("os").cpus().length;
 
 require("dotenv").config();
 
-const PORT = process.env.port || 8080; // test
+const PORT = process.env.PORT || 8080; // test
 const CLIENT_DISTRIBUTION_DIRECTORY = path.resolve(__dirname, "./build");
 const isDev = process.env.NODE_ENV !== "production";
 
