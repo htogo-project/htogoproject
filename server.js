@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const express = require("express"); 
+=======
+const express = require("express");
+>>>>>>> 041ec21b0ee9715ab3df36bd04cacb0ed7432bdf
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -8,7 +12,11 @@ const numCPUs = require("os").cpus().length;
 
 require("dotenv").config();
 
+<<<<<<< HEAD
 const PORT = process.env.PORT || 8080;
+=======
+const PORT = process.env.PORT || 8080; // test
+>>>>>>> 041ec21b0ee9715ab3df36bd04cacb0ed7432bdf
 const CLIENT_DISTRIBUTION_DIRECTORY = path.resolve(__dirname, "./build");
 const isDev = process.env.NODE_ENV !== "production";
 
