@@ -32,7 +32,7 @@ function Contact(props) {
                 setName("");
                 setMessage("");
                 setEmail("");
-                setSent("Message sent! I will make the updated ASAP or get back to you for more info! =)")
+                setSent("Message sent! I will make the updated ASAP =)")
             })
             .catch((error) => {
                 console.log(error, 'Message not sent')

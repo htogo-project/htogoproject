@@ -31,27 +31,18 @@ function App() {
             <List value={code} del={delivery} />
           </div>
         </div>
-        {/* <Route exact path="/contact12">
-          <Contact />
-        </Route> */}
-          <div className={styles.add}>
-            <Add adc={add} setAdc={setAdd} />
-          </div>
       </div>
     );
   } else {
     return (
       <Router>
-
-    <div>
-      <header>
-        <Header />
-      </header>
-      <Contact adc={add} setAdc={setAdd} />
-
-      {/* <Email adc={add} setAdc={setAdd}/> */}
-    </div>
-    </Router>
+        <div>
+          <header>
+            <Header />
+          </header>
+          <Contact adc={add} setAdc={setAdd} />
+        </div>
+      </Router>
 
     )
   }

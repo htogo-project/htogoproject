@@ -22,7 +22,7 @@ function Search(props) {
 
     const addHover = () => {
         if (btn == styles.btn) {
-        setBtn(styles.btn_clicked)
+            setBtn(styles.btn_clicked)
         } else {
             setBtn(styles.btn)
         }
@@ -78,10 +78,11 @@ function Search(props) {
                     </div>
                 </div>
                 <form action="/action_page.php">
-                    <input  className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
+                    <input className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
                     <label className={styles.label}> Delivery</label><br></br>
                 </form>
                 <div>
+                    <label className={styles.label}> + 1 </label><br></br>
                     <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
                     <div className={btn} >
                         <a onClick={btnClicked} href="">Add</a>
@@ -214,7 +215,7 @@ const styles = {
         font-weight: bold;
         margin-left: 1px;
      `,
-     labelInput : css`
+    labelInput: css`
      margin-left: 60px;
     //  position:absolute;
     //  left: 50%;
