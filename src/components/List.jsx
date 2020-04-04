@@ -25,10 +25,10 @@ function List(props) {
                 {arr.map((data) =>
                     <div key={data.Index.toString()} className={styles.contacts}>
                         <div className={styles.block}>
-                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
                             <h4>{data.Type}</h4>
-                            <h4>Address: {data.Address}</h4>
-                            <h4>Phone: {data.Phone}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
                         </div>
                     </div>
@@ -53,10 +53,10 @@ function List(props) {
                 {arr.map((data) =>
                     <div key={data.Index.toString()} className={styles.contacts}>
                         <div className={styles.block}>
-                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
                             <h4>{data.Type}</h4>
-                            <h4>Address: {data.Address}</h4>
-                            <h4>Phone: {data.Phone}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
                         </div>
                     </div>
@@ -84,10 +84,10 @@ function List(props) {
                 {arr.map((data) =>
                     <div key={data.Index.toString()} className={styles.contacts}>
                         <div className={styles.block}>
-                            <h2 className={styles.title}>{data.Restaurant}</h2>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
                             <h4>{data.Type}</h4>
-                            <h4>Address: {data.Address}</h4>
-                            <h4>Phone: {data.Phone}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
                         </div>
                     </div>
@@ -103,9 +103,11 @@ function List(props) {
                         <div className={styles.block}>
                             <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
                             <h4>{data.Type}</h4>
-                            <h4>Address: {data.Address}</h4>
-                            <h4>Phone: {data.Phone}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
+                            <div>
+                            </div>
                         </div>
                     </div>
 
@@ -154,7 +156,6 @@ const styles = {
                 
             `,
     back: css`
-            margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
