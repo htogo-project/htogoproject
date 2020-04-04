@@ -1,5 +1,4 @@
 const express = require("express"); 
-const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -10,7 +9,6 @@ const numCPUs = require("os").cpus().length;
 require("dotenv").config();
 
 const PORT = process.env.PORT || 8080;
-const PORT = process.env.PORT || 8080; // test
 const CLIENT_DISTRIBUTION_DIRECTORY = path.resolve(__dirname, "./build");
 const isDev = process.env.NODE_ENV !== "production";
 
