@@ -34,12 +34,20 @@ function Search(props) {
 
         }
     }
+    const clicking = () => {
+        if (showlist === "css-1u6deux") {
+            setShowlist(styles.dropdown_clicked)
+        } else {
+            setShowlist(styles.dropdown_content)
+
+        }
+    }
 
     return (
         <div className={styles.wrappermaster}>
             <div className={styles.wrapper}>
                 <div className={styles.dropdown}>
-                    <button onPointerOver={onHover} className={styles.dropbtn}>{city}</button>
+                    <button onPointerOver={onHover} onClick={clicking} className={styles.dropbtn}>{city}</button>
                     <div className={showlist}>
                         <a onClick={handleClick} href="">Arcata</a>
                         <a onClick={handleClick} href="">Carlotta</a>
