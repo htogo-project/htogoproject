@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { css } from 'emotion';
-import Button from '../images/htgbutton.png'
-
+import Add from './Add'
 
 
 
@@ -9,7 +8,6 @@ import Button from '../images/htgbutton.png'
 function Search(props) {
     const [showlist, setShowlist] = useState(styles.dropdown_content)
     const cities = ["Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "DrWhitethorn"]
-    const [btn, setBtn] = useState(styles.btn)
     const [city, setCity] = useState("Pick a city")
 
     const isItDelivery = () => {
@@ -20,24 +18,6 @@ function Search(props) {
         }
     };
 
-    const addHover = () => {
-        if (btn == styles.btn) {
-            setBtn(styles.btn_clicked)
-        } else {
-            setBtn(styles.btn)
-        }
-    }
-
-    const btnClicked = (e) => {
-        e.preventDefault()
-        if (!props.adc) {
-            props.setAdc(true)
-        } else {
-            props.setAdc(false)
-        }
-        setBtn(styles.btn_clicked)
-    }
-
     const handleClick = (event) => {
         event.preventDefault()
         setCity(event.target.textContent)
@@ -47,16 +27,13 @@ function Search(props) {
     }
 
     const onHover = () => {
-        setShowlist(styles.dropdown_content)
-    }
+        if (showlist === "css-1u6deux") {
+            setShowlist(styles.dropdown_clicked)
+        } else {
+            setShowlist(styles.dropdown_content)
 
-    // const sendMeAnEmail = () => {
-    //     if (!props.adc) {
-    //         props.setAdc(true)
-    //     } else {
-    //         props.setAdc(false)
-    //     }
-    // }
+        }
+    }
 
     return (
         <div className={styles.wrappermaster}>
@@ -64,13 +41,14 @@ function Search(props) {
                 <div className={styles.dropdown}>
                     <button onPointerOver={onHover} className={styles.dropbtn}>{city}</button>
                     <div className={showlist}>
-                        <a onClick={handleClick} href="#">Arcata</a>
-                        <a onClick={handleClick} href="#">Carlotta</a>
-                        <a onClick={handleClick} href="#">Eureka</a>
+                        <a onClick={handleClick} href="">Arcata</a>
+                        <a onClick={handleClick} href="">Carlotta</a>
+                        <a onClick={handleClick} href="">Eureka</a>
                         <a onClick={handleClick} href="">Ferndale</a>
                         <a onClick={handleClick} href="">Fortuna</a>
                         <a onClick={handleClick} href="">Mckinleyville</a>
                         <a onClick={handleClick} href="">Redway</a>
+                        <a onClick={handleClick} href="">Orick</a>
                         <a onClick={handleClick} href="">Rio Dell</a>
                         <a onClick={handleClick} href="">Trinidad</a>
                         <a onClick={handleClick} href="">Whitethorn</a>
@@ -82,12 +60,7 @@ function Search(props) {
                     <label className={styles.label}> Delivery</label><br></br>
                 </form>
                 <div>
-                    <label className={styles.label}> + 1 </label><br></br>
-                    <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
-                    <div className={btn} >
-                        <a onClick={btnClicked} href="">Add</a>
-                    </div>
-
+                    <Add adc={props.adc} setAdc={props.setAdc} />
                 </div>
             </div>
         </div>
@@ -154,60 +127,12 @@ const styles = {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (min-width: 1300px) {
+        @media (min-width: 768px) {
             width: 60%;
          
         }`,
     wrappermaster: css`
     background-color: #8B4513;
-    `,
-    btn: css`
-    font-family: Georgia, serif;
-    font-size: 16px;
-    margin: auto;
-    position: absolute;
-    display: none;
-    margin-left: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    a {
-        margin-left: 1px;
-        width: 80px;
-        background-color: blacke;
-        color: black;
-        padding: 12px 10px;
-        text-decoration: none;
-        display: block;
-    } a:hover {
-        background-color: #f1f1f1;
-    } 
-        `,
-
-    btn_clicked: css`
-    font-family: Georgia, serif;
-    font-size: 16px;
-    margin: auto;
-    position: absolute;
-    display: block;
-    margin-left: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    a {
-        margin-left: 1px;
-        width: 80px;
-        background-color: blacke;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    } a:hover {
-        background-color: #f1f1f1;
-    } 
-    `,
-    donut: css`
-    outline: none;
     `,
     label: css`
         font-family: Georgia, serif;

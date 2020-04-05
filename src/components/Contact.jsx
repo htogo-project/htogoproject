@@ -1,17 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { withRouter } from "react-router-dom";
 import { css } from 'emotion'
+import Header from './Header'
 import axios from 'axios';
 
 
-function Contact(props) {
-    const [sent, setSent] = useState("");
+const Contact = (props) => {
+    const [sent, setSent] = useState("Send a message to add or update your business information");
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
 
+    useEffect(() => {
+        return () => {
+            props.setAdc(false)
+            props.history.push('/');
+        }
+    })
 
     const goBack = () => {
         props.setAdc(false)
+        props.history.push('/')
+        props.setAdc(false)
+
     }
 
 
@@ -28,7 +39,6 @@ function Contact(props) {
 
         })
             .then(res => {
-                console.log("sent")
                 setName("");
                 setMessage("");
                 setEmail("");
@@ -59,6 +69,7 @@ function Contact(props) {
 
     return (
         <div>
+            <Header />
             <h4 className={styles.sent}>{sent}</h4>
             <button onClick={goBack} className={styles.goBack}> Go Back </button>
             <div className={styles.wrapper}>
@@ -67,7 +78,7 @@ function Contact(props) {
                         <label > Your name</label>
                         <input onClick={emptySent} onChange={handleChangeName} className={styles.same} type="text" name="firstname" placeholder="Your Name" value={name} />
                         <label > E-mail</label>
-                        <input onClick={emptySent}  onChange={handleChangeEmail} className={styles.same} type="text" name="email" placeholder="Your Email" value={email} />
+                        <input onClick={emptySent} onChange={handleChangeEmail} className={styles.same} type="text" name="email" placeholder="Your Email" value={email} />
                         <label > Message</label>
                         <textarea onClick={emptySent} onChange={handleChangeMessage} className={styles.same} name="subject" placeholder="What would you like to add/remove or update?" value={message}></textarea>
                         <button onClick={send} className={styles.b} type="submit" value="Submit"> Send </button>
@@ -112,14 +123,17 @@ const styles = {
             background-color: #45a049;
         }
     `,
-    sent:css`
+    sent: css`
     color: black;
     text-align: center;
     `,
     goBack: css`
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
     margin-left: 20px;
     `
 
 }
 
-export default Contact;
+export default withRouter(Contact);

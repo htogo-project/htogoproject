@@ -7,6 +7,8 @@
 
 .env
 
+src/Humboldttogo.json
+
 # testing
 /coverage
 
