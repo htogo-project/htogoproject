@@ -20,33 +20,21 @@ function Add(props) {
         }
     }
 
-    // const btnClicked = (e) => {
-    //     e.preventDefault()
-    //     if (!props.adc) {
-    //         props.setAdc(true)
-    //     } else {
-    //         props.setAdc(false)
-    //     }
-    //     setBtn(styles.btn_clicked)
-    // }
 
-    const sendMeAnEmail = () => {
-        if (!props.adc) {
-            props.setAdc(true)
-        } else {
-            props.setAdc(false)
-        }
-    }
+
 
     return (
         <div>
-            <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
-            <div className={btn} >
-                <Link to="/contact">
-                    <div onClick={() => { props.setAdc(true) }}> Contact
+            <Link to="/contact">
+                <div onClick={() => { props.setAdc(true) }}>
+                    <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
+                    <div className={btn} >
+                        <div> Contact</div>
                     </div>
-                </Link>
-            </div>
+                </div>
+            </Link>
+
+
         </div>
     )
 }

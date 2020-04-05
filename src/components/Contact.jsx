@@ -11,12 +11,12 @@ const Contact = (props) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
 
-    useEffect(() => {
-        return () => {
-            props.setAdc(false)
-            props.history.push('/');
-        }
-    })
+    // useEffect(() => {
+    //     return () => {
+    //         props.setAdc(false)
+    //         props.history.push('/');
+    //     }
+    // })
 
     const goBack = () => {
         props.setAdc(false)
