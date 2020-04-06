@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { css } from 'emotion';
 import Add from './Add'
+import { css } from 'emotion';
 
 
 
 
-function Search(props) {
+const Search = (props) => {
     const [showlist, setShowlist] = useState(styles.dropdown_content)
     const cities = ["Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "DrWhitethorn"]
     const [city, setCity] = useState("Pick a city")

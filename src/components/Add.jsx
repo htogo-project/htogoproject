@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { css } from 'emotion'
+
 import Button from '../images/contact.png'
 
 
 
 
-function Add(props) {
+const Add = (props) => {
 
     const [btn, setBtn] = useState(styles.btn)
 

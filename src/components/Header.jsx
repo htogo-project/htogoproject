@@ -1,9 +1,10 @@
 import React from 'react';
 import { css } from 'emotion'
+
 import Logo from '../images/htg.png'
 
 
-function Header() {
+const Header = () => {
     return (
         <div className={styles.header}>
            <img src={Logo}/> 
