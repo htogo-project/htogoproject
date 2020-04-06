@@ -37,6 +37,7 @@ if (!isDev && cluster.isMaster) {
   app.use(express.static(CLIENT_DISTRIBUTION_DIRECTORY));
 
   app.post("/api/v1", (req, res) => {
+    console.log("heeey",__dirname)
     var data = req.body;
 
     const transporter = nodemailer.createTransport({

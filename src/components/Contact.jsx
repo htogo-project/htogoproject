@@ -11,14 +11,14 @@ const Contact = (props) => {
 
     const history = useHistory();
 
-    useEffect(() => {
-        return () => {
-            if (history.action === 'POP') {
-                props.setAdc(false)
-                props.history.push('/');
-            }
-        }
-    })
+    // useEffect(() => {
+    //     return () => {
+    //         if (history.action === 'POP') {
+    //             props.setAdc(false)
+    //             props.history.push('/');
+    //         }
+    //     }
+    // })
 
     const goBack = () => {
         props.setAdc(false)

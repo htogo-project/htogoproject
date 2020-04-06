@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { withRouter } from "react-router-dom";
 import axios from 'axios';
+
 import { css } from 'emotion'
 
 
@@ -24,6 +25,7 @@ const Email = (props) => {
 
         })
             .then(res => {
+                console.log("sent")
                 setName("");
                 setMessage("");
                 setEmail("");
