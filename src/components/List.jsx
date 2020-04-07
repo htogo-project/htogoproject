@@ -106,12 +106,8 @@ function List(props) {
                             <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
                             <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4>{data.Info}</h4>
-                            {/* <button type="submit" value="Submit"> click </button> */}
-                            <div>
-                            {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmokinbarrels2018%2Fposts%2F817427118741164&width=500" className={styles.frame} scrolling="yes" frameBorder="0" allowTransparency="true" allow="encrypted-media"></iframe> */}
-                            {/* <iframe className={styles.frame}src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsmokinbarrels2018&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" allowtransparency="true" frameBorder="0"> </iframe>  */}
-                            </div>
-                            {/* <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsmokinbarrels2018&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" style="border:none; overflow:hidden; width:600px; height:430px; background: white; float:left; " allowtransparency="true" frameborder="0"></iframe> */}
+                            <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
+                            <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
                         </div>
                     </div>
 
