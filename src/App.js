@@ -22,7 +22,7 @@ const App = () => {
             <header>
               <Header />
             </header>
-            <Joke />
+            {/* <Joke /> */}
             <div className={styles.bodyApp}>
               <div>
                 <Search adc={add} setAdc={setAdd} setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
