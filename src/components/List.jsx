@@ -110,7 +110,6 @@ function List(props) {
                             <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
                         </div>
                     </div>
-
                 )}
             </div>
         )
@@ -178,6 +177,19 @@ const styles = {
     frame: css`
     border:none;
      overflow:hidden; width:600px; height:800px; background: white; float:left
+    `,
+    test: css`
+    display: flex;
+    justify-content: space-between;
+    `,
+    back2: css`
+    display: block
+    `,
+    iframe: css`
+        width=500;
+        height=669;
+        border:none;
+        overflow:hidden; 
     `
 }
 

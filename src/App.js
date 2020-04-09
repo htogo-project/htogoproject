@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Search from './components/Search'
 import List from './components/List'
 import Contact from './components/Contact'
-import Joke from './components/Joke'
 import { css } from 'emotion'
 
 
@@ -22,7 +21,6 @@ const App = () => {
             <header>
               <Header />
             </header>
-            {/* <Joke /> */}
             <div className={styles.bodyApp}>
               <div>
                 <Search adc={add} setAdc={setAdd} setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
