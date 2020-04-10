@@ -4,14 +4,15 @@ import Header from './components/Header'
 import Search from './components/Search'
 import List from './components/List'
 import Contact from './components/Contact'
+import datas from "./Humboldttogo.json"
 import { css } from 'emotion'
 
 
 
 const App = () => {
   const [code, setCode] = useState("");
-  const [delivery, setDelivery] = useState(false)
   const [add, setAdd] = useState(false)
+  const [type, setType] = useState(datas)
 
   if (!add) {
     return (
@@ -23,10 +24,10 @@ const App = () => {
             </header>
             <div className={styles.bodyApp}>
               <div>
-                <Search adc={add} setAdc={setAdd} setValue={setCode} value={code} del={delivery} setDel={setDelivery} />
+                <Search usertype={type} setUserType={setType} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
               </div>
               <div>
-                <List value={code} del={delivery} />
+                <List usertype={type} value={code}  />
               </div>
             </div>
           </div>
@@ -46,13 +47,13 @@ const App = () => {
 
 const styles = {
   bodyApp: css`
-                  min-height: 100vh;
-                `,
+    min-height: 100vh;
+  `,
   add: css`
-                position: absolute;
-                margin-botton: 0px;
-                cursor: pointer;
-                `
+    position: absolute;
+    margin-botton: 0px;
+    cursor: pointer;
+  `
 }
 
 export default App;
