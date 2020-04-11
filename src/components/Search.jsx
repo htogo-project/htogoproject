@@ -89,7 +89,11 @@ const Search = (props) => {
             str+=e.currentTarget.value;
             setKey(str)
             let arr = [];
-            if (city !== "city" && delivery) {
+
+            if (str === "" && city === "city" && !delivery || str === "" && city === "All" && !delivery) {
+                props.setRestaurant(datas)
+            }
+            else if (city !== "city" && delivery) {
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase()) && datas[i].Info.includes("Delivery")) {
                         arr.push(datas[i])

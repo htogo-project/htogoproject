@@ -96,13 +96,8 @@ const Delivery = (props) => {
                 props.setR(arr)
 
             } else if (props.iskey.length === 0 && props.iscity === "city") {
-                console.log("3")
-                for (var i = 0; i < datas.length; i++) {
-                    if (!datas[i].Info.includes("Delivery")) {
-                        arr.push(datas[i])
-                    }
-                }
-                props.setR(arr)
+    
+                props.setR(datas)
 
             } else if (props.iskey.length > 0 && props.iscity === "All") {
                 console.log("4")
@@ -113,13 +108,7 @@ const Delivery = (props) => {
             }
             props.setR(arr)
         } else if (props.iskey.length === 0 && props.iscity === "All") {
-            console.log("5")
-            for (var i = 0; i < datas.length; i++) {
-                if (!datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setR(arr)
+            props.setR(datas)
         }
             props.setDel(false);
         }
