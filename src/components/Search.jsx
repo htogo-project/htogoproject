@@ -168,6 +168,7 @@ const Search = (props) => {
                                                 <a onClick={handleClick} href="">Eureka</a>
                                                 <a onClick={handleClick} href="">Ferndale</a>
                                                 <a onClick={handleClick} href="">Fortuna</a>
+                                                <a onClick={handleClick} href="">Garberville</a>
                                                 <a onClick={handleClick} href="">Mckinleyville</a>
                                                 <a onClick={handleClick} href="">Redway</a>
                                                 <a onClick={handleClick} href="">Orick</a>
