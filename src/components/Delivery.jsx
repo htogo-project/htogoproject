@@ -53,14 +53,14 @@ const Delivery = (props) => {
                 props.setR(arr)
             } else if (props.iskey.length === 0 && props.iscity !== "city") {
                 for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].Info.includes("Delivery")) {
+                    if (datas[i].Info.includes("Delivery") && datas[i].City === props.iscity) {
                         arr.push(datas[i])
                     }
                 }
                 props.setR(arr)
             } else if (props.iskey.length === 0 && props.iscity !== "All") {
                 for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].Info.includes("Delivery")) {
+                    if (datas[i].Info.includes("Delivery") && datas[i].City === props.iscity) {
                         arr.push(datas[i])
                     }
                 }
