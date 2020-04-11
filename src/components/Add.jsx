@@ -26,8 +26,8 @@ const Add = (props) => {
     return (
         <div>
             <Link to="/contact">
-                <div onClick={() => { props.setAdc(true) }}>
-                    <input className={styles.donut} onPointerOver={addHover} type="image" src={Button} />
+                <div onClick={() => { props.setContact(true) }}>
+                    <button className={styles.donut} onPointerOver={addHover}>Send info</button>
                     <div className={btn} >
                         <div> Contact</div>
                     </div>

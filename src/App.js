@@ -10,9 +10,9 @@ import { css } from 'emotion'
 
 
 const App = () => {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState("Humboldt");
   const [add, setAdd] = useState(false)
-  const [type, setType] = useState(datas)
+  const [restaurants, setRestaurants] = useState(datas)
 
   if (!add) {
     return (
@@ -24,10 +24,10 @@ const App = () => {
             </header>
             <div className={styles.bodyApp}>
               <div>
-                <Search usertype={type} setUserType={setType} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
+                <Search restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
               </div>
               <div>
-                <List usertype={type} value={code}  />
+                <List restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
               </div>
             </div>
           </div>

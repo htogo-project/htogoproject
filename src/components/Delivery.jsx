@@ -1,26 +1,134 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import datas from "../Humboldttogo.json"
 import { css } from 'emotion'
 
 
 
 
 
-const Delivery = (props) => {
 
+const Delivery = (props) => {
+    const [memDel, setMemDel] = useState('')
 
     const isItDelivery = () => {
+        console.log(props.del)
+        let arr = []
         if (!props.del) {
+            if (props.iskey.length > 0 && props.iscity !== "city" && props.iscity !== "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === props.iscity && datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length > 0 && props.iscity === "city") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length === 0 && props.iscity === "city") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+
+            } else if (props.iskey.length > 0 && props.iscity === "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length === 0 && props.iscity === "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length === 0 && props.iscity !== "city") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length === 0 && props.iscity !== "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            }
+            props.setR(arr);
             props.setDel(true);
         } else {
+            console.log(props.iskey, props.iscity === "All")
+            console.log("heeei")
+            if (props.iskey.length > 0 && props.iscity !== "city" && props.iscity !== "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === props.iscity && datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && !datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } if (props.iskey.length === 0 && props.iscity !== "city" && props.iscity !== "All") {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === props.iscity) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+            } else if (props.iskey.length > 0 && props.iscity === "city") {
+                console.log("2")
+                console.log("you should be here", props.iskey)
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === props.iscity && datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && !datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+
+            } else if (props.iskey.length === 0 && props.iscity === "city") {
+                console.log("3")
+                for (var i = 0; i < datas.length; i++) {
+                    if (!datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setR(arr)
+
+            } else if (props.iskey.length > 0 && props.iscity === "All") {
+                console.log("4")
+            for (var i = 0; i < datas.length; i++) {
+                if (datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase())) {
+                    arr.push(datas[i])
+                }
+            }
+            props.setR(arr)
+        } else if (props.iskey.length === 0 && props.iscity === "All") {
+            console.log("5")
+            for (var i = 0; i < datas.length; i++) {
+                if (!datas[i].Info.includes("Delivery")) {
+                    arr.push(datas[i])
+                }
+            }
+            props.setR(arr)
+        }
             props.setDel(false);
         }
-    };
+    }
 
 
 
     return (
-        <div>
+        <div className={styles.del}>
             <form action="/action_page.php">
                 <input className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
                 <label className={styles.label}> Delivery</label><br></br>
@@ -33,10 +141,14 @@ const Delivery = (props) => {
 const styles = {
     label: css`
         font-family: Helvetica,Arial,sans-serif;
-        color: white;
-        margin-botton: 15px;
+        color: black;
+        // position: absolute;
         font-weight: bold;
      `,
+    del: css`
+    margin-top: 10px;
+    margin-left: 10%;
+    `
 }
 
 export default Delivery;
