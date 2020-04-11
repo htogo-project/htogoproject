@@ -9,7 +9,6 @@ import { css } from 'emotion'
 
 
 const Delivery = (props) => {
-    const [memDel, setMemDel] = useState('')
 
     const isItDelivery = () => {
         console.log(props.del)
@@ -86,10 +85,8 @@ const Delivery = (props) => {
                 }
                 props.setR(arr)
             } else if (props.iskey.length > 0 && props.iscity === "city") {
-                console.log("2")
-                console.log("you should be here", props.iskey)
                 for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].City === props.iscity && datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && !datas[i].Info.includes("Delivery")) {
+                    if (datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase())) {
                         arr.push(datas[i])
                     }
                 }

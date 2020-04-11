@@ -90,7 +90,7 @@ const Search = (props) => {
             setKey(str)
             let arr = [];
 
-            if (str === "" && city === "city" && !delivery || str === "" && city === "All" && !delivery) {
+            if ((str === "" && city === "city" && !delivery) || (str === "" && city === "All" && !delivery)) {
                 props.setRestaurant(datas)
             }
             else if (city !== "city" && delivery) {
@@ -114,14 +114,21 @@ const Search = (props) => {
                     }
                 }  
                 props.setRestaurant(arr)
-            } else if (city !== "All" && !delivery) {
+            } else if (city !== "city" && city !== "All" && !delivery) {
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
                     }
                 }
                 props.setRestaurant(arr)
-            } else if (city === "All"  && !delivery || city === "city"  && !delivery) {
+            } else if (city === "All" && !delivery) {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+            }else if (city === "city"  && !delivery) {
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
