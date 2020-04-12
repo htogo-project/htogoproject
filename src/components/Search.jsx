@@ -91,16 +91,19 @@ const Search = (props) => {
             let arr = [];
 
             if ((str === "" && city === "city" && !delivery) || (str === "" && city === "All" && !delivery)) {
+                console.log('1')
                 props.setRestaurant(datas)
             }
-            else if (city !== "city" && delivery) {
+            else if (city !== "All" && city !== "city" && delivery) {
+                console.log('2')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase()) && datas[i].Info.includes("Delivery")) {
                         arr.push(datas[i])
                     }
                 }
                 props.setRestaurant(arr)
-            } else if (city !== "city" && !delivery) {
+            } else if (city !== "All" && city !== "city" && !delivery) {
+                console.log('3')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
@@ -108,6 +111,7 @@ const Search = (props) => {
                 }
                 props.setRestaurant(arr)
              } else if (city === "All" && delivery) {
+                console.log('4')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].Info.includes("Delivery") && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
@@ -115,6 +119,7 @@ const Search = (props) => {
                 }  
                 props.setRestaurant(arr)
             } else if (city !== "city" && city !== "All" && !delivery) {
+                console.log('5')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
@@ -122,6 +127,7 @@ const Search = (props) => {
                 }
                 props.setRestaurant(arr)
             } else if (city === "All" && !delivery) {
+                console.log('6')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
@@ -129,16 +135,25 @@ const Search = (props) => {
                 }
                 props.setRestaurant(arr)
             }else if (city === "city"  && !delivery) {
+                console.log('7')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
                     }
                 }
                 props.setRestaurant(arr)
-            }
-            else if (city === "All" && delivery || city === "city"  && delivery) {
+            } else if (city === "All" && delivery || city === "city"  && delivery) {
+                console.log('8')
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+            } else if (city === "All" && !delivery) {
+                console.log('9')
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
                         arr.push(datas[i])
                     }
                 }
