@@ -4,23 +4,37 @@ import Add from './Add.jsx';
 
 
 function List(props) {
+    const [zoomImg, setzoomImg] = useState(styles.img)
+
+    const Zoomer = () => {
+        if(zoomImg === styles.img) {
+            setzoomImg(styles.zoomImg)
+        } else {
+            setzoomImg(styles.img)
+        }
+    }
+
     return (
         <div className={styles.back}>
             <div className={styles.results}> Showing {props.restaurant.length} results in {props.value}</div>
             {props.restaurant.map((data, index) =>
                 <div key={index} className={styles.contacts}>
                     <div className={styles.block}>
-                        <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
-                        <h4>{data.Type}</h4>
-                        <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
-                        <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
-                        <h4>{data.Info}</h4>
-                        <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
-                        <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
+                        <div className={styles.info}>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
+                            <h4>{data.Type}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
+                            <h4>{data.Hours}</h4>
+                            <h4 className={styles.Info}>{data.Info}</h4>
+                            <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
+                            <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
+                        </div>
+                        <div> <img  className={zoomImg} src={`../${data.Image}`} /> </div>
                     </div>
                 </div>
             )}
-            <Add contact={props.contact} setContact={props.setContact}/>
+            <Add contact={props.contact} setContact={props.setContact} />
         </div>
     )
 
@@ -28,53 +42,25 @@ function List(props) {
 
 
 const styles = {
-    wrapper: css`
-        display:flex;
-        justify-content: center;
-        width: 100%;
-    `,
-    header: css`
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #4CAF50;
-        color: white;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        width: 60%;
-    `,
-    restaurant: css`
-        background-color: white;
-        color: black;
-        td {
-        white-space: wrap;
-        padding-bottom: 600px;
-        }
-    `,
-    phone: css`
-        width:100px;
-    `,
     block: css`
+        display: flex;
+        justify-content: space-between;
         border: 3px outset #F0FFF0;
         margin-top: 20px;
-        // margin: auto;
-        // margin-left: 10px;
         padding: 10px;
-        background-color: white;        
+        background-color: white;    
+        flex-wrap: wrap;    
     `,
     back: css`
         display: block;
-        // flex-wrap: wrap;
         padding-left: 10%;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: space-around;
         background-color: #2F4F4F;
     `,
     title: css`
-            color: #778899;
-            font-weight: bold;
-            font-size: 17px;
-            `,
+        color: #778899;
+        font-weight: bold;
+        font-size: 17px;
+    `,
     contacts: css`
          width: 80%;
 
@@ -93,6 +79,26 @@ const styles = {
         font-size: 24px;
         font-weight: bold;
         font-family: Helvetica,Arial,sans-serif;
+    `,
+    img: css`
+        height: auto;
+        width: 100%;
+        // max-width: 300px;
+        // cursor: pointer;
+    `,
+    zoomImg: css`
+        transform: scale(1.1);
+        // position: absolute;
+        // width: 100vw;
+        // height: 100vh;
+        // right: 0px;
+        // left: 0px;
+        cursor: pointer;
+        overflow: hidden;
+
+    `,
+    info: css`
+        width: 50%;
     `
 }
 
