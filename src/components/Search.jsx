@@ -179,6 +179,7 @@ const Search = (props) => {
                                             <div className={showlist}>
                                                 <a onClick={handleClick} href="">All</a>
                                                 <a onClick={handleClick} href="">Arcata</a>
+                                                <a onClick={handleClick} href="">Bayside</a>
                                                 <a onClick={handleClick} href="">Carlotta</a>
                                                 <a onClick={handleClick} href="">Eureka</a>
                                                 <a onClick={handleClick} href="">Ferndale</a>
@@ -192,7 +193,7 @@ const Search = (props) => {
                                                 <a onClick={handleClick} href="">Whitethorn</a>
                                             </div>
                                         </div>
-                                        <input onChange={getType} className={styles.typeSearch} placeholder="Search by type, ..." />
+                                        <input onChange={getType} className={styles.typeSearch} placeholder="Search Mexican, Cannabis, Alcohol..." />
                                     </div>
                                     <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} />
                                 </div>
@@ -202,6 +203,7 @@ const Search = (props) => {
 
                         const styles = {
                             wrappermaster: css`
+                            overflow: hidden;
     // background-color: black;
         background-color: #FFFFFF;
         height: 100px;
@@ -209,8 +211,8 @@ const Search = (props) => {
                             wrapper: css`
         display: flex;
         justify-content: space-between;
-        width:300px ;
-        margin-left: 10%;
+        width:400px ;
+        margin-left: 2%;
         div:button {
             height: 100%;
             // width: 100%;
@@ -267,12 +269,13 @@ const Search = (props) => {
                             typeSearch: css`
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: none;
-        padding-left: 10px;
+        padding-left: 5px;
         background-color: white;
         outline: none;
+        margin: auto;
         width: 60%;
         height: 60px; 
-        font-size: 18px;
+        font-size: 15px;
  
      `,
 

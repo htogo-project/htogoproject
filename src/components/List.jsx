@@ -55,6 +55,7 @@ const styles = {
         flex-wrap: wrap;    
     `,
     back: css`
+    overflow: hidden;
         display: block;
         padding-left: 10%;
         background-color: #2F4F4F;
