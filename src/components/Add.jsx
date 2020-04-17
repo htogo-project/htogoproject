@@ -24,7 +24,7 @@ const Add = (props) => {
 
 
     return (
-        <div>
+        <div id="contact">
             <Link to="/contact">
                 <div onClick={() => { props.setContact(true) }}>
                     <button className={styles.donut} onPointerOver={addHover}>Send info</button>

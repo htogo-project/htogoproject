@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ScrollIntoView from 'react-scroll-into-view'
 import { css } from 'emotion'
 import Add from './Add.jsx';
 
@@ -13,6 +14,8 @@ function List(props) {
             setzoomImg(styles.img)
         }
     }
+
+
 
     return (
         <div className={styles.back}>
@@ -30,7 +33,7 @@ function List(props) {
                             <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
                             <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
                         </div>
-                        <div> <img  className={zoomImg} src={`../${data.Image}`} /> </div>
+                        <div> <img  onClick={() => { props.setContact(true) }} className={zoomImg} src={`../${data.Image}`} /> </div>
                     </div>
                 </div>
             )}
@@ -63,7 +66,6 @@ const styles = {
     `,
     contacts: css`
          width: 80%;
-
     `,
     results: css`
         color: white;
@@ -83,6 +85,7 @@ const styles = {
     img: css`
         height: auto;
         width: 100%;
+        cursor: pointer;
         // max-width: 300px;
         // cursor: pointer;
     `,
@@ -98,7 +101,7 @@ const styles = {
 
     `,
     info: css`
-        width: 50%;
+        width: auto;
     `
 }
 

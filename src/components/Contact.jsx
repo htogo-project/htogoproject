@@ -7,23 +7,19 @@ import { css } from 'emotion'
 
 const Contact = (props) => {
     const [sent, setSent] = useState("Send a message to add or update your business information");
-  
+
 
     const history = useHistory();
 
-    // useEffect(() => {
-    //     return () => {
-    //         if (history.action === 'POP') {
-    //             props.setAdc(false)
-    //             props.history.push('/');
-    //         }
-    //     }
-    // })
+    useEffect(() => {
+        if (props.history.action === "PUSH") {
+            window.scrollTo(0, 0)
+        }
+    })
 
     const goBack = () => {
         props.setAdc(false)
         props.history.push('/')
-        props.setAdc(false)
 
     }
 
@@ -33,7 +29,7 @@ const Contact = (props) => {
             <Header />
             <h4 className={styles.sent}>{sent}</h4>
             <button onClick={goBack} className={styles.goBack}> Go Back </button>
-            <Email topMessage={setSent}/>
+            <Email topMessage={setSent} />
         </div>
     )
 }
