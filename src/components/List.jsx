@@ -1,21 +1,9 @@
-import React, { useState } from 'react';
-import ScrollIntoView from 'react-scroll-into-view'
+import React, { useState, useEffect } from 'react';
 import { css } from 'emotion'
 import Add from './Add.jsx';
 
 
 function List(props) {
-    const [zoomImg, setzoomImg] = useState(styles.img)
-
-    const Zoomer = () => {
-        if(zoomImg === styles.img) {
-            setzoomImg(styles.zoomImg)
-        } else {
-            setzoomImg(styles.img)
-        }
-    }
-
-
 
     return (
         <div className={styles.back}>
@@ -28,12 +16,24 @@ function List(props) {
                             <h4>{data.Type}</h4>
                             <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
                             <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
-                            <h4>{data.Hours}</h4>
+                            {/* <h4> Today, {data.Hours[new Date().getDay()]}</h4> */}
                             <h4 className={styles.Info}>{data.Info}</h4>
                             <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
                             <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
                         </div>
-                        <div> <img  onClick={() => { props.setContact(true) }} className={zoomImg} src={`../${data.Image}`} /> </div>
+                        <div className={styles.hours}>
+                        <h4 className={styles.today}> Today, {data.Hours[new Date().getDay()]}</h4>
+                            <ul>
+                                <li>{data.Hours["0"]}</li>
+                                <li>{data.Hours["1"]}</li>
+                                <li>{data.Hours["2"]}</li>
+                                <li>{data.Hours["3"]}</li>
+                                <li>{data.Hours["4"]}</li>
+                                <li>{data.Hours["5"]}</li>
+                                <li>{data.Hours["6"]}</li>
+                            </ul>
+                        </div>
+                        <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
                     </div>
                 </div>
             )}
@@ -87,22 +87,15 @@ const styles = {
         height: auto;
         width: 100%;
         cursor: pointer;
-        // max-width: 300px;
-        // cursor: pointer;
-    `,
-    zoomImg: css`
-        transform: scale(1.1);
-        // position: absolute;
-        // width: 100vw;
-        // height: 100vh;
-        // right: 0px;
-        // left: 0px;
-        cursor: pointer;
-        overflow: hidden;
-
     `,
     info: css`
         width: auto;
+    `,
+    hours: css`
+        font-size: 14px;
+    `,
+    today: css`
+        color: green;
     `
 }
 

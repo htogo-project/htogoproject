@@ -12,9 +12,7 @@ const Contact = (props) => {
     const history = useHistory();
 
     useEffect(() => {
-        if (props.history.action === "PUSH") {
             window.scrollTo(0, 0)
-        }
     })
 
     const goBack = () => {
