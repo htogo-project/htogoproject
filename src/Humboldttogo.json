@@ -1704,13 +1704,13 @@
     "Phone": "(707) 407-3848",
     "Closed": "",
     "Hours": {
-      "0": "Sunday9AM–8PM",
+      "0": "Sunday 9AM–8PM",
       "1": "Monday Closed",
-      "2": "Tuesday9AM–8PM",
-      "3": "Wednesday9AM–8PM",
-      "4": "Thursday9AM–8PM",
-      "5": "Friday9AM–8PM",
-      "6": "Saturday9AM–8PM"
+      "2": "Tuesday 9AM–8PM",
+      "3": "Wednesday 9AM–8PM",
+      "4": "Thursday 9AM–8PM",
+      "5": "Friday 9AM–8PM",
+      "6": "Saturday 9AM–8PM"
     },
     "Info": "Curbside, Pick up and delivery on the Website",
     "City": "Eureka",
