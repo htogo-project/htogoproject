@@ -8,7 +8,7 @@
     "Phone": "(707) 273-5299",
     "Closed": 0,
     "Hours": {
-      "0": "Sunday 11:00AM-9:00PM]",
+      "0": "Sunday 11:00AM-9:00PM",
       "1": "Monday 11:00AM-9:00PM",
       "2": "Tuesday 11:00AM-9:00PM",
       "3": "Wednesday 11:00AM-9:00PM",
@@ -32,7 +32,7 @@
     "Phone": "(707) 798-6300",
     "Closed": 1,
     "Hours": {
-      "0": "Sunday 1:00PM-8:00PM]",
+      "0": "Sunday 1:00PM-8:00PM",
       "1": "Monday Closed",
       "2": "Tuesday 11:00AM-9:00PM",
       "3": "Wednesday 11:00AM-9:00PM",
@@ -56,7 +56,7 @@
     "Phone": "(707) 445-9777",
     "Closed": 0,
     "Hours": {
-      "0": "Sunday 8:00AM-8:00PM]",
+      "0": "Sunday 8:00AM-8:00PM",
       "1": "Monday 8:00AM-8:00PM",
       "2": "Tuesday 8:00AM-8:00PM",
       "3": "Wednesday 8:00AM-8:00PM",
@@ -80,7 +80,7 @@
     "Phone": "(707) 496-4165",
     "Closed": 0,
     "Hours": {
-      "0": "Sunday 11:00AM-6:00PM]",
+      "0": "Sunday 11:00AM-6:00PM",
       "1": "Monday 11:00AM-6:00PM",
       "2": "Tuesday 11:00AM-6:00PM",
       "3": "Wednesday 11:00AM-6:00PM",
@@ -905,6 +905,30 @@
   },
   {
     "Index": 39,
+    "Restaurant": "Esmeralda's Mexican Food",
+    "Website": "https://www.facebook.com/esmesfood/",
+    "Type": "Mexican",
+    "Address": "328 Grotto St\nEureka, California 95501",
+    "Phone": "(707) 442-0887",
+    "Closed": "",
+    "Hours": {
+      "0": "Sunday12–9PM",
+      "1": "Monday11AM–9PM",
+      "2": "Tuesday11AM–9PM",
+      "3": "Wednesday11AM–9PM",
+      "4": "Thursday11AM–9PM",
+      "5": "Friday11AM–9PM",
+      "6": "Saturday12–9PM"
+    },
+    "Info": "Take out",
+    "City": "Eureka",
+    "Deliveries cities": "",
+    "Image": "images_restaurants/sendapic.png",
+    "Keywords": "mexican, esmeraldas",
+    "Maps": "328%20Grotto%20St\nEureka%2C%20California%2095501"
+  },
+  {
+    "Index": 40,
     "Restaurant": "Eureka Natural foods",
     "Website": "https://eurekanaturalfoods.com",
     "Type": "Market",
@@ -928,7 +952,7 @@
     "Maps": "2165%20Central%20Ave.\nMcKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 40,
+    "Index": 41,
     "Restaurant": "Eureka Sea Grill",
     "Website": "https://seagrilleureka.com/",
     "Type": "Seafood and Grill",
@@ -952,7 +976,7 @@
     "Maps": "316%20E%20St%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 41,
+    "Index": 42,
     "Restaurant": "Ferndale Pizza Co.",
     "Website": "https://www.facebook.com/FerndalePizzaCo/",
     "Type": "Pizzas",
@@ -976,7 +1000,7 @@
     "Maps": "607%20Main%20St%20Ferndale%2CCalifornia%2095536"
   },
   {
-    "Index": 42,
+    "Index": 43,
     "Restaurant": "Fieldbrook Market & Eatery",
     "Website": "https://fieldbrookmarket.com/",
     "Type": "Market, Various",
@@ -1000,7 +1024,7 @@
     "Maps": "4636%20Fieldbrook%20Rd%20\nMcKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 43,
+    "Index": 44,
     "Restaurant": "Fieldbrook Winery",
     "Website": "https://www.fieldbrookwinery.com",
     "Type": "Wine, drinks",
@@ -1024,7 +1048,7 @@
     "Maps": "4241%20Fieldbrook%20Road\nMcKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 44,
+    "Index": 45,
     "Restaurant": "Fiesta Grill & Cantina",
     "Website": "https://fiesta-grill-cantina.business.site/",
     "Type": "Mexican",
@@ -1048,7 +1072,7 @@
     "Maps": "3525%20Janes%20Rd,%20Arcata,%20CA,%2095521"
   },
   {
-    "Index": 45,
+    "Index": 46,
     "Restaurant": "Fregoso's Comida Mexicana",
     "Website": "https://fregosos-comida-mexicana.business.site/",
     "Type": "Mexican",
@@ -1072,7 +1096,7 @@
     "Maps": "1504%20G%20St%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 46,
+    "Index": 47,
     "Restaurant": "Fresh Freeze",
     "Website": "https://www.freshfreezeeureka.com/",
     "Type": "Deserts, Ice Cream",
@@ -1096,7 +1120,31 @@
     "Maps": "3023%20F%20St%20\n%20Eureka%2CCalifornia%2095501"
   },
   {
-    "Index": 47,
+    "Index": 48,
+    "Restaurant": "Funky Monkey Fortuna",
+    "Website": "https://www.facebook.com/Funky-Monkey-Fortuna-436205683162005/?hc_location=ufi",
+    "Type": "handmade pizza, sandwiches appetizers and desserts",
+    "Address": "1875 Riverwalk Dr\nFortuna, California 95540",
+    "Phone": "(707) 725-1600",
+    "Closed": "",
+    "Hours": {
+      "0": "Sunday4–9PM",
+      "1": "Monday4–9PM",
+      "2": "Tuesday4–9PM",
+      "3": "Wednesday4–9PM",
+      "4": "Thursday4–9PM",
+      "5": "Friday4–10PM",
+      "6": "Saturday4–10PM"
+    },
+    "Info": "Take out",
+    "City": "Fortuna",
+    "Deliveries cities": "",
+    "Image": "images_restaurants/sendapic.png",
+    "Keywords": "handmade pizza, sandwiches appetizers and desserts,meatball sandwich, garlic fries and buffalo chicken salad",
+    "Maps": "1875%20Riverwalk%20Dr\nFortuna%2C%20California%2095540"
+  },
+  {
+    "Index": 49,
     "Restaurant": "Gabriel’s Italian Restaurant",
     "Website": "https://www.gabrielseureka.com/",
     "Type": "Italian",
@@ -1120,7 +1168,7 @@
     "Maps": "216%20E%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 48,
+    "Index": 50,
     "Restaurant": "Gallagher's Irish Pub",
     "Website": "https://gallaghers-irishpub.com/",
     "Type": "Drinks, Various",
@@ -1144,7 +1192,7 @@
     "Maps": "139%202nd%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 49,
+    "Index": 51,
     "Restaurant": "Golden Harvest Cafe",
     "Website": "https://www.goldenharvestcafe.com",
     "Type": "Cafe, Savory, Various",
@@ -1168,7 +1216,7 @@
     "Maps": "1707%20Allard%20Ave\nEureka%2CCalifornia%2095503"
   },
   {
-    "Index": 50,
+    "Index": 52,
     "Restaurant": "Gyppo Ale Mill",
     "Website": "https://gyppo.com/",
     "Type": "Brewery, Various",
@@ -1192,7 +1240,7 @@
     "Maps": "1661%20Upper%20Pacific%20Drive%20\nShelter%20Cove%2CCalifornia%2095589"
   },
   {
-    "Index": 51,
+    "Index": 53,
     "Restaurant": "Happy Donuts/ Express Asian Food",
     "Website": "https://www.facebook.com/HappyDonutsAsianFood/?hc_location=ufi",
     "Type": "Donuts , Breakfast, Chinese Food , Espresso Coffee, Smoothies and much more.",
@@ -1216,7 +1264,7 @@
     "Maps": "2916%20Central%20Ave\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 52,
+    "Index": 54,
     "Restaurant": "Headies Pizza & Pour",
     "Website": "https://www.headiesmt.com/",
     "Type": "Pizza and Beer",
@@ -1240,7 +1288,7 @@
     "Maps": "359%20Main%20St%20Trinidad%2CCalifornia%2095570"
   },
   {
-    "Index": 53,
+    "Index": 55,
     "Restaurant": "Hole in the Wall",
     "Website": "https://www.yelp.com/biz/hole-in-the-wall-great-sandwiches-arcata-5",
     "Type": "Sandwiches",
@@ -1264,7 +1312,7 @@
     "Maps": "590%20G%20St\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 54,
+    "Index": 56,
     "Restaurant": "Hoppy's FroYo",
     "Website": "https://www.facebook.com/hoppysfroyo/",
     "Type": "Frozen yogurt, deserts",
@@ -1288,7 +1336,7 @@
     "Maps": "1151%20Main%20St.%20Fortuna%2CCalifornia%2095540"
   },
   {
-    "Index": 55,
+    "Index": 57,
     "Restaurant": "Humboldt Bay Bistro",
     "Website": "https://humboldtbaybistro.com/",
     "Type": "California/French Fusion",
@@ -1312,7 +1360,7 @@
     "Maps": "1436%202nd%20St.\nEureka%2CCalifornia"
   },
   {
-    "Index": 56,
+    "Index": 58,
     "Restaurant": "Humboldt Bay Coffee Company",
     "Website": "https://www.humboldtcoffee.com",
     "Type": "Coffee",
@@ -1336,7 +1384,7 @@
     "Maps": "527%203rd%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 57,
+    "Index": 59,
     "Restaurant": "Humboldt Cider Company",
     "Website": "https://www.humboldtcidercompany.com/",
     "Type": "Drinks",
@@ -1360,7 +1408,7 @@
     "Maps": "517%20F%20St,%20Eureka%20CA,%2095501"
   },
   {
-    "Index": 58,
+    "Index": 60,
     "Restaurant": "Humboldt Regeneration Brewery and Farm",
     "Website": "https://www.humboldtregeneration.com",
     "Type": "Brewery, various",
@@ -1384,7 +1432,7 @@
     "Maps": "2320%20Central%20Ave,%20Ste%20F,%20McKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 59,
+    "Index": 61,
     "Restaurant": "Humboldt Smokehouse",
     "Website": "https://humboldtsmokehouse.com/",
     "Type": "BBQ",
@@ -1408,7 +1456,7 @@
     "Maps": "310%205th%20St%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 60,
+    "Index": 62,
     "Restaurant": "Humboldt Soup Company",
     "Website": "https://www.humboldtsoupcompany.com/",
     "Type": "Soups",
@@ -1432,7 +1480,7 @@
     "Maps": "1019%20Myrtle%20Avenue,%20Eureka,%20CA%2095501"
   },
   {
-    "Index": 61,
+    "Index": 63,
     "Restaurant": "Humbrews / Humboldt Brews",
     "Website": "https://humbrews.com/",
     "Type": "Drinks and Grill",
@@ -1456,7 +1504,7 @@
     "Maps": "856%2010th%20St\nArcata%2CCalifornia,%2095521"
   },
   {
-    "Index": 62,
+    "Index": 64,
     "Restaurant": "Hunan Village Restaurant",
     "Website": "https://www.hunanfortuna.com/",
     "Type": "Chinese",
@@ -1480,7 +1528,7 @@
     "Maps": "1468%20Main%20St\nFortuna,%2095540"
   },
   {
-    "Index": 63,
+    "Index": 65,
     "Restaurant": "Hunan Village Restaurant",
     "Website": "https://www.facebook.com/pages/Hunan-Restaurant/111614432206934",
     "Type": "Chinese",
@@ -1504,7 +1552,7 @@
     "Maps": "2912%20E%20St,%20Eureka,%20CA%2095501"
   },
   {
-    "Index": 64,
+    "Index": 66,
     "Restaurant": "It's Alive Kombucha",
     "Website": "https://www.itsalivekombucha.com/",
     "Type": "Kombucha",
@@ -1528,7 +1576,7 @@
     "Maps": "1612%20Old%20Arcata%20Rd%2C%20Bayside%2C%20CA%2095524"
   },
   {
-    "Index": 65,
+    "Index": 67,
     "Restaurant": "Jack's Seafood",
     "Website": "https://www.jackseafoodeureka.com/",
     "Type": "Seafood and Grill",
@@ -1552,7 +1600,7 @@
     "Maps": "4%20C%20St%20B%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 66,
+    "Index": 68,
     "Restaurant": "Japhy's Soup & Noodles",
     "Website": "https://japhys.com/",
     "Type": "Asian",
@@ -1576,7 +1624,7 @@
     "Maps": "1563%20G%20St%2C%20Arcata%2C%20CA%2095521"
   },
   {
-    "Index": 67,
+    "Index": 69,
     "Restaurant": "Jitten bean Coffe",
     "Website": "https://www.facebook.com/jitterbeancoffeeco/",
     "Type": "Cafe, coffee",
@@ -1600,7 +1648,7 @@
     "Maps": "4950%20Valley%20W%20Blvd%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 68,
+    "Index": 70,
     "Restaurant": "Jitten bean Coffe",
     "Website": "https://www.facebook.com/jitterbeancoffeeco/",
     "Type": "Cafe, coffee",
@@ -1624,7 +1672,7 @@
     "Maps": "1836%205th%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 69,
+    "Index": 71,
     "Restaurant": "Kebab Cafe",
     "Website": "https://www.kebabcafearcata.com",
     "Type": "Mediterranean",
@@ -1648,7 +1696,7 @@
     "Maps": "5000%20Valley%20West%20Blvd%20Ste%2019%20Arcata%2CCalifornia%2095521"
   },
   {
-    "Index": 70,
+    "Index": 72,
     "Restaurant": "Kenny's Chocolates",
     "Website": "https://www.kennyschocolates.com/",
     "Type": "Chocolate Shop",
@@ -1672,7 +1720,7 @@
     "Maps": "425%20Snug%20Alley%20suite%20b%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 71,
+    "Index": 73,
     "Restaurant": "KISKANU Cannabis",
     "Website": "https://kiskanudispensary.com/",
     "Type": "Cannabis / Hemp",
@@ -1696,7 +1744,7 @@
     "Maps": "2200%204th%20St%2CEureka%20CA%2095501"
   },
   {
-    "Index": 72,
+    "Index": 74,
     "Restaurant": "La Patria Mariscos & Gril Restaurant",
     "Website": "https://lapatriamgrestaurant.com",
     "Type": "Seafood and Grill",
@@ -1704,13 +1752,13 @@
     "Phone": "(707) 407-3848",
     "Closed": "",
     "Hours": {
-      "0": "Sunday 9AM–8PM",
+      "0": "Sunday9AM–8PM",
       "1": "Monday Closed",
-      "2": "Tuesday 9AM–8PM",
-      "3": "Wednesday 9AM–8PM",
-      "4": "Thursday 9AM–8PM",
-      "5": "Friday 9AM–8PM",
-      "6": "Saturday 9AM–8PM"
+      "2": "Tuesday9AM–8PM",
+      "3": "Wednesday9AM–8PM",
+      "4": "Thursday9AM–8PM",
+      "5": "Friday9AM–8PM",
+      "6": "Saturday9AM–8PM"
     },
     "Info": "Curbside, Pick up and delivery on the Website",
     "City": "Eureka",
@@ -1720,7 +1768,7 @@
     "Maps": "1718%204th%20St%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 73,
+    "Index": 75,
     "Restaurant": "La Trattoria",
     "Website": "https://www.latrattoriaarcata.com",
     "Type": "Italian",
@@ -1744,7 +1792,7 @@
     "Maps": "30%20Sunnybrae%20Ctr%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 74,
+    "Index": 76,
     "Restaurant": "Las Cazuelas Restaurant & Cantina",
     "Website": "https://www.doordash.com/store/las-cazuelas-restaurant-fortuna-675837/",
     "Type": "Mexican",
@@ -1768,7 +1816,7 @@
     "Maps": "435%20N%20Fortuna%20Blvd\nFortuna%2CCalifornia"
   },
   {
-    "Index": 75,
+    "Index": 77,
     "Restaurant": "Lighthouse Grill",
     "Website": "https://trinidadlighthousegrill.com/",
     "Type": "Burgers",
@@ -1792,7 +1840,7 @@
     "Maps": "355%20Main%20St%20\nTrinidad%2CCalifornia%2095570"
   },
   {
-    "Index": 76,
+    "Index": 78,
     "Restaurant": "LoCo Fish Co.",
     "Website": "https://www.facebook.com/550SouthGStreetArcataCA95521/",
     "Type": "Burgers, Fish and Chips, Tacos / Mexican",
@@ -1816,7 +1864,7 @@
     "Maps": "550%20S.%20G%20Street\nArcata%2CCalifornia,%2095521"
   },
   {
-    "Index": 77,
+    "Index": 79,
     "Restaurant": "Los Bagels",
     "Website": "https://www.losbagels.com",
     "Type": "Bagels, Cafe",
@@ -1840,7 +1888,7 @@
     "Maps": "1061%20I%20Street\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 78,
+    "Index": 80,
     "Restaurant": "Lost Coast Baking Company",
     "Website": "https://www.facebook.com/pages/category/Cafe/Lost-Coast-Baking-Company-910323959167089/",
     "Type": "Various, Breakfast, Chicken Pot Pies",
@@ -1864,7 +1912,7 @@
     "Maps": "543%20Main%20St%2CFerndale%2CCA%2095536"
   },
   {
-    "Index": 79,
+    "Index": 81,
     "Restaurant": "Masaki's | Kyoto Japanese Restaurant",
     "Website": "https://masakis-kyoto-japanese-restaurant.business.site/",
     "Type": "Japanese",
@@ -1888,7 +1936,7 @@
     "Maps": "320%20F%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 80,
+    "Index": 82,
     "Restaurant": "Mazzottis",
     "Website": "https://places.singleplatform.com",
     "Type": "Italian",
@@ -1912,7 +1960,7 @@
     "Maps": "773%208th%20St,%20Arcata,%20CA,%2095521"
   },
   {
-    "Index": 81,
+    "Index": 83,
     "Restaurant": "Meadows Cafe",
     "Website": "https://www.facebook.com/pg/Meadows-Cafe-Deli-504363256244404/about/?ref=page_internal",
     "Type": "Deli, Breakfast, Bakery",
@@ -1936,7 +1984,7 @@
     "Maps": "1211%20Evergreen%20Rd\nRedway%2CCalifornia%2095560"
   },
   {
-    "Index": 82,
+    "Index": 84,
     "Restaurant": "Mia Bella",
     "Website": "https://www.miabellacakes.com/",
     "Type": "Cakes",
@@ -1960,7 +2008,7 @@
     "Maps": "1041%20H%20St,%20Arcata,%20CA,%2095521"
   },
   {
-    "Index": 83,
+    "Index": 85,
     "Restaurant": "Moonstone Crossing",
     "Website": "https://www.moonstonecrossing.com/",
     "Type": "Wine, Drinks",
@@ -1984,7 +2032,31 @@
     "Maps": "529%20Trinity%20St%20\nTrinidad%2CCalifornia%2095570"
   },
   {
-    "Index": 84,
+    "Index": 86,
+    "Restaurant": "Mountain Mike's Pizza",
+    "Website": "https://www.facebook.com/MountainMikesEurekaCA/?hc_location=ufi",
+    "Type": "Pizza",
+    "Address": "3144 Broadway Street, Suites C-3,C-4, C-5, Eureka, California 95501",
+    "Phone": "(707) 268-1100",
+    "Closed": "",
+    "Hours": {
+      "0": "Sunday\t11AM–10PM",
+      "1": "Monday\t11AM–10PM",
+      "2": "Tuesday\t11AM–10PM",
+      "3": "Wednesday\t11AM–10PM",
+      "4": "Thursday\t11AM–10PM",
+      "5": "Friday\t11AM–11PM",
+      "6": "Saturday\t11AM–11PM"
+    },
+    "Info": "Take out",
+    "City": "Eureka",
+    "Deliveries cities": "",
+    "Image": "images_restaurants/sendapic.png",
+    "Keywords": "mountain mike, pizza",
+    "Maps": "3144%20Broadway%20Street%2C%20Suites%20C-3%2CC-4%2C%20C-5%2C%20Eureka%2C%20California%2095501"
+  },
+  {
+    "Index": 87,
     "Restaurant": "Oberon Grill",
     "Website": "https://www.oberongrill.net/",
     "Type": "Bar and Grill",
@@ -2008,7 +2080,7 @@
     "Maps": "516%202nd%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 85,
+    "Index": 88,
     "Restaurant": "Old Town Coffee & Chocolates",
     "Website": "https://oldtowncoffeeeureka.com/",
     "Type": "Coffee, Chocolates",
@@ -2032,7 +2104,7 @@
     "Maps": "211%20F%20Street%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 86,
+    "Index": 89,
     "Restaurant": "Pachanga Mexicana Restaurant",
     "Website": "https://pachangamexicana.com",
     "Type": "Mexican",
@@ -2056,7 +2128,7 @@
     "Maps": "1802%205th%20St\nEureka%2CCalifornia,%2095501"
   },
   {
-    "Index": 87,
+    "Index": 90,
     "Restaurant": "Panda Cafe",
     "Website": "https://www.pandacafe.net",
     "Type": "Chinese",
@@ -2080,7 +2152,7 @@
     "Maps": "1010%20Broadway\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 88,
+    "Index": 91,
     "Restaurant": "Papa Murphy’s Take and Bake",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
     "Type": "Italian, pizza",
@@ -2104,7 +2176,7 @@
     "Maps": "686%20F%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 89,
+    "Index": 92,
     "Restaurant": "Papa Murphy’s Take and Bake",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
     "Type": "Italian, pizza",
@@ -2128,7 +2200,7 @@
     "Maps": "407%20Henderson%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 90,
+    "Index": 93,
     "Restaurant": "Papa Murphy’s Take and Bake",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
     "Type": "Italian, pizza",
@@ -2152,7 +2224,7 @@
     "Maps": "2015%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519"
   },
   {
-    "Index": 91,
+    "Index": 94,
     "Restaurant": "Papa Wheelies Pup",
     "Website": "https://www.facebook.com/pages/category/Pub/Papa-Wheelies-Pub-554485114700702/",
     "Type": "Drinks - Grill",
@@ -2176,7 +2248,7 @@
     "Maps": "1584%20Reasor%20Rd%20\nMcKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 92,
+    "Index": 95,
     "Restaurant": "Partrick's Candy",
     "Website": "https://www.facebook.com/pages/category/Candy-Store/Partricks-Candy-1655989934653708/",
     "Type": "Candy Store",
@@ -2200,7 +2272,7 @@
     "Maps": "%20537%20F%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 93,
+    "Index": 96,
     "Restaurant": "Paul's Live From New York",
     "Website": "https://places.singleplatform.com/live-from-new-york-pizza/menu",
     "Type": "Pizzas and Drinks",
@@ -2224,7 +2296,7 @@
     "Maps": "665%20Samoa%20Blvd\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 94,
+    "Index": 97,
     "Restaurant": "Pepper's",
     "Website": "https://www.menupix.com/california/restaurants/5560698/Peppers-Fortuna-CA?fbclid=IwAR3qUDYwiImXLYg1PnMrK6AgNfAqKYxgirPLaotssQc5f4uPaY3QNCXoNYg",
     "Type": "American Restaurant, Various",
@@ -2248,7 +2320,7 @@
     "Maps": "719%20S%20Fortuna%20Blvd\nFortuna%2CCalifornia%2095540"
   },
   {
-    "Index": 95,
+    "Index": 98,
     "Restaurant": "Philly Cheese Steak Shoppe",
     "Website": "https://www.phillycheesesteakshoppe.com/",
     "Type": "Hot dogs, Steak, Sandwichs",
@@ -2272,7 +2344,7 @@
     "Maps": "1811%20G%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 96,
+    "Index": 99,
     "Restaurant": "Philly Cheese Steak Shoppe",
     "Website": "https://www.phillycheesesteakshoppe.com/",
     "Type": "Hot dogs, Steak, Sandwichs",
@@ -2296,7 +2368,7 @@
     "Maps": "3050%20Broadway%20St\nEureka%2CCA%2095501"
   },
   {
-    "Index": 97,
+    "Index": 100,
     "Restaurant": "Plaza Grill",
     "Website": "https://www.plazagrillarcata.com",
     "Type": "American, Grill, Various",
@@ -2320,7 +2392,7 @@
     "Maps": "791%208th%20St,%20Fl%203rd\nArcata%2CCalifornia,%2095521"
   },
   {
-    "Index": 98,
+    "Index": 101,
     "Restaurant": "Poppa Joe's",
     "Website": "https://www.facebook.com/PoppaJoes/",
     "Type": "Sandwiches",
@@ -2344,7 +2416,7 @@
     "Maps": "409%20Main%20St,%20Ferndale%20CA,%2095536"
   },
   {
-    "Index": 99,
+    "Index": 102,
     "Restaurant": "Porter Street Barbeque",
     "Website": "https://facebook.com/Porter-Street-Barbeque-155525104461292/",
     "Type": "BBQ",
@@ -2368,7 +2440,7 @@
     "Maps": "605%20Broadway\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 100,
+    "Index": 103,
     "Restaurant": "Pretty Baked",
     "Website": "https://www.facebook.com/prettybaked.ro/",
     "Type": "Cookies, Cupcakes, Bakery",
@@ -2392,7 +2464,7 @@
     "Maps": "Rio%20Dell%2CCalifornia,%2095562"
   },
   {
-    "Index": 101,
+    "Index": 104,
     "Restaurant": "Ramone's Bakery & Cafe",
     "Website": "https://ramonesbakery.com/",
     "Type": "Bakery and Cafe",
@@ -2416,7 +2488,7 @@
     "Maps": "2297%20Harrison%20Ave%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 102,
+    "Index": 105,
     "Restaurant": "Redwood Coast Brewing Company",
     "Website": "https://redwoodcurtainbrewing.com/pages/contact-us",
     "Type": "Brewery, Drinks, Various",
@@ -2440,7 +2512,7 @@
     "Maps": "%20550%20South%20G%20St.%20#4\nArcata,%20CA%2095521"
   },
   {
-    "Index": 103,
+    "Index": 106,
     "Restaurant": "Rico's Tacos Taqueria",
     "Website": "https://www.ricostacostaqueria.com/",
     "Type": "Mexican",
@@ -2464,7 +2536,7 @@
     "Maps": "686%20F%20St%20D%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 104,
+    "Index": 107,
     "Restaurant": "Ridgetop Café & Coffee Barn",
     "Website": "https://www.facebook.com/RidgetopCafe/",
     "Type": "Cafe, breakfast",
@@ -2488,7 +2560,7 @@
     "Maps": "623%20Fernbridge%20Dr%2C%20Fortuna%2C%20CA%2095540"
   },
   {
-    "Index": 105,
+    "Index": 108,
     "Restaurant": "Rita’s Margaritas",
     "Website": "https://www.ritashumboldt.com/",
     "Type": "Mexican",
@@ -2512,7 +2584,7 @@
     "Maps": "855%208th%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 106,
+    "Index": 109,
     "Restaurant": "Rita’s Margaritas",
     "Website": "https://www.ritashumboldt.com/",
     "Type": "Mexican",
@@ -2536,7 +2608,7 @@
     "Maps": "1111%205th%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 107,
+    "Index": 110,
     "Restaurant": "Roman's Kitchen",
     "Website": "https://www.romanskitchen.com/",
     "Type": "Various",
@@ -2560,7 +2632,7 @@
     "Maps": "681%20I%20St%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 108,
+    "Index": 111,
     "Restaurant": "Sammy's BBQ & Catering",
     "Website": "https://www.sammysbbqcatering.com/",
     "Type": "BBQ",
@@ -2584,7 +2656,7 @@
     "Maps": "1709%205th%20Street,%20Eureka,%2095501"
   },
   {
-    "Index": 109,
+    "Index": 112,
     "Restaurant": "Septentrio Winery",
     "Website": "https://septentriowinery.com",
     "Type": "Wine, drinks",
@@ -2608,7 +2680,7 @@
     "Maps": "Delivery"
   },
   {
-    "Index": 110,
+    "Index": 113,
     "Restaurant": "Shamus T Bones",
     "Website": "https://www.shamustbones.com",
     "Type": "Steak, Seafood, Pizza, Cocktails, Drinks",
@@ -2632,7 +2704,7 @@
     "Maps": "1911%20Truesdale%20St\nEureka%2CCalifornia"
   },
   {
-    "Index": 111,
+    "Index": 114,
     "Restaurant": "Shenanigans",
     "Website": "https://www.facebook.com/sheananiganseureka/",
     "Type": "Pizza",
@@ -2656,7 +2728,7 @@
     "Maps": "1604%204th%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 112,
+    "Index": 115,
     "Restaurant": "Siam Orchid Thai Cuisine",
     "Website": "https://www.siamorchidca.com/",
     "Type": "Thai, Asian",
@@ -2680,7 +2752,7 @@
     "Maps": "427%20V%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 113,
+    "Index": 116,
     "Restaurant": "Six Rivers Brewery",
     "Website": "https://www.sixriversbrewery.com",
     "Type": "American, Drinks, Various",
@@ -2704,7 +2776,7 @@
     "Maps": "1300%20Central%20Ave\nMcKinleyville%2CCalifornia%2095519"
   },
   {
-    "Index": 114,
+    "Index": 117,
     "Restaurant": "Sixth and E",
     "Website": "https://www.sixthande.com/",
     "Type": "Burgers - Pasta - Salads",
@@ -2728,7 +2800,7 @@
     "Maps": "603%20E%20St\nEureka%2CCalifornia,%2095501"
   },
   {
-    "Index": 115,
+    "Index": 118,
     "Restaurant": "Slice of Humbolt Pie",
     "Website": "https://sliceofhumboldtpie.com",
     "Type": "Sweet and Savory Pies",
@@ -2752,7 +2824,7 @@
     "Maps": "828%20I%20St%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 116,
+    "Index": 119,
     "Restaurant": "Smokin' Barrels Burgers & BBQ",
     "Website": "https://www.facebook.com/smokinbarrels2018/",
     "Type": "Burgers & BBQ",
@@ -2776,7 +2848,7 @@
     "Maps": "1095%20S.%20Fortuna%20Blvd.%20Ste.%20E%20Fortuna,%2095540"
   },
   {
-    "Index": 117,
+    "Index": 120,
     "Restaurant": "Smug's Pizza",
     "Website": "https://www.smugspizza.com/",
     "Type": "Pizza",
@@ -2800,7 +2872,7 @@
     "Maps": "1034%20G%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 118,
+    "Index": 121,
     "Restaurant": "Snack Shack",
     "Website": "https://www.facebook.com/pages/category/Fast-Food-Restaurant/EdeBees-Snack-Shack-867005576643756/",
     "Type": "Various",
@@ -2824,7 +2896,7 @@
     "Maps": "12079%20Redwood%20Hwy%2COrick%2CCA%2095555"
   },
   {
-    "Index": 119,
+    "Index": 122,
     "Restaurant": "Stars Hamburgers",
     "Website": "https://www.facebook.com/pages/Stars-Hamburgers/130196950684995",
     "Type": "Burgers, Hamburgers",
@@ -2848,7 +2920,7 @@
     "Maps": "1535%20G%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 120,
+    "Index": 123,
     "Restaurant": "Stitches 'n' Sprinkes",
     "Website": "https://www.facebook.com/stitchesnsprinkles/",
     "Type": "Cookies, Cupcakes, Bakery",
@@ -2872,7 +2944,7 @@
     "Maps": "95503,%20Humboldt%20Hill,%2095501,%20Eureka%20and%20nearby%20areas."
   },
   {
-    "Index": 121,
+    "Index": 124,
     "Restaurant": "Surfside Burger Shack",
     "Website": "https://surfsideburgershack.com/",
     "Type": "Burgers",
@@ -2896,7 +2968,7 @@
     "Maps": "445%205th%20St,%20Eureka,%2095501"
   },
   {
-    "Index": 122,
+    "Index": 125,
     "Restaurant": "Sushi Spot Inc",
     "Website": "https://www.sushispotarcata.com/",
     "Type": "Japanese",
@@ -2920,7 +2992,7 @@
     "Maps": "1552%20City%20Center%20Rd\nMcKinleyville,%20%2095519"
   },
   {
-    "Index": 123,
+    "Index": 126,
     "Restaurant": "Sushi Spot Inc",
     "Website": "https://www.sushispotarcata.com/",
     "Type": "Japanese",
@@ -2944,7 +3016,7 @@
     "Maps": "Suite%20101,%20670%209th%20Street,%20Arcata,%2095521"
   },
   {
-    "Index": 124,
+    "Index": 127,
     "Restaurant": "Sushi Tao",
     "Website": "https://sushi-tao.biz/menu/",
     "Type": "Japanese, sushi",
@@ -2968,7 +3040,7 @@
     "Maps": "768%2018th%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 125,
+    "Index": 128,
     "Restaurant": "Szechuan Garden Restaurant Arcata",
     "Website": "https://szechuangardentogo.com",
     "Type": "Chinese",
@@ -2992,7 +3064,7 @@
     "Maps": "752%2018th%20St\nArcata%2CCalifornia,%2095521"
   },
   {
-    "Index": 126,
+    "Index": 129,
     "Restaurant": "Tandoori Bites Indian Cuisine",
     "Website": "https://tandooribitesindianeureka.com/36553",
     "Type": "Indian",
@@ -3016,7 +3088,7 @@
     "Maps": "1735%204th%20St%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 127,
+    "Index": 130,
     "Restaurant": "Taqueria La Barca",
     "Website": "https://www.facebook.com/TaqueriaLaBarcaMexicanRestaurant/",
     "Type": "Mexican",
@@ -3040,7 +3112,7 @@
     "Maps": "%205201%20Carlson%20Park%20Dr%20#%204%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 128,
+    "Index": 131,
     "Restaurant": "Taqueria La Barca Taco Truck",
     "Website": "https://www.facebook.com/TaqueriaLaBarcaMexicanRestaurant/",
     "Type": "Mexican",
@@ -3064,7 +3136,7 @@
     "Maps": "1434%20Myrtle%20Avenue%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 129,
+    "Index": 132,
     "Restaurant": "The Banana Hut Hawaiian BBQ",
     "Website": "https://www.thebananahut.com/",
     "Type": "Hawaiian",
@@ -3088,7 +3160,7 @@
     "Maps": "621%205th%20St\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 130,
+    "Index": 133,
     "Restaurant": "The Boardroom Eureka",
     "Website": "https://boardroomeureka.com/",
     "Type": "Cheese, meat and veggies",
@@ -3112,7 +3184,7 @@
     "Maps": "3750%20Harris%20Street,%20Suite%20G,%20Eureka,%2095503"
   },
   {
-    "Index": 131,
+    "Index": 134,
     "Restaurant": "The Burger Joint",
     "Website": "https://www.facebook.com/theburgerjointarcata/",
     "Type": "Burger",
@@ -3136,7 +3208,7 @@
     "Maps": "835%20J%20St%2CArcata%2CCA%2095521"
   },
   {
-    "Index": 132,
+    "Index": 135,
     "Restaurant": "The Diver Bar and Grill",
     "Website": "https://www.yelp.com/biz/the-diver-bar-and-grill-eureka",
     "Type": "Various",
@@ -3160,7 +3232,7 @@
     "Maps": "2834%20F%20St%20\nEureka%2CCalifornia%2095501"
   },
   {
-    "Index": 133,
+    "Index": 136,
     "Restaurant": "The Greene Lily",
     "Website": "https://www.yelp.com/biz/the-greene-lily-eureka",
     "Type": "Breakfast",
@@ -3184,7 +3256,7 @@
     "Maps": "307%202nd%20St%2CEureka%2CCA%2095501"
   },
   {
-    "Index": 134,
+    "Index": 137,
     "Restaurant": "The Jam Arcata",
     "Website": "https://www.thejamarcata.com/",
     "Type": "Pizzas, Handpies, Chicken",
@@ -3208,7 +3280,7 @@
     "Maps": "915%20H%20St%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 135,
+    "Index": 138,
     "Restaurant": "The Larrupin Cafe",
     "Website": "https://www.thelarrupin.com/",
     "Type": "Various",
@@ -3232,7 +3304,7 @@
     "Maps": "1658%20Patricks%20Point%20Dr\nTrinidad%2CCalifornia,%2095501"
   },
   {
-    "Index": 136,
+    "Index": 139,
     "Restaurant": "The Madrone - Brick Fire Pizza and Taphouse",
     "Website": "https://madronetaphouse.com/?fbclid=IwAR1zbOCl6a24pK7casD46-pmJasvAGW6zn7bE__MCHW92vc1C3D1oDMdrOs",
     "Type": "Pizzas and Drinks",
@@ -3256,7 +3328,7 @@
     "Maps": "421%203rd%20st\nEureka%2CCalifornia"
   },
   {
-    "Index": 137,
+    "Index": 140,
     "Restaurant": "The Patron Kitchen",
     "Website": "https://www.facebook.com/pg/The-Patron-Kitchen-1982048258475530/posts/",
     "Type": "Mexican",
@@ -3280,7 +3352,7 @@
     "Maps": "70%20B%20Wildwood%20Ave%2CRio%20Dell%2CCA%2095562"
   },
   {
-    "Index": 138,
+    "Index": 141,
     "Restaurant": "The Wildflower Cafe & Bakery",
     "Website": "https://wildflowercafebakery.com",
     "Type": "Vegan and Vegetarian Cuisine, Various",
@@ -3304,7 +3376,7 @@
     "Maps": "1604%20G%20St%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 139,
+    "Index": 142,
     "Restaurant": "Tomo Japanese Restaurant",
     "Website": "https://tomoarcata.com/",
     "Type": "Japanese, sushi",
@@ -3328,7 +3400,7 @@
     "Maps": "708%209th%20St\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 140,
+    "Index": 143,
     "Restaurant": "Toni's 24h Restaurant",
     "Website": "https://tonisrestaurant.com/",
     "Type": "Burgers",
@@ -3352,7 +3424,7 @@
     "Maps": "1901%20Heindon%20Rd%20,%20Arcata%20CA,%2095521"
   },
   {
-    "Index": 141,
+    "Index": 144,
     "Restaurant": "Tres Picosos",
     "Website": "https://treschilespicosos.com/",
     "Type": "Mexican",
@@ -3376,7 +3448,7 @@
     "Maps": "3502%20Broadway%20St,%20Eureka,%2095503"
   },
   {
-    "Index": 142,
+    "Index": 145,
     "Restaurant": "Trinidad Bay Eatery and Gallery",
     "Website": "https://trinidadeatery.com/",
     "Type": "Serving Breakfast, Lunch & Dinner",
@@ -3400,7 +3472,7 @@
     "Maps": "607%20Parker%20St%2CTrinidad%2CCA%2095570"
   },
   {
-    "Index": 143,
+    "Index": 146,
     "Restaurant": "Village Pantry",
     "Website": "https://www.yelp.com/biz/village-pantry-arcata-2",
     "Type": "Various",
@@ -3424,7 +3496,7 @@
     "Maps": "5000%20Valley%20West%20Blvd%20\nArcata%2CCalifornia%2095521"
   },
   {
-    "Index": 144,
+    "Index": 147,
     "Restaurant": "Village Pantry",
     "Website": "https://www.yelp.com/biz/village-pantry-arcata-2",
     "Type": "Various",
@@ -3448,7 +3520,7 @@
     "Maps": "1912%20Broadway%20St,%20Eureka,%20CA%2095501"
   },
   {
-    "Index": 145,
+    "Index": 148,
     "Restaurant": "Wildwood Waffles",
     "Website": "https://www.facebook.com/wildwoodwaffles/",
     "Type": "waffles, breakfast, cafe",
@@ -3469,6 +3541,6 @@
     "Deliveries cities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "waffles, breakfast, cafe",
-    "Maps": "770%20Wildwood%20Ave%2CRio%20Dell%20CA%2095562"
+    "Maps": "770%20Wildwood%20Ave%2C%20Rio%20Dell%2C%20CA%2095562"
   }
 ]
