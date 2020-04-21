@@ -38,12 +38,12 @@ const App = () => {
     return (
       <Router>
         <Route path="/">
-          <SlideMenu
+          {/* <SlideMenu
             active={slideMenuActive}
             nav={nav}
-            reactRouter={false}>
+            reactRouter={false}> */}
             <div>
-              <button onClick={closeMenu}> Here </button>
+              {/* <button onClick={closeMenu}> Here </button> */}
               <header>
                 <Header />
               </header>
@@ -57,7 +57,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-          </SlideMenu>
+          {/* </SlideMenu> */}
          </Route>
       </Router>
     );

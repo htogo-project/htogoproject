@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { css } from 'emotion'
 import Add from './Add.jsx';
 
@@ -7,44 +6,40 @@ import Add from './Add.jsx';
 function List(props) {
 
     return (
-        // <Router>
-            <div className={styles.back}>
-                <span className={styles.results}> Showing {props.restaurant.length} results in {props.value}</span>
-                {props.restaurant.map((data, index) =>
-                    <div key={index} className={styles.contacts}>
-                        {/* <Route exact path={data.Restaurant}> */}
-                            <div className={styles.block}>
-                                <div className={styles.info}>
-                                    <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
-                                    <h4>{data.Type}</h4>
-                                    <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
-                                    <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
-                                    {/* <h4> Today, {data.Hours[new Date().getDay()]}</h4> */}
-                                    <h4 className={styles.Info}>{data.Info}</h4>
-                                    <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
-                                    <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
-                                </div>
-                                <div className={styles.hours}>
-                                    <h4 className={styles.today}> Today, {data.Hours[new Date().getDay()]}</h4>
-                                    <ul>
-                                        <li>{data.Hours["0"]}</li>
-                                        <li>{data.Hours["1"]}</li>
-                                        <li>{data.Hours["2"]}</li>
-                                        <li>{data.Hours["3"]}</li>
-                                        <li>{data.Hours["4"]}</li>
-                                        <li>{data.Hours["5"]}</li>
-                                        <li>{data.Hours["6"]}</li>
-                                    </ul>
-                                </div>
-                                <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
+        <div className={styles.back}>
+            <span className={styles.results}> Showing {props.restaurant.length} results in {props.value}</span>
+            {props.restaurant.map((data, index) =>
+                <div key={index} className={styles.contacts}>
+                    <div className={styles.block}>
+                        <div className={styles.info}>
+                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
+                            <h4>{data.Type}</h4>
+                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
+                            {/* <h4> Today, {data.Hours[new Date().getDay()]}</h4> */}
+                            <h4 className={styles.Info}>{data.Info}</h4>
+                            <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
+                            <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
+                        </div>
+                        <div className={styles.hours}>
+                            <h4 className={styles.today}> Today, {data.Hours[new Date().getDay()]}</h4>
+                            <ul>
+                                <li>{data.Hours["0"]}</li>
+                                <li>{data.Hours["1"]}</li>
+                                <li>{data.Hours["2"]}</li>
+                                <li>{data.Hours["3"]}</li>
+                                <li>{data.Hours["4"]}</li>
+                                <li>{data.Hours["5"]}</li>
+                                <li>{data.Hours["6"]}</li>
+                            </ul>
+                        </div>
+                        <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
 
-                            </div>
-                        {/* </Route> */}
                     </div>
-                )}
-                <Add contact={props.contact} setContact={props.setContact} />
-            </div>
-        // </Router>
+                </div>
+            )}
+            <Add contact={props.contact} setContact={props.setContact} />
+        </div>
     )
 
 }
