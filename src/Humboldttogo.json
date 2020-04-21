@@ -2084,24 +2084,24 @@
     "Restaurant": "Old Town Coffee & Chocolates",
     "Website": "https://oldtowncoffeeeureka.com/",
     "Type": "Coffee, Chocolates",
-    "Address": "211 F Street, Eureka, CA 95501",
-    "Phone": "(707) 445-8600",
+    "Address": "502 Henderson Street, Eureka, CA 95501",
+    "Phone": "(707) 442-1522",
     "Closed": "",
     "Hours": {
-      "0": "Sunday7AM–8PM",
-      "1": "Monday7AM–8PM",
-      "2": "Tuesday7AM–9PM",
-      "3": "Wednesday7AM–9PM",
-      "4": "Thursday7AM–9PM",
-      "5": "Friday7AM–10PM",
-      "6": "Saturday7AM–10PM"
+      "0": "Sunday Closed",
+      "1": "Monday 7:30AM–4PM",
+      "2": "Tuesday 7:30AM–4PM",
+      "3": "Wednesday 7:30AM–4PM",
+      "4": "Thursday 7:30AM–4PM",
+      "5": "Friday 7:30AM–4PM",
+      "6": "Saturday 7:30AM–4PM"
     },
     "Info": "Curbside Take out, shipping, local delivery",
     "City": "Eureka",
     "Deliveries cities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Coffee, Chocolates",
-    "Maps": "211%20F%20Street%2CEureka%2CCA%2095501"
+    "Maps": "502%20Henderson%20Street%2CEureka%2CCA%2095501"
   },
   {
     "Index": 89,
