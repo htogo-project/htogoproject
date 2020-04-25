@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import datas from "../Humboldttogo.json"
 import { css } from 'emotion'
 
@@ -11,7 +10,6 @@ import { css } from 'emotion'
 const Delivery = (props) => {
 
     const isItDelivery = () => {
-        console.log(props.del)
         let arr = []
         if (!props.del) {
             if (props.iskey.length > 0 && props.iscity !== "city" && props.iscity !== "All") {
@@ -68,8 +66,6 @@ const Delivery = (props) => {
             props.setR(arr);
             props.setDel(true);
         } else {
-            console.log(props.iskey, props.iscity === "All")
-            console.log("heeei")
             if (props.iskey.length > 0 && props.iscity !== "city" && props.iscity !== "All") {
                 for (var i = 0; i < datas.length; i++) {
                     if (datas[i].City === props.iscity && datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase()) && !datas[i].Info.includes("Delivery")) {
@@ -97,7 +93,6 @@ const Delivery = (props) => {
                 props.setR(datas)
 
             } else if (props.iskey.length > 0 && props.iscity === "All") {
-                console.log("4")
             for (var i = 0; i < datas.length; i++) {
                 if (datas[i].Keywords.toLowerCase().includes(props.iskey.toLowerCase())) {
                     arr.push(datas[i])
@@ -128,12 +123,11 @@ const styles = {
     label: css`
         font-family: Helvetica,Arial,sans-serif;
         color: black;
-        // position: absolute;
         font-weight: bold;
      `,
     del: css`
-    margin-top: 10px;
-    margin-left: 10%;
+        margin-top: 10px;
+        margin-left: 25%;
     `
 }
 

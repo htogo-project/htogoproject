@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Add from './Add'
 import { css } from 'emotion';
 import datas from "../Humboldttogo.json"
+import stores from "../Stores.json"
 import Delivery from './Delivery';
 
 
@@ -37,7 +38,6 @@ const Search = (props) => {
 
       useEffect(() => {
           timeNow()
-        
     })
 
     const handleClick = (event) => {
@@ -205,7 +205,7 @@ const Search = (props) => {
                         <a onClick={handleClick} href="">Whitethorn</a>
                     </div>
                 </div>
-                <input onChange={getType} className={styles.typeSearch} placeholder="Search Mexican, Cannabis, Alcohol..." />
+                <input onChange={getType} className={styles.typeSearch} placeholder="Search type" />
             </div>
             <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} />
         </div>
@@ -222,8 +222,8 @@ const styles = {
     wrapper: css`
         display: flex;
         justify-content: space-between;
-        width:400px ;
-        margin-left: 2%;
+        width:250px ;
+        margin-left: 20%;
         div:button {
             height: 100%;
         }

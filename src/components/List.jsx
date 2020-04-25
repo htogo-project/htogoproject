@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { css } from 'emotion'
 import Add from './Add.jsx';
 
@@ -16,7 +17,6 @@ function List(props) {
                             <h4>{data.Type}</h4>
                             <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
                             <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
-                            {/* <h4> Today, {data.Hours[new Date().getDay()]}</h4> */}
                             <h4 className={styles.Info}>{data.Info}</h4>
                             <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
                             <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
@@ -33,12 +33,15 @@ function List(props) {
                                 <li>{data.Hours["6"]}</li>
                             </ul>
                         </div>
-                        <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
+                        <Link to={`/${data.Restaurant}`}>
+                            <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
+                        </Link>
 
                     </div>
                 </div>
             )}
             <Add contact={props.contact} setContact={props.setContact} />
+
         </div>
     )
 

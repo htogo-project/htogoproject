@@ -1,17 +1,15 @@
 import React from 'react';
 import { css } from 'emotion'
 
-import Logo from '../images/htg21.png'
-// import Logo from '../images/htogo.png'
+// import Logo from '../images/htg21.png'
+import Logo from '../images/htogo.png'
 
 
 
 const Header = () => {
     return (
-        <div>
-            <div className={styles.header}>
-                <img src={Logo} />
-            </div>
+        <div className={styles.header}>
+            <img src={Logo} />
         </div>
     )
 }
@@ -20,11 +18,12 @@ const Header = () => {
 const styles = {
     header: css`
     margin-top: 0px;
-    margin-left: 8px;
-    @media (max-width: 320px) {
-       img{ width: 80% ;
-       }
-    }
+    padding-left: 15px;
+    background-color: white;
+    // @media (max-width: 320px) {
+    //    img{ width: 80% ;
+    //    }
+    // }
     `
 }
 
