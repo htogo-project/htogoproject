@@ -1,44 +1,68 @@
-import React, { useEffect, useState } from 'react';
-import Add from './Add'
+import React, { useState } from 'react';
 import { css } from 'emotion';
-import datas from "../Humboldttogo.json"
-import stores from "../Stores.json"
-import Delivery from './Delivery';
+import list from "../Humboldttogo.json"
 
 
 
 
 const Search = (props) => {
-    const cities = ["Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "DrWhitethorn"]
-
+    const cities = ["All", "Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "Whitethorn", "Scotia", "Hydesville"]
     const [delivery, setDelivery] = useState(false)
     const [city, setCity] = useState("city")
     const [key, setKey] = useState("")
-    const [time, setTime] = useState("")
+    const [type, setType] = useState("")
+
 
 
     const [showlist, setShowlist] = useState(styles.dropdown_content)
 
-    const addZero = (i) => {
-        if (i < 10) {
-          i = "0" + i;
-        } else {
-            i=i
+    const helper = (datas, city, key, delivery, type) => {
+
+
+        let arr = [];
+
+        if (city !== 'All' && city !== 'city') {
+            if (delivery) {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+                // setDelivery(false)
+            } else if (!delivery) {
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+                // setDelivery(true)
+            }
+        } else if (city === 'All' || city === 'city') {
+            if (delivery) {
+                console.log('1')
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+                // setDelivery(false)
+            } else if (!delivery) {
+                console.log('2')
+
+                for (var i = 0; i < datas.length; i++) {
+                    if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
+                        arr.push(datas[i])
+                    }
+                }
+                props.setRestaurant(arr)
+                // setDelivery(true)
+            }
         }
     }
 
-    const timeNow = () => {
-        var d = new Date();
-        var h = d.getHours();
-        var m = d.getMinutes();
-        var s = d.getSeconds();
-        // console.log(d.getHours())
-        setTime(h + ":" + m + ":" + s)
-      }
-
-      useEffect(() => {
-          timeNow()
-    })
 
     const handleClick = (event) => {
         event.preventDefault()
@@ -47,129 +71,15 @@ const Search = (props) => {
         props.setValue(event.target.textContent)
         setShowlist(styles.dropdown_content)
 
-        let arr = [];
-        if (actualCity === 'All' && !delivery && key.length === 0) {
-            props.setRestaurant(datas)
-        } else if (key.length > 0 && delivery && actualCity !== 'All') {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === actualCity && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-            }
-        } else if (key.length > 0 && !delivery && actualCity !== 'All') {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === actualCity && datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-            }
-        } else if (key.length === 0 && delivery && actualCity !== 'All') {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === actualCity && datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-            }
-        } else if (key.length === 0 && !delivery && actualCity !== 'All') {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === actualCity) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-
-            }
-        } else if (actualCity === 'All' && !delivery && key.length > 0) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (actualCity === 'All' && delivery && key.length > 0) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-
-            }
-        } else if (actualCity === 'All' && delivery && key.length === 0) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-                props.setRestaurant(arr)
-
-            }
-        }
+        helper(list, actualCity, key, delivery, type)
     }
+
+
     let str = ""
     var getType = (e) => {
         str += e.currentTarget.value;
         setKey(str)
-        let arr = [];
-
-        if ((str === "" && city === "city" && !delivery) || (str === "" && city === "All" && !delivery)) {
-            props.setRestaurant(datas)
-        }
-        else if (city !== "All" && city !== "city" && delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city !== "All" && city !== "city" && !delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city === "All" && delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Info.includes("Delivery") && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city !== "city" && city !== "All" && !delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city === "All" && !delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city === "city" && !delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city === "All" && delivery || city === "city" && delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        } else if (city === "All" && !delivery) {
-            for (var i = 0; i < datas.length; i++) {
-                if (datas[i].Keywords.toLowerCase().includes(str.toLowerCase())) {
-                    arr.push(datas[i])
-                }
-            }
-            props.setRestaurant(arr)
-        }
+        helper(list, city, key, delivery, type)
     }
 
     const clicking = () => {
@@ -180,34 +90,72 @@ const Search = (props) => {
         }
     }
 
+    const isItDelivery = () => {
+        if (!delivery) {
+            setDelivery(true)
+            helper(list, city, key, true, type)
+        } else if (delivery) {
+            setDelivery(false)
+            helper(list, city, key, false, type)
+        }
+    }
+
+    const changeTypeOther = (e) => {
+        let content = e.target.textContent
+        setType(content)
+        let arr = []
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].Business === "Other") {
+                arr.push(list[i])
+            }
+        }
+        helper(arr, city, key, delivery, content)
+    }
+
+    const changeTypeRestaurant = (e) => {
+        let content = e.target.textContent
+        setType(content)
+
+        let arr = []
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].Business === "Restaurant") {
+                arr.push(list[i])
+            }
+        }
+        helper(arr, city, key, delivery, content)
+    }
+
+    const changeTypeAll = () => {
+        helper(list, city, key, delivery, type)
+    }
 
 
     return (
         <div className={styles.wrappermaster}>
+            <div className={styles.buttons}>
+                <button className={styles.button} onClick={changeTypeAll}> All </button>
+                <button className={styles.button} onClick={changeTypeOther}> Other </button>
+                <button className={styles.button} onClick={changeTypeRestaurant}> Restaurant </button>
+            </div>
             <div className={styles.wrapper}>
-                <div className={styles.dropdown}>
-                    <button onClick={clicking} className={styles.dropbtn}>{city}</button>
-                    {/* <div> Hora{time}</div> */}
+                <div onClick={clicking} className={styles.dropdown}>
+                    <button className={styles.dropbtn}>{city}</button>
                     <div className={showlist}>
-                        <a onClick={handleClick} href="">All</a>
-                        <a onClick={handleClick} href="">Arcata</a>
-                        <a onClick={handleClick} href="">Bayside</a>
-                        <a onClick={handleClick} href="">Carlotta</a>
-                        <a onClick={handleClick} href="">Eureka</a>
-                        <a onClick={handleClick} href="">Ferndale</a>
-                        <a onClick={handleClick} href="">Fortuna</a>
-                        <a onClick={handleClick} href="">Garberville</a>
-                        <a onClick={handleClick} href="">Mckinleyville</a>
-                        <a onClick={handleClick} href="">Redway</a>
-                        <a onClick={handleClick} href="">Orick</a>
-                        <a onClick={handleClick} href="">Rio Dell</a>
-                        <a onClick={handleClick} href="">Trinidad</a>
-                        <a onClick={handleClick} href="">Whitethorn</a>
+                        {cities.map((city, index) =>
+                            <a key={index} onClick={handleClick} href="">{city}</a>
+                        )}
                     </div>
+
                 </div>
                 <input onChange={getType} className={styles.typeSearch} placeholder="Search type" />
             </div>
-            <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} />
+            <div className={styles.del}>
+                <form>
+                    <input className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
+                    <label className={styles.label}> Delivery</label><br></br>
+                </form>
+            </div>
+            {/* <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} /> */}
         </div>
     )
 }
@@ -291,6 +239,38 @@ const styles = {
         display: flex;
         flex-direction: column;
     `,
+    label: css`
+        font-family: Helvetica,Arial,sans-serif;
+        color: black;
+        font-weight: bold;
+    `,
+    del: css`
+        margin-top: 10px;
+        margin-left: 25%;
+    `,
+    button: css`
+        border-color: #e7e7e7;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        width: auto;
+        height: 30px;
+        outline: none;
+        &:hover{
+        background: #e7e7e7;
+        }
+    `,
+    buttons: css`
+        position: absolute;
+        width: 200px;
+        top: 20px;
+        left: 33% ;
+        display: flex;
+        justify-content: space-between;
+    } @media (min-width: 1000px) {
+        left: 20%;
+    }
+`,
 
 }
 

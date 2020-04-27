@@ -13,7 +13,7 @@ function List(props) {
                 <div key={index} className={styles.contacts}>
                     <div className={styles.block}>
                         <div className={styles.info}>
-                            <a href={data.Website} className={styles.title}>{data.Restaurant}</a>
+                            <a href={data.Website} className={styles.title}>{data.Name}</a>
                             <h4>{data.Type}</h4>
                             <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
                             <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
