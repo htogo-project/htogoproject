@@ -17,7 +17,7 @@
       "5": "Friday 11:00AM-9:00PM",
       "6": "Saturday 11:00AM-9:00PM"
     },
-    "Info": "Take-out - During the shelter in place, we are offering bottles half off to beer/wine/sake with food!",
+    "Info": "Take-out",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
@@ -46,7 +46,7 @@
     "Info": "Open and doing curbside",
     "City": "McKinleyville",
     "DeliveriesCities": "",
-    "Image": "",
+    "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pet Supply A and L Feed and Pet Supply",
     "Maps": "2308%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
     "Business": "Other"
@@ -410,7 +410,7 @@
     "Info": "",
     "City": "McKinleyville",
     "DeliveriesCities": "",
-    "Image": "",
+    "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bookstore Blake's Books",
     "Maps": "2005%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
     "Business": "Other"
@@ -454,7 +454,7 @@
     "Info": "Accepting order through phone and facebook messages",
     "City": "Eureka",
     "DeliveriesCities": "",
-    "Image": "",
+    "Image": "images_restaurants/sendapic.png",
     "Keywords": "Books Booklegger",
     "Maps": "402%202nd%20St%2C%20Eureka%2C%20California%2095501",
     "Business": "Other"
@@ -1509,7 +1509,7 @@
       "5": "Friday5AM–8PM",
       "6": "Saturday5AM–8PM"
     },
-    "Info": "Inside takeout , Drive Thru window and Curbside PickUp (Open 365 Days)",
+    "Info": "Inside takeout,Drive Thru window,Curbside PickUp",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",

@@ -14,12 +14,12 @@ function List(props) {
                     <div className={styles.block}>
                         <div className={styles.info}>
                             <a href={data.Website} className={styles.title}>{data.Name}</a>
-                            <h4>{data.Type}</h4>
-                            <h4> Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
-                            <h4> Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
+                            <h4 className={styles.type}>{data.Type}</h4>
+                            <h4 className={styles.type} > Address: <a href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </h4>
+                            <h4 className={styles.type} > Phone: <a href={`tel:${data.Phone}`}>{data.Phone}</a></h4>
                             <h4 className={styles.Info}>{data.Info}</h4>
-                            <h4> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
-                            <h4> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
+                            <h4 className={styles.type}> <a href={"https://forms.gle/TsG6WwsDsPBSnnp1A"}> Do you work here? Check Humboldt Virtual Tip Jar</a></h4>
+                            <h4 className={styles.type}> <a href={"https://docs.google.com/spreadsheets/d/1-ynqqpXoYd9S5GWX-aiDYzqGJBienLGIEjWOIxu-pMY/edit?usp=sharing"}> Ordering food from here? Don't forget to tip </a></h4>
                         </div>
                         <div className={styles.hours}>
                             <h4 className={styles.today}> Today, {data.Hours[new Date().getDay()]}</h4>
@@ -56,10 +56,10 @@ const styles = {
         margin-top: 20px;
         padding: 10px;
         background-color: white;    
-        flex-wrap: wrap;    
+        flex-wrap: wrap;   
     `,
     back: css`
-    overflow: hidden;
+        overflow: hidden;
         display: block;
         padding-left: 10%;
         background-color: #2F4F4F;
@@ -71,11 +71,12 @@ const styles = {
     `,
     contacts: css`
          width: 80%;
+
     `,
-    results: css`
-        color: white;
-        margin-left: 30%;
-    `,
+    // results: css`
+    //     color: white;
+    //     margin-left: 30%;
+    // `,
     keywords: css`
         display: none;
     `,
@@ -92,14 +93,28 @@ const styles = {
         width: 100%;
         cursor: pointer;
     `,
-    info: css`
-        width: auto;
+    Info: css`
+    font-size: 12px;
+    width: auto;
+    font-weight: bold;
     `,
-    hours: css`
-        font-size: 14px;
+    info: css`
+    font-weight: bold;
+    font-size: 16px;
+    // width: auto;
     `,
     today: css`
-        color: green;
+    color: green;
+    font-size: 13px;
+    `,
+    hours: css`
+        font-size: 12px;
+    `,
+    type: css`
+    font-size: 14px;
+    color: #778899;
+    font-weight: bold;
+
     `
 }
 
