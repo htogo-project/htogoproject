@@ -6,6 +6,8 @@ import List from './components/List'
 import Contact from './components/Contact'
 
 import datas from "./Humboldttogo.json"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import { css } from 'emotion'
 

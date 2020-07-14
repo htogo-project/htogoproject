@@ -17,7 +17,7 @@
       "5": "Friday 11:00AM-9:00PM",
       "6": "Saturday 11:00AM-9:00PM"
     },
-    "Info": "Take-out",
+    "Info": "Take-out - During the shelter in place, we are offering bottles half off to beer/wine/sake with food!",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
@@ -799,6 +799,32 @@
   },
   {
     "Index": 32,
+    "Name": "Cocina Mariposa",
+    "Endpoint": "",
+    "Website": "https://www.facebook.com/cocinamariposaa",
+    "Type": "Mexican Food",
+    "Address": "4750 Fairway Dr. (Eureka Golf Course)",
+    "Phone": "(707) 599-2469",
+    "Closed": "Saturday        11am - 6pm\nSunday       11am - 6pm\nMonday        11am - 6pm\nTuesday        11am - 6pm\nWednesday        11am - 6pm\nThursday        11am - 6pm\nFriday        11am - 6pm",
+    "Hours": {
+      "0": "Sunday11am-6pm",
+      "1": "Monday11am-6pm",
+      "2": "Tuesday11am-6pm",
+      "3": "Wednesday11am-6pm",
+      "4": "Thursday11am-6pm",
+      "5": "Friday11am-6pm",
+      "6": "Saturday11am-6pm"
+    },
+    "Info": "Take Out\nLimited outdoor seating",
+    "City": "Eureka",
+    "DeliveriesCities": "",
+    "Image": "images_restaurants/sendapic.png",
+    "Keywords": "Mexican Food Cocina Mariposa",
+    "Maps": "4750%20Fairway%20Dr.%20(Eureka%20Golf%20Course)",
+    "Business": ""
+  },
+  {
+    "Index": 33,
     "Name": "Coffee Break Internet Cafe",
     "Endpoint": "",
     "Website": "https://www.coffeebreakarcata.com/",
@@ -824,7 +850,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 33,
+    "Index": 34,
     "Name": "College Ball Cakeballs",
     "Endpoint": "",
     "Website": "https://www.facebook.com/CollegeBallCakeballs/",
@@ -842,7 +868,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 34,
+    "Index": 35,
     "Name": "Country Living Florist",
     "Endpoint": "countrylivingflorist",
     "Website": "https://countrylivingflorist.com/",
@@ -868,7 +894,7 @@
     "Business": "Other"
   },
   {
-    "Index": 35,
+    "Index": 36,
     "Name": "Delish on 5th",
     "Endpoint": "",
     "Website": "https://www.delishon5th.com/",
@@ -894,7 +920,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 36,
+    "Index": 37,
     "Name": "Denny’s",
     "Endpoint": "",
     "Website": "https://locations.dennys.com/CA/EUREKA/247449",
@@ -920,7 +946,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 37,
+    "Index": 38,
     "Name": "Denny’s",
     "Endpoint": "",
     "Website": "https://locations.dennys.com/CA/MCKINLEYVILLE/246799",
@@ -946,7 +972,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 38,
+    "Index": 39,
     "Name": "Dick Taylor Craft Chocolate",
     "Endpoint": "",
     "Website": "https://dicktaylorchocolate.com/",
@@ -972,7 +998,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 39,
+    "Index": 40,
     "Name": "Domino's Pizza",
     "Endpoint": "",
     "Website": "https://www.dominos.com/en/?utm_source=google&utm_medium=loclist&utm_campaign=localmaps",
@@ -998,7 +1024,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 40,
+    "Index": 41,
     "Name": "Don's Donuts Pizza & Deli",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/category/Pizza-Place/Dons-Donuts-Pizza-Deli-115983365096679/",
@@ -1024,7 +1050,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 41,
+    "Index": 42,
     "Name": "Double D Steak",
     "Endpoint": "",
     "Website": "https://www.facebook.com/doubledsteak/",
@@ -1050,7 +1076,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 42,
+    "Index": 43,
     "Name": "Eel River Brewing Company",
     "Endpoint": "",
     "Website": "https://www.eelriverbrewing.com",
@@ -1076,7 +1102,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 43,
+    "Index": 44,
     "Name": "El Chipotle",
     "Endpoint": "",
     "Website": "https://www.facebook.com/elchipotlearcata/",
@@ -1102,7 +1128,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 44,
+    "Index": 45,
     "Name": "Esmeralda's Mexican Food",
     "Endpoint": "",
     "Website": "https://www.facebook.com/esmesfood/",
@@ -1128,7 +1154,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 45,
+    "Index": 46,
     "Name": "Eureka Natural foods",
     "Endpoint": "",
     "Website": "https://eurekanaturalfoods.com",
@@ -1154,7 +1180,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 46,
+    "Index": 47,
     "Name": "Eureka Sea Grill",
     "Endpoint": "",
     "Website": "https://seagrilleureka.com/",
@@ -1180,7 +1206,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 47,
+    "Index": 48,
     "Name": "Ferndale Pizza Co.",
     "Endpoint": "",
     "Website": "https://www.facebook.com/FerndalePizzaCo/",
@@ -1206,7 +1232,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 48,
+    "Index": 49,
     "Name": "Fieldbrook Market & Eatery",
     "Endpoint": "",
     "Website": "https://fieldbrookmarket.com/",
@@ -1232,7 +1258,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 49,
+    "Index": 50,
     "Name": "Fieldbrook Winery",
     "Endpoint": "",
     "Website": "https://www.fieldbrookwinery.com",
@@ -1258,7 +1284,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 50,
+    "Index": 51,
     "Name": "Fiesta Grill & Cantina",
     "Endpoint": "",
     "Website": "https://fiesta-grill-cantina.business.site/",
@@ -1284,7 +1310,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 51,
+    "Index": 52,
     "Name": "Fregoso's Comida Mexicana",
     "Endpoint": "",
     "Website": "https://fregosos-comida-mexicana.business.site/",
@@ -1310,7 +1336,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 52,
+    "Index": 53,
     "Name": "Fresh Freeze",
     "Endpoint": "",
     "Website": "https://www.freshfreezeeureka.com/",
@@ -1336,7 +1362,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 53,
+    "Index": 54,
     "Name": "Funky Monkey Fortuna",
     "Endpoint": "",
     "Website": "https://www.facebook.com/Funky-Monkey-Fortuna-436205683162005/?hc_location=ufi",
@@ -1362,7 +1388,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 54,
+    "Index": 55,
     "Name": "Gabriel’s Italian Restaurant",
     "Endpoint": "",
     "Website": "https://www.gabrielseureka.com/",
@@ -1388,7 +1414,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 55,
+    "Index": 56,
     "Name": "Gallagher's Irish Pub",
     "Endpoint": "",
     "Website": "https://gallaghers-irishpub.com/",
@@ -1414,7 +1440,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 56,
+    "Index": 57,
     "Name": "Golden Harvest Cafe",
     "Endpoint": "",
     "Website": "https://www.goldenharvestcafe.com",
@@ -1440,7 +1466,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 57,
+    "Index": 58,
     "Name": "Gyppo Ale Mill",
     "Endpoint": "",
     "Website": "https://gyppo.com/",
@@ -1466,7 +1492,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 58,
+    "Index": 59,
     "Name": "Happy Donuts/ Express Asian Food",
     "Endpoint": "",
     "Website": "https://www.facebook.com/HappyDonutsAsianFood/?hc_location=ufi",
@@ -1492,7 +1518,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 59,
+    "Index": 60,
     "Name": "Headies Pizza & Pour",
     "Endpoint": "",
     "Website": "https://www.headiesmt.com/",
@@ -1518,7 +1544,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 60,
+    "Index": 61,
     "Name": "Hole in the Wall",
     "Endpoint": "",
     "Website": "https://www.yelp.com/biz/hole-in-the-wall-great-sandwiches-arcata-5",
@@ -1544,7 +1570,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 61,
+    "Index": 62,
     "Name": "Hoppy's FroYo",
     "Endpoint": "",
     "Website": "https://www.facebook.com/hoppysfroyo/",
@@ -1570,7 +1596,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 62,
+    "Index": 63,
     "Name": "Humboldt Bay Bistro",
     "Endpoint": "",
     "Website": "https://humboldtbaybistro.com/",
@@ -1596,7 +1622,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 63,
+    "Index": 64,
     "Name": "Humboldt Bay Coffee Company",
     "Endpoint": "",
     "Website": "https://www.humboldtcoffee.com",
@@ -1622,7 +1648,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 64,
+    "Index": 65,
     "Name": "Humboldt Cider Company",
     "Endpoint": "",
     "Website": "https://www.humboldtcidercompany.com/",
@@ -1648,7 +1674,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 65,
+    "Index": 66,
     "Name": "HUMBOLDT HOTSAUCE - OG",
     "Endpoint": "humboldthotsauce-og",
     "Website": "https://www.humboldthotsauce.com/HUMBOLDT-HOTSAUCE-OG-SET-p/og-set.htm?fbclid=IwAR2yIP6MsNymDozFGx2pOfJVyaicwCX1R_7IBj-S-8cs0eMtFbw_BvQaEeI",
@@ -1666,7 +1692,7 @@
     "Business": "Other"
   },
   {
-    "Index": 66,
+    "Index": 67,
     "Name": "Humboldt Regeneration Brewery and Farm",
     "Endpoint": "",
     "Website": "https://www.humboldtregeneration.com",
@@ -1692,7 +1718,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 67,
+    "Index": 68,
     "Name": "Humboldt Smokehouse",
     "Endpoint": "",
     "Website": "https://humboldtsmokehouse.com/",
@@ -1718,7 +1744,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 68,
+    "Index": 69,
     "Name": "Humboldt Soup Company",
     "Endpoint": "",
     "Website": "https://www.humboldtsoupcompany.com/",
@@ -1744,7 +1770,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 69,
+    "Index": 70,
     "Name": "Humbrews / Humboldt Brews",
     "Endpoint": "",
     "Website": "https://humbrews.com/",
@@ -1770,7 +1796,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 70,
+    "Index": 71,
     "Name": "Hunan Village Restaurant",
     "Endpoint": "",
     "Website": "https://www.hunanfortuna.com/",
@@ -1796,7 +1822,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 71,
+    "Index": 72,
     "Name": "Hunan Village Restaurant",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/Hunan-Restaurant/111614432206934",
@@ -1822,7 +1848,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 72,
+    "Index": 73,
     "Name": "iExperts Repair",
     "Endpoint": "iexpertsrepair",
     "Website": "https://www.facebook.com/humboldtiExpertsrepair/",
@@ -1848,7 +1874,7 @@
     "Business": "Other"
   },
   {
-    "Index": 73,
+    "Index": 74,
     "Name": "It's Alive Kombucha",
     "Endpoint": "",
     "Website": "https://www.itsalivekombucha.com/",
@@ -1874,7 +1900,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 74,
+    "Index": 75,
     "Name": "Jack's Seafood",
     "Endpoint": "",
     "Website": "https://www.jackseafoodeureka.com/",
@@ -1900,7 +1926,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 75,
+    "Index": 76,
     "Name": "Japhy's Soup & Noodles",
     "Endpoint": "",
     "Website": "https://japhys.com/",
@@ -1926,7 +1952,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 76,
+    "Index": 77,
     "Name": "Jitten bean Coffe",
     "Endpoint": "",
     "Website": "https://www.facebook.com/jitterbeancoffeeco/",
@@ -1952,7 +1978,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 77,
+    "Index": 78,
     "Name": "Jitten bean Coffe",
     "Endpoint": "",
     "Website": "https://www.facebook.com/jitterbeancoffeeco/",
@@ -1978,7 +2004,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 78,
+    "Index": 79,
     "Name": "Jogg'n Shoppe",
     "Endpoint": "jogg'nshoppe",
     "Website": "https://www.facebook.com/joggnshoppe/",
@@ -1996,7 +2022,7 @@
     "Business": "Other"
   },
   {
-    "Index": 79,
+    "Index": 80,
     "Name": "Kebab Cafe",
     "Endpoint": "",
     "Website": "https://www.kebabcafearcata.com",
@@ -2022,7 +2048,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 80,
+    "Index": 81,
     "Name": "Kenny's Chocolates",
     "Endpoint": "",
     "Website": "https://www.kennyschocolates.com/",
@@ -2048,7 +2074,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 81,
+    "Index": 82,
     "Name": "KISKANU Cannabis",
     "Endpoint": "",
     "Website": "https://kiskanudispensary.com/",
@@ -2074,7 +2100,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 82,
+    "Index": 83,
     "Name": "Kneeland Glen Farm Stand",
     "Endpoint": "kneelandglenfarmstand",
     "Website": "https://www.facebook.com/KneelandGlenFarmstand/",
@@ -2092,7 +2118,7 @@
     "Business": "Other"
   },
   {
-    "Index": 83,
+    "Index": 84,
     "Name": "La Patria Mariscos & Gril Restaurant",
     "Endpoint": "",
     "Website": "https://lapatriamgrestaurant.com",
@@ -2118,7 +2144,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 84,
+    "Index": 85,
     "Name": "La Trattoria",
     "Endpoint": "",
     "Website": "https://www.latrattoriaarcata.com",
@@ -2144,7 +2170,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 85,
+    "Index": 86,
     "Name": "Las Cazuelas Restaurant & Cantina",
     "Endpoint": "",
     "Website": "https://www.doordash.com/store/las-cazuelas-restaurant-fortuna-675837/",
@@ -2170,7 +2196,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 86,
+    "Index": 87,
     "Name": "Lighthouse Grill",
     "Endpoint": "",
     "Website": "https://trinidadlighthousegrill.com/",
@@ -2196,7 +2222,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 87,
+    "Index": 88,
     "Name": "LoCo Fish Co.",
     "Endpoint": "",
     "Website": "https://www.facebook.com/550SouthGStreetArcataCA95521/",
@@ -2222,7 +2248,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 88,
+    "Index": 89,
     "Name": "Los Bagels",
     "Endpoint": "",
     "Website": "https://www.losbagels.com",
@@ -2248,7 +2274,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 89,
+    "Index": 90,
     "Name": "Lost Coast Baking Company",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/category/Cafe/Lost-Coast-Baking-Company-910323959167089/",
@@ -2274,7 +2300,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 90,
+    "Index": 91,
     "Name": "Masaki's | Kyoto Japanese Restaurant",
     "Endpoint": "",
     "Website": "https://masakis-kyoto-japanese-restaurant.business.site/",
@@ -2300,7 +2326,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 91,
+    "Index": 92,
     "Name": "Mazzottis",
     "Endpoint": "",
     "Website": "https://places.singleplatform.com",
@@ -2326,7 +2352,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 92,
+    "Index": 93,
     "Name": "Meadows Cafe",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pg/Meadows-Cafe-Deli-504363256244404/about/?ref=page_internal",
@@ -2352,7 +2378,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 93,
+    "Index": 94,
     "Name": "Mia Bella",
     "Endpoint": "",
     "Website": "https://www.miabellacakes.com/",
@@ -2378,7 +2404,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 94,
+    "Index": 95,
     "Name": "Moonstone Crossing",
     "Endpoint": "",
     "Website": "https://www.moonstonecrossing.com/",
@@ -2404,7 +2430,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 95,
+    "Index": 96,
     "Name": "Mountain Mike's Pizza",
     "Endpoint": "",
     "Website": "https://www.facebook.com/MountainMikesEurekaCA/?hc_location=ufi",
@@ -2430,7 +2456,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 96,
+    "Index": 97,
     "Name": "Northtown Books",
     "Endpoint": "northtownbooks",
     "Website": "https://www.northtownbooks.com/",
@@ -2448,7 +2474,7 @@
     "Business": "Other"
   },
   {
-    "Index": 97,
+    "Index": 98,
     "Name": "Oberon Grill",
     "Endpoint": "",
     "Website": "https://www.oberongrill.net/",
@@ -2474,7 +2500,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 98,
+    "Index": 99,
     "Name": "Old Town Coffee & Chocolates",
     "Endpoint": "",
     "Website": "https://oldtowncoffeeeureka.com/",
@@ -2500,7 +2526,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 99,
+    "Index": 100,
     "Name": "Otto and Olive",
     "Endpoint": "ottoandolive",
     "Website": "https://www.otto-and-olive.com/?fbclid=IwAR0MwydDogxo6Y5DnDQOHuSV5-oWt_iLVL2i6Fi04XMATrZAWorvBzVa_p0#/",
@@ -2526,7 +2552,7 @@
     "Business": "Other"
   },
   {
-    "Index": 100,
+    "Index": 101,
     "Name": "Pachanga Mexicana Restaurant",
     "Endpoint": "",
     "Website": "https://pachangamexicana.com",
@@ -2552,7 +2578,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 101,
+    "Index": 102,
     "Name": "Panda Cafe",
     "Endpoint": "",
     "Website": "https://www.pandacafe.net",
@@ -2578,7 +2604,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 102,
+    "Index": 103,
     "Name": "Papa Murphy’s Take and Bake",
     "Endpoint": "",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
@@ -2604,7 +2630,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 103,
+    "Index": 104,
     "Name": "Papa Murphy’s Take and Bake",
     "Endpoint": "",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
@@ -2630,7 +2656,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 104,
+    "Index": 105,
     "Name": "Papa Murphy’s Take and Bake",
     "Endpoint": "",
     "Website": "https://order.papamurphys.com/menu/papa-murphys-f-street?utm_source=organic&utm_medium=gmb&utm_campaign=yext",
@@ -2656,7 +2682,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 105,
+    "Index": 106,
     "Name": "Papa Wheelies Pup",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/category/Pub/Papa-Wheelies-Pub-554485114700702/",
@@ -2682,7 +2708,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 106,
+    "Index": 107,
     "Name": "Partrick's Candy",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/category/Candy-Store/Partricks-Candy-1655989934653708/",
@@ -2708,7 +2734,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 107,
+    "Index": 108,
     "Name": "Paul's Live From New York",
     "Endpoint": "",
     "Website": "https://places.singleplatform.com/live-from-new-york-pizza/menu",
@@ -2734,7 +2760,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 108,
+    "Index": 109,
     "Name": "Pepper's",
     "Endpoint": "",
     "Website": "https://www.menupix.com/california/restaurants/5560698/Peppers-Fortuna-CA?fbclid=IwAR3qUDYwiImXLYg1PnMrK6AgNfAqKYxgirPLaotssQc5f4uPaY3QNCXoNYg",
@@ -2760,7 +2786,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 109,
+    "Index": 110,
     "Name": "Philly Cheese Steak Shoppe",
     "Endpoint": "",
     "Website": "https://www.phillycheesesteakshoppe.com/",
@@ -2786,7 +2812,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 110,
+    "Index": 111,
     "Name": "Philly Cheese Steak Shoppe",
     "Endpoint": "",
     "Website": "https://www.phillycheesesteakshoppe.com/",
@@ -2812,7 +2838,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 111,
+    "Index": 112,
     "Name": "Plaza Grill",
     "Endpoint": "",
     "Website": "https://www.plazagrillarcata.com",
@@ -2838,7 +2864,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 112,
+    "Index": 113,
     "Name": "Poppa Joe's",
     "Endpoint": "",
     "Website": "https://www.facebook.com/PoppaJoes/",
@@ -2864,7 +2890,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 113,
+    "Index": 114,
     "Name": "Porter Street Barbeque",
     "Endpoint": "",
     "Website": "https://facebook.com/Porter-Street-Barbeque-155525104461292/",
@@ -2890,7 +2916,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 114,
+    "Index": 115,
     "Name": "Pretty Baked",
     "Endpoint": "",
     "Website": "https://www.facebook.com/prettybaked.ro/",
@@ -2916,7 +2942,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 115,
+    "Index": 116,
     "Name": "Ramone's Bakery & Cafe",
     "Endpoint": "",
     "Website": "https://ramonesbakery.com/",
@@ -2942,7 +2968,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 116,
+    "Index": 117,
     "Name": "Redwood Coast Brewing Company",
     "Endpoint": "",
     "Website": "https://redwoodcurtainbrewing.com/pages/contact-us",
@@ -2968,7 +2994,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 117,
+    "Index": 118,
     "Name": "Renata's Creperie",
     "Endpoint": "",
     "Website": "https://www.facebook.com/RenatasCreperie/",
@@ -2994,7 +3020,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 118,
+    "Index": 119,
     "Name": "Rico's Tacos Taqueria",
     "Endpoint": "",
     "Website": "https://www.ricostacostaqueria.com/",
@@ -3020,7 +3046,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 119,
+    "Index": 120,
     "Name": "Ridgetop Café & Coffee Barn",
     "Endpoint": "",
     "Website": "https://www.facebook.com/RidgetopCafe/",
@@ -3046,7 +3072,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 120,
+    "Index": 121,
     "Name": "Rita’s Margaritas",
     "Endpoint": "",
     "Website": "https://www.ritashumboldt.com/",
@@ -3072,7 +3098,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 121,
+    "Index": 122,
     "Name": "Rita’s Margaritas",
     "Endpoint": "",
     "Website": "https://www.ritashumboldt.com/",
@@ -3098,7 +3124,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 122,
+    "Index": 123,
     "Name": "Roman's Kitchen",
     "Endpoint": "",
     "Website": "https://www.romanskitchen.com/",
@@ -3124,7 +3150,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 123,
+    "Index": 124,
     "Name": "Sammy's BBQ & Catering",
     "Endpoint": "",
     "Website": "https://www.sammysbbqcatering.com/",
@@ -3150,7 +3176,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 124,
+    "Index": 125,
     "Name": "Sekoya Botanicals",
     "Endpoint": "sekoyabotanicals",
     "Website": "https://sekoyabotanicals.com/?fbclid=IwAR0KMJl6y92Z3RpGinZWrlqU1__MNix4PGYOdxfdbA9XOLTnxrUZvMYuuAY",
@@ -3168,7 +3194,7 @@
     "Business": "Other"
   },
   {
-    "Index": 125,
+    "Index": 126,
     "Name": "Septentrio Winery",
     "Endpoint": "",
     "Website": "https://septentriowinery.com",
@@ -3194,7 +3220,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 126,
+    "Index": 127,
     "Name": "Shamus T Bones",
     "Endpoint": "",
     "Website": "https://www.shamustbones.com",
@@ -3220,7 +3246,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 127,
+    "Index": 128,
     "Name": "Shenanigans",
     "Endpoint": "",
     "Website": "https://www.facebook.com/sheananiganseureka/",
@@ -3246,7 +3272,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 128,
+    "Index": 129,
     "Name": "Siam Orchid Thai Cuisine",
     "Endpoint": "",
     "Website": "https://www.siamorchidca.com/",
@@ -3272,7 +3298,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 129,
+    "Index": 130,
     "Name": "Six Rivers Brewery",
     "Endpoint": "",
     "Website": "https://www.sixriversbrewery.com",
@@ -3298,7 +3324,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 130,
+    "Index": 131,
     "Name": "Sixth and E",
     "Endpoint": "",
     "Website": "https://www.sixthande.com/",
@@ -3324,7 +3350,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 131,
+    "Index": 132,
     "Name": "Slice of Humbolt Pie",
     "Endpoint": "",
     "Website": "https://sliceofhumboldtpie.com",
@@ -3350,7 +3376,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 132,
+    "Index": 133,
     "Name": "Smokin' Barrels Burgers & BBQ",
     "Endpoint": "",
     "Website": "https://www.facebook.com/smokinbarrels2018/",
@@ -3376,7 +3402,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 133,
+    "Index": 134,
     "Name": "Smug's Pizza",
     "Endpoint": "",
     "Website": "https://www.smugspizza.com/",
@@ -3402,7 +3428,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 134,
+    "Index": 135,
     "Name": "Snack Shack",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/category/Fast-Food-Restaurant/EdeBees-Snack-Shack-867005576643756/",
@@ -3428,7 +3454,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 135,
+    "Index": 136,
     "Name": "Stars Hamburgers",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pages/Stars-Hamburgers/130196950684995",
@@ -3454,7 +3480,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 136,
+    "Index": 137,
     "Name": "Stitches 'n' Sprinkes",
     "Endpoint": "",
     "Website": "https://www.facebook.com/stitchesnsprinkles/",
@@ -3480,7 +3506,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 137,
+    "Index": 138,
     "Name": "Surfside Burger Shack",
     "Endpoint": "",
     "Website": "https://surfsideburgershack.com/",
@@ -3506,7 +3532,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 138,
+    "Index": 139,
     "Name": "Sushi Spot Inc",
     "Endpoint": "",
     "Website": "https://www.sushispotarcata.com/",
@@ -3532,7 +3558,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 139,
+    "Index": 140,
     "Name": "Sushi Spot Inc",
     "Endpoint": "",
     "Website": "https://www.sushispotarcata.com/",
@@ -3558,7 +3584,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 140,
+    "Index": 141,
     "Name": "Sushi Tao",
     "Endpoint": "",
     "Website": "https://sushi-tao.biz/menu/",
@@ -3584,7 +3610,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 141,
+    "Index": 142,
     "Name": "Szechuan Garden Restaurant Arcata",
     "Endpoint": "",
     "Website": "https://szechuangardentogo.com",
@@ -3610,7 +3636,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 142,
+    "Index": 143,
     "Name": "Tandoori Bites Indian Cuisine",
     "Endpoint": "",
     "Website": "https://tandooribitesindianeureka.com/36553",
@@ -3636,7 +3662,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 143,
+    "Index": 144,
     "Name": "Taqueria La Barca",
     "Endpoint": "",
     "Website": "https://www.facebook.com/TaqueriaLaBarcaMexicanRestaurant/",
@@ -3662,7 +3688,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 144,
+    "Index": 145,
     "Name": "Taqueria La Barca Taco Truck",
     "Endpoint": "",
     "Website": "https://www.facebook.com/TaqueriaLaBarcaMexicanRestaurant/",
@@ -3688,7 +3714,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 145,
+    "Index": 146,
     "Name": "The Banana Hut Hawaiian BBQ",
     "Endpoint": "",
     "Website": "https://www.thebananahut.com/",
@@ -3714,7 +3740,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 146,
+    "Index": 147,
     "Name": "The Boardroom Eureka",
     "Endpoint": "",
     "Website": "https://boardroomeureka.com/",
@@ -3740,7 +3766,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 147,
+    "Index": 148,
     "Name": "The Burger Joint",
     "Endpoint": "",
     "Website": "https://www.facebook.com/theburgerjointarcata/",
@@ -3766,7 +3792,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 148,
+    "Index": 149,
     "Name": "The Diver Bar and Grill",
     "Endpoint": "",
     "Website": "https://www.yelp.com/biz/the-diver-bar-and-grill-eureka",
@@ -3792,7 +3818,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 149,
+    "Index": 150,
     "Name": "The Greene Lily",
     "Endpoint": "",
     "Website": "https://www.yelp.com/biz/the-greene-lily-eureka",
@@ -3818,7 +3844,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 150,
+    "Index": 151,
     "Name": "The Humboldt Corner - THC",
     "Endpoint": "thehumboldtcorner-thc",
     "Website": "https://www.thehumboldtcorner.com/",
@@ -3836,7 +3862,7 @@
     "Business": "Other"
   },
   {
-    "Index": 151,
+    "Index": 152,
     "Name": "The Jam Arcata",
     "Endpoint": "",
     "Website": "https://www.thejamarcata.com/",
@@ -3862,7 +3888,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 152,
+    "Index": 153,
     "Name": "The Larrupin Cafe",
     "Endpoint": "",
     "Website": "https://www.thelarrupin.com/",
@@ -3888,7 +3914,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 153,
+    "Index": 154,
     "Name": "The Madrone - Brick Fire Pizza and Taphouse",
     "Endpoint": "",
     "Website": "https://madronetaphouse.com/?fbclid=IwAR1zbOCl6a24pK7casD46-pmJasvAGW6zn7bE__MCHW92vc1C3D1oDMdrOs",
@@ -3914,7 +3940,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 154,
+    "Index": 155,
     "Name": "The Patron Kitchen",
     "Endpoint": "",
     "Website": "https://www.facebook.com/pg/The-Patron-Kitchen-1982048258475530/posts/",
@@ -3940,7 +3966,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 155,
+    "Index": 156,
     "Name": "The Wildflower Cafe & Bakery",
     "Endpoint": "",
     "Website": "https://wildflowercafebakery.com",
@@ -3966,7 +3992,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 156,
+    "Index": 157,
     "Name": "Tin Can Mailman",
     "Endpoint": "tincanmailman",
     "Website": "http://www.tincanbooks.com/",
@@ -3992,7 +4018,7 @@
     "Business": "Other"
   },
   {
-    "Index": 157,
+    "Index": 158,
     "Name": "Tomo Japanese Restaurant",
     "Endpoint": "",
     "Website": "https://tomoarcata.com/",
@@ -4018,7 +4044,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 158,
+    "Index": 159,
     "Name": "Toni's 24h Restaurant",
     "Endpoint": "",
     "Website": "https://tonisrestaurant.com/",
@@ -4044,7 +4070,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 159,
+    "Index": 160,
     "Name": "Tres Picosos",
     "Endpoint": "",
     "Website": "https://treschilespicosos.com/",
@@ -4070,7 +4096,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 160,
+    "Index": 161,
     "Name": "Trinidad Bay Eatery and Gallery",
     "Endpoint": "",
     "Website": "https://trinidadeatery.com/",
@@ -4096,7 +4122,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 161,
+    "Index": 162,
     "Name": "Trinity Diesel",
     "Endpoint": "trinitydiesel",
     "Website": "https://www.trinitydiesel.com/",
@@ -4122,7 +4148,7 @@
     "Business": "Other"
   },
   {
-    "Index": 162,
+    "Index": 163,
     "Name": "Tulip Boutique",
     "Endpoint": "tulipboutique",
     "Website": "https://www.tulipperfume.com/?fbclid=IwAR2flusCxztexJSaOzkQIRjEoI3HPa8XRZh7o8N2me0AA1mCqrJThjKS0aA",
@@ -4148,7 +4174,7 @@
     "Business": "Other"
   },
   {
-    "Index": 163,
+    "Index": 164,
     "Name": "Village Pantry",
     "Endpoint": "",
     "Website": "https://www.yelp.com/biz/village-pantry-arcata-2",
@@ -4174,7 +4200,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 164,
+    "Index": 165,
     "Name": "Village Pantry",
     "Endpoint": "",
     "Website": "https://www.yelp.com/biz/village-pantry-arcata-2",
@@ -4200,7 +4226,7 @@
     "Business": "Restaurant"
   },
   {
-    "Index": 165,
+    "Index": 166,
     "Name": "Vintage Avenger",
     "Endpoint": "vintageavenger",
     "Website": "https://www.etsy.com/shop/VintageAvengerBoheme?social_invites=1&si_uuid=a6cd5654-3d3d-410a-b0b8-0b557bdce13d&user_id=24241447&si_time=1587599684&si_page=shop_home&si_trigger=ss&si_object_id=ui.core.CoreActivity&platform=android&fbclid=IwAR0cfkWPRu0cnPrtWTI74MVpAjESCjoNG-y3zJbczjOccQ8tDbblXnAUPNQ",
@@ -4218,7 +4244,7 @@
     "Business": "Other"
   },
   {
-    "Index": 166,
+    "Index": 167,
     "Name": "Wildwood Waffles",
     "Endpoint": "",
     "Website": "https://www.facebook.com/wildwoodwaffles/",
