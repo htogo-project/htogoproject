@@ -6,9 +6,10 @@ import list from "../Humboldttogo.json"
 
 
 const Search = (props) => {
-    const cities = ["All", "Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "Whitethorn", "Scotia", "Hydesville"]
+    const cities = ["Humboldt", "Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "Whitethorn", "Scotia", "Hydesville"]
     const [delivery, setDelivery] = useState(false)
-    const [city, setCity] = useState("city")
+    const [displayDelivery, setDisplayDelivery] = useState("None")
+    const [city, setCity] = useState("Humboldt")
     const [key, setKey] = useState("")
     const [type, setType] = useState("")
 
@@ -21,50 +22,86 @@ const Search = (props) => {
 
         let arr = [];
 
-        if (city !== 'All' && city !== 'city') {
+        if (city !== 'Humboldt') {
             if (delivery) {
-                for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                        arr.push(datas[i])
+                if (type.length > 1) {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery") && datas[i].Business === type) {
+                            arr.push(datas[i])
+                        }
                     }
+                    props.setRestaurant(arr)
+                } else {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                            arr.push(datas[i])
+                        }
+                    }
+                    props.setRestaurant(arr)
                 }
-                props.setRestaurant(arr)
-                // setDelivery(false)
             } else if (!delivery) {
-                for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                        arr.push(datas[i])
+                if (type.length > 1) {
+                    console.log('00', type === "Restaurants", datas[0].Business === type, datas[0].Business)
+                    
+
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Business === type) {
+                            arr.push(datas[i])
+                        }
                     }
+                    props.setRestaurant(arr)
+                } else {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
+                            arr.push(datas[i])
+                        }
+                    }
+                    props.setRestaurant(arr)
                 }
-                props.setRestaurant(arr)
-                // setDelivery(true)
             }
-        } else if (city === 'All' || city === 'city') {
+        } else if (city === 'Humboldt') {
             if (delivery) {
                 console.log('1')
-                for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                        arr.push(datas[i])
+                if (type.length > 1) {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery") && datas[i].Business === type) {
+                            arr.push(datas[i])
+                        }
                     }
+                    props.setRestaurant(arr)
+                } else {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
+                            arr.push(datas[i])
+                        }
+                    }
+                    props.setRestaurant(arr)
                 }
-                props.setRestaurant(arr)
-                // setDelivery(false)
             } else if (!delivery) {
-                console.log('2')
-
-                for (var i = 0; i < datas.length; i++) {
-                    if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                        arr.push(datas[i])
+                console.log('2', type)
+                if (type.length > 1) {
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Business === type) {
+                            arr.push(datas[i])
+                        }
                     }
+                    props.setRestaurant(arr)
+                } else {
+                    console.log('28', type)
+                    for (var i = 0; i < datas.length; i++) {
+                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
+                            arr.push(datas[i])
+                        }
+                    }
+                    props.setRestaurant(arr)
                 }
-                props.setRestaurant(arr)
-                // setDelivery(true)
             }
         }
     }
 
 
     const handleClick = (event) => {
+        console.log(event.target.textContent)
         event.preventDefault()
         const actualCity = event.target.textContent
         setCity(event.target.textContent)
@@ -101,8 +138,9 @@ const Search = (props) => {
     }
 
     const changeTypeOther = (e) => {
-        let content = e.target.textContent
+        let content = e.target.value
         setType(content)
+        console.log(content, "hi")
         let arr = []
         for (var i = 0; i < list.length; i++) {
             if (list[i].Business === "Other") {
@@ -113,8 +151,9 @@ const Search = (props) => {
     }
 
     const changeTypeRestaurant = (e) => {
-        let content = e.target.textContent
+        let content = e.target.value
         setType(content)
+        console.log(content, "hi")
 
         let arr = []
         for (var i = 0; i < list.length; i++) {
@@ -131,12 +170,14 @@ const Search = (props) => {
 
 
     return (
-        <div className={styles.wrappermaster}>
-            <div className={styles.buttons}>
-                <button className={styles.button} onClick={changeTypeAll}> All </button>
-                <button className={styles.button} onClick={changeTypeOther}> Other </button>
-                <button className={styles.button} onClick={changeTypeRestaurant}> Restaurant </button>
-            </div>
+        <div className={styles.wrappOptions}>
+
+            {/* <div className={styles.del}>
+                <form>
+                    <input className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
+                    <label className={styles.label}> Delivery</label><br></br>
+                </form>
+            </div> */}
             <div className={styles.wrapper}>
                 <div onClick={clicking} className={styles.dropdown}>
                     <button className={styles.dropbtn}>{city}</button>
@@ -149,11 +190,23 @@ const Search = (props) => {
                 </div>
                 <input onChange={getType} className={styles.typeSearch} placeholder="Search type" />
             </div>
-            <div className={styles.del}>
-                <form>
-                    <input className={styles.labelInput} onClick={isItDelivery} type="checkbox" name="delivery" value="Delivery" />
-                    <label className={styles.label}> Delivery</label><br></br>
-                </form>
+
+            <div className={styles.buttons_all_others_rest}>
+                {/* <button className={styles.button} onClick={changeTypeAll}> All </button> */}
+                {/* <button className={styles.button} onClick={changeTypeOther}> Other </button>
+                <button className={styles.button} onClick={changeTypeRestaurant}> Restaurant </button> */}
+                <div>
+                    <input className={styles.button} onClick={changeTypeRestaurant} type="radio" name="option" value="Restaurants" />
+                    <label for="Restaurants" className={styles.label}> Restaurants </label>
+                </div>
+                <div>
+                    <input className={styles.button} onClick={changeTypeOther} type="radio" name="option" value="Other" />
+                    <label for="Other" className={styles.label}> Other</label>
+                </div>
+                <div>
+                    <input className={styles.button} onClick={isItDelivery} type="checkbox" name="option" value="Delivery" />
+                    <label for="Delivery" className={styles.label}> Delivery</label>
+                </div>
             </div>
             {/* <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} /> */}
         </div>
@@ -162,22 +215,41 @@ const Search = (props) => {
 
 
 const styles = {
-    wrappermaster: css`
-        overflow: hidden;
+    delivery: css`
+        display: none,
+        font-family: Helvetica,Arial,sans-serif;
+        color: black;
+        font-weight: bold;
+    `,
+    wrappOptions: css`
+        position: absolute;
+        top: 0px;
         background-color: #FFFFFF;
         height: 100px;
+        width: 310px;
+        margin-top: 10px;
+        margin-left: 100px;
+        // border: 3px solid blue;
     `,
-    wrapper: css`
+    buttons_all_others_rest: css`
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } @media (min-width: 1000px) {
+        left: 20%;
+    }
+`, wrapper: css`
         display: flex;
         justify-content: space-between;
-        width:250px ;
-        margin-left: 20%;
+        // border: 3px solid pink;
+        width:300px;
         div:button {
             height: 100%;
         }
       `,
     dropdown: css`
         display: inline-block;
+        margin-left: 0px;
     `,
     dropbtn: css`
         border: 1px outset white;
@@ -189,9 +261,9 @@ const styles = {
         cursor: pointer;
         outline: none;
         padding: 12px 16px;
-        height: 100%; 
-        width: 100%;
-   `,
+        height: 50px;
+        width: 115px;
+        `,
     dropdown_content: css`
       a {  
         font-family: Georgia, serif;
@@ -208,7 +280,7 @@ const styles = {
         background-color: #f9f9f9;
         display:block;
         a {
-            width: 80px;
+            width: 115px;
             color: black;
             padding: 12px 16px;
             text-decoration: none;
@@ -226,14 +298,10 @@ const styles = {
     typeSearch: css`
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: none;
-        padding-left: 5px;
         background-color: white;
         outline: none;
-        margin: auto;
-        width: 60%;
-        height: 60px; 
+        height: 50px; 
         font-size: 15px;
- 
      `,
     deliveryCity: css`
         display: flex;
@@ -260,17 +328,7 @@ const styles = {
         background: #e7e7e7;
         }
     `,
-    buttons: css`
-        position: absolute;
-        width: 200px;
-        top: 20px;
-        left: 33% ;
-        display: flex;
-        justify-content: space-between;
-    } @media (min-width: 1000px) {
-        left: 20%;
-    }
-`,
+
 
 }
 
