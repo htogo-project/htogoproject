@@ -157,7 +157,7 @@ const Search = (props) => {
 
         let arr = []
         for (var i = 0; i < list.length; i++) {
-            if (list[i].Business === "Restaurant") {
+            if (list[i].Business === "Restaurants") {
                 arr.push(list[i])
             }
         }
