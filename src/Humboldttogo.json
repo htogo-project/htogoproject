@@ -35,13 +35,13 @@
     "Phone": "(707) 839-3265",
     "Closed": "",
     "Hours": {
-      "0": "Sunday\t10AM–4PM",
-      "1": "Monday\t9:30AM–6PM",
-      "2": "Tuesday\t9:30AM–6PM",
-      "3": "Wednesday\t9:30AM–6PM",
-      "4": "Thursday\t9:30AM–6PM",
-      "5": "Friday\t9:30AM–6PM",
-      "6": "Saturday\t9:30AM–6PM"
+      "0": "Sunday 10AM–4PM",
+      "1": "Monday 9:30AM–6PM",
+      "2": "Tuesday 9:30AM–6PM",
+      "3": "Wednesday 9:30AM–6PM",
+      "4": "Thursday 9:30AM–6PM",
+      "5": "Friday 9:30AM–6PM",
+      "6": "Saturday 9:30AM–6PM"
     },
     "Info": "Open and doing curbside",
     "City": "McKinleyville",
