@@ -17,13 +17,14 @@ const Header = () => {
 
 const styles = {
     header: css`
+  
     margin-top: 10px;
-    padding-left: 15px;
-    background-color: white;
-    // @media (max-width: 320px) {
-    //    img{ width: 80% ;
-    //    }
-    // }
+    // // padding-left: 15px;
+    // background-color: white;
+    // // @media (max-width: 320px) {
+    // //    img{ width: 80% ;
+    // //    }
+    // // }
     `
 }
 
