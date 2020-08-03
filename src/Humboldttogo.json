@@ -23,11 +23,15 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese A & J Ichiban",
     "Maps": "615%20F%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8009288,
+      "lng": -124.1655115
+    }
   },
   {
     "Index": 2,
-    "Name": "A & L Feed & Pet Supply",
+    "Name": "A and L Feed and Pet Supply",
     "Endpoint": "aandlfeedandpetsupply",
     "Website": "http://www.humcoaandlfeed.com/",
     "Type": "Pet Supply",
@@ -49,7 +53,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pet Supply A and L Feed and Pet Supply",
     "Maps": "2308%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.9470695,
+      "lng": -124.1013989
+    }
   },
   {
     "Index": 3,
@@ -75,11 +83,15 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Caribbean A Taste of Bim",
     "Maps": "613%203rd%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8039004,
+      "lng": -124.1649638
+    }
   },
   {
     "Index": 4,
-    "Name": "Adel's Restaurant",
+    "Name": "Adel's Restaurant Eureka",
     "Endpoint": "",
     "Website": "https://places.singleplatform.com/adels-restaurant-2/menu?ref=google",
     "Type": "Diner, burgers, bbq, various",
@@ -101,7 +113,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Diner, burgers, bbq, various Adel's Restaurant Eureka",
     "Maps": "1724%20Broadway%20St%20.%20Eureka%2CCalifornia%2095501-0138",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7917227,
+      "lng": -124.1786016
+    }
   },
   {
     "Index": 5,
@@ -127,7 +143,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Alma's Mexican Food",
     "Maps": "1225%20Giuntoli%20Ln%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9046847,
+      "lng": -124.080579
+    }
   },
   {
     "Index": 6,
@@ -153,7 +173,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Amigas Burritos",
     "Maps": "317%205th%20St\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8018386,
+      "lng": -124.1677068
+    }
   },
   {
     "Index": 7,
@@ -179,7 +203,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas, Italian Angelo's Pizza Parlor",
     "Maps": "215%20W%207th%20St%20\nEureka%2CCalifornia%2095501-0251",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7987208,
+      "lng": -124.1731897
+    }
   },
   {
     "Index": 8,
@@ -205,7 +233,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cambodian Annie's Cambodian Cuisine",
     "Maps": "1917%205th%20St%2CEureka%20CA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8040355,
+      "lng": -124.151031
+    }
   },
   {
     "Index": 9,
@@ -231,7 +263,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas, Burgers, Deli Arcata Pizza and Deli",
     "Maps": "1057%20H%20St\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8703386,
+      "lng": -124.0865557
+    }
   },
   {
     "Index": 10,
@@ -257,7 +293,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas and Pasta - Italian Babe's Pizza & Pasta",
     "Maps": "4015%20Walnut%20Dr%20\nEureka%2CCalifornia%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7694615,
+      "lng": -124.1424465
+    }
   },
   {
     "Index": 11,
@@ -283,7 +323,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bakery and Cafe / dinner Bandit Savory & Sweet Cafe",
     "Maps": "%20525%202nd%20St%20#101%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8038618,
+      "lng": -124.1473832
+    }
   },
   {
     "Index": 12,
@@ -303,13 +347,17 @@
       "5": "Open 24hours",
       "6": "Open 24hours"
     },
-    "Info": "Bar Box Pick up and Delivery",
+    "Info": "Take out/Delivery",
     "City": "Delivery",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Drinks Bar Nomadic",
     "Maps": "Delivery",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 45.7736258,
+      "lng": -99.6175066
+    }
   },
   {
     "Index": 13,
@@ -335,7 +383,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese and Italian  Bayfront Restaurant",
     "Maps": "1%20F%20St.%20Eureka,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8058738,
+      "lng": -124.1666163
+    }
   },
   {
     "Index": 14,
@@ -361,7 +413,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Breakfast Beau Pre Cafe",
     "Maps": "%201777%20Norton%20Rd,%20McKinleyville,%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9629139,
+      "lng": -124.0962378
+    }
   },
   {
     "Index": 15,
@@ -387,7 +443,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Thai, Asian Bencharong Thai House",
     "Maps": "600%20F%20St,%20Ste%209%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8657223,
+      "lng": -124.0852373
+    }
   },
   {
     "Index": 16,
@@ -413,7 +473,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bookstore Blake's Books",
     "Maps": "2005%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.941734,
+      "lng": -124.1005346
+    }
   },
   {
     "Index": 17,
@@ -439,7 +503,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various - Drinks Blondies Food and Drink",
     "Maps": "420%20E%20California%20Ave\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8796183,
+      "lng": -124.0699598
+    }
   },
   {
     "Index": 18,
@@ -457,7 +525,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Books Booklegger",
     "Maps": "402%202nd%20St%2C%20Eureka%2C%20California%2095501",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8041861,
+      "lng": -124.1674998
+    }
   },
   {
     "Index": 19,
@@ -483,7 +555,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "American, Various Brick & Fire a bistro",
     "Maps": "1630%20F%20St\nEureka%2CCalifornia,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7923258,
+      "lng": -124.1638231
+    }
   },
   {
     "Index": 20,
@@ -509,7 +585,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, Savory, Various Cafe Brio Arcata",
     "Maps": "791%20G%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8678729,
+      "lng": -124.0863667
+    }
   },
   {
     "Index": 21,
@@ -535,7 +615,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, Savory, Breakfast Cafe Nooner Too",
     "Maps": "2910%20E%20St\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7814255,
+      "lng": -124.1648192
+    }
   },
   {
     "Index": 22,
@@ -561,7 +645,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, Savory, Various Cafe Phoenix",
     "Maps": "1360%20G%20St\nArcata%2CCalifornia,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8723874,
+      "lng": -124.0841994
+    }
   },
   {
     "Index": 23,
@@ -587,7 +675,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Seafood and Grill Café Waterfront",
     "Maps": "102%20F%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8050481,
+      "lng": -124.166913
+    }
   },
   {
     "Index": 24,
@@ -613,7 +705,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Calico’s cafe",
     "Maps": "808%20Redwood%20Dr%2CGarberville%2CCA%2095542",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.1000606,
+      "lng": -123.7952239
+    }
   },
   {
     "Index": 25,
@@ -633,13 +729,17 @@
       "5": "Fri 4:30 pm - 8:30 pm",
       "6": "Sat 4:30 pm - 8:30 pm"
     },
-    "Info": "Take out, Curbside Delivery on Doordash",
+    "Info": "Take out / Curbside Delivery on Doordash",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Steakhouse, American Restaurant Campground",
     "Maps": "865%209th%20Street%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8689821,
+      "lng": -124.0875081
+    }
   },
   {
     "Index": 26,
@@ -665,7 +765,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Carmela's Mexican Restaurant",
     "Maps": "701%20Central%20Ave,%20McKinleyville,%20CA%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9239292,
+      "lng": -124.0999044
+    }
   },
   {
     "Index": 27,
@@ -691,7 +795,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Carmela's Mexican Restaurant Arcata",
     "Maps": "1288%20G%20St,%20Arcata,%20CA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.871746,
+      "lng": -124.0843996
+    }
   },
   {
     "Index": 28,
@@ -717,7 +825,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Car Repair Central Avenue Service Center",
     "Maps": "2785%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.9560357,
+      "lng": -124.1004115
+    }
   },
   {
     "Index": 29,
@@ -743,7 +855,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Chapala Café",
     "Maps": "201%202nd%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.804191,
+      "lng": -124.1696289
+    }
   },
   {
     "Index": 30,
@@ -769,7 +885,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Asian, Chinese Chin's Cafe",
     "Maps": "4200%20Broadway%20St.%20Eureka,%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7682518,
+      "lng": -124.192036
+    }
   },
   {
     "Index": 31,
@@ -789,13 +909,17 @@
       "5": "Fri 9:00 am - 4:00 pm",
       "6": "Sat 9:00 am - 4:00 pm"
     },
-    "Info": "Delivery / Take out",
+    "Info": "Take out / Delivery",
     "City": "Eureka, Arcata, Mckinleyville",
     "DeliveriesCities": "Eureka, Arcata, Mckinleyville",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Clean Queen Meal Prep",
     "Maps": "Delivery%20to%20Eureka,%20Arcata,%20Mckinleyville,...",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 45.7736259,
+      "lng": -99.6175066
+    }
   },
   {
     "Index": 32,
@@ -821,7 +945,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Food Cocina Mariposa",
     "Maps": "4750%20Fairway%20Dr.%20(Eureka%20Golf%20Course)",
-    "Business": ""
+    "Business": "",
+    "Coord": {
+      "lat": 40.760395,
+      "lng": -124.168629
+    }
   },
   {
     "Index": 33,
@@ -847,7 +975,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, breakfast Coffee Break Internet Cafe",
     "Maps": "%20700%20Bayside%20Rd%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8584762,
+      "lng": -124.0719686
+    }
   },
   {
     "Index": 34,
@@ -865,7 +997,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Deserts College Ball Cakeballs",
     "Maps": "ridgecrest%20place\nEureka%2CCalifornia%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7630289,
+      "lng": -124.163025
+    }
   },
   {
     "Index": 35,
@@ -891,7 +1027,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Florist Country Living Florist",
     "Maps": "1309%2011th%20St%20#105%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.871573,
+      "lng": -124.0919987
+    }
   },
   {
     "Index": 36,
@@ -917,7 +1057,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Delish on 5th",
     "Maps": "%20440%20F%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8020643,
+      "lng": -124.1663562
+    }
   },
   {
     "Index": 37,
@@ -943,7 +1087,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Denny’s",
     "Maps": "326%205th%20Street%2CEureka%2CCA%2C95501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8016101,
+      "lng": -124.16723
+    }
   },
   {
     "Index": 38,
@@ -969,7 +1117,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Denny’s",
     "Maps": "1500%20ANA%20SPARKS%20WAY\nMCKINLEYVILLE%2CCA%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9320233,
+      "lng": -124.1029137
+    }
   },
   {
     "Index": 39,
@@ -995,7 +1147,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chocolate Shop Dick Taylor Craft Chocolate",
     "Maps": "4%20W%204th%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.802245,
+      "lng": -124.1717785
+    }
   },
   {
     "Index": 40,
@@ -1021,7 +1177,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizza Domino's Pizza",
     "Maps": "500%205th%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8016891,
+      "lng": -124.165735
+    }
   },
   {
     "Index": 41,
@@ -1047,7 +1207,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Donuts , Breakfast Don's Donuts Pizza & Deli",
     "Maps": "933%20H%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8694038,
+      "lng": -124.0869604
+    }
   },
   {
     "Index": 42,
@@ -1073,7 +1237,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Steak, Steakhouse Double D Steak",
     "Maps": "320%20Main%20St%20\nFortuna%2CCalifornia%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5997061,
+      "lng": -124.1655682
+    }
   },
   {
     "Index": 43,
@@ -1099,7 +1267,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Brewery, Various, Beer Eel River Brewing Company",
     "Maps": "1777%20Alamar%20Way%20\nFortuna%2CCalifornia%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5793621,
+      "lng": -124.1529821
+    }
   },
   {
     "Index": 44,
@@ -1125,7 +1297,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican El Chipotle",
     "Maps": "Crescent%20Way%20850\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8593997,
+      "lng": -124.0731394
+    }
   },
   {
     "Index": 45,
@@ -1151,7 +1327,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Esmeralda's Mexican Food",
     "Maps": "328%20Grotto%20St\nEureka%2C%20California%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7815214,
+      "lng": -124.165109
+    }
   },
   {
     "Index": 46,
@@ -1177,7 +1357,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Market Eureka Natural foods",
     "Maps": "2165%20Central%20Ave.\nMcKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.944848,
+      "lng": -124.10012
+    }
   },
   {
     "Index": 47,
@@ -1197,13 +1381,17 @@
       "5": "Fri 5:00 pm 9:00 pm",
       "6": "Sat 5:00 pm 9:00 pm"
     },
-    "Info": "Eureka - Take out/Curbside",
+    "Info": "Take out / Curbside",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Seafood and Grill Eureka Sea Grill",
     "Maps": "316%20E%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8030799,
+      "lng": -124.1676471
+    }
   },
   {
     "Index": 48,
@@ -1223,13 +1411,17 @@
       "5": "Fri 11:30 am - 9:30 pm",
       "6": "Sat 11:30 am - 9:30 pm"
     },
-    "Info": "Take Out",
+    "Info": "Take out",
     "City": "Ferndale",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas Ferndale Pizza Co.",
     "Maps": "607%20Main%20St%20Ferndale%2CCalifornia%2095536",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5780531,
+      "lng": -124.2624478
+    }
   },
   {
     "Index": 49,
@@ -1249,13 +1441,17 @@
       "5": "Fri 8:00 am - 10:00 pm",
       "6": "Sat 9:00 am - 8:00 pm"
     },
-    "Info": "Takeout/Curbside",
+    "Info": "Take out / Curbside",
     "City": "Mckinleyville",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Market, Various Fieldbrook Market & Eatery",
     "Maps": "4636%20Fieldbrook%20Rd%20\nMcKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9643865,
+      "lng": -124.0363403
+    }
   },
   {
     "Index": 50,
@@ -1275,13 +1471,17 @@
       "5": "Fri Closed",
       "6": "Sat Closed"
     },
-    "Info": "Wine delivery",
+    "Info": "Delivery",
     "City": "Mckinleyville",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Wine, drinks Fieldbrook Winery",
     "Maps": "4241%20Fieldbrook%20Road\nMcKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.958715,
+      "lng": -124.031844
+    }
   },
   {
     "Index": 51,
@@ -1307,7 +1507,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Fiesta Grill & Cantina",
     "Maps": "3525%20Janes%20Rd,%20Arcata,%20CA,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9021419,
+      "lng": -124.0904977
+    }
   },
   {
     "Index": 52,
@@ -1327,13 +1531,17 @@
       "5": "Fri 11:00 am - 9:00 pm",
       "6": "Sat 11:00 am - 9:00 pm"
     },
-    "Info": "Arcata - Take out/Delivery",
+    "Info": "Take out / Delivery",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Fregoso's Comida Mexicana",
     "Maps": "1504%20G%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8737178,
+      "lng": -124.083819
+    }
   },
   {
     "Index": 53,
@@ -1359,7 +1567,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Deserts, Ice Cream Fresh Freeze",
     "Maps": "3023%20F%20St%20\n%20Eureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.780762,
+      "lng": -124.1632638
+    }
   },
   {
     "Index": 54,
@@ -1385,7 +1597,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "handmade pizza, sandwiches appetizers and desserts Funky Monkey Fortuna",
     "Maps": "1875%20Riverwalk%20Dr\nFortuna%2C%20California%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5776937,
+      "lng": -124.1528755
+    }
   },
   {
     "Index": 55,
@@ -1405,13 +1621,17 @@
       "5": "Fri 11:30 am - 10:00 pm",
       "6": "Sat 11:30 am - 10:00 pm"
     },
-    "Info": "Take out/ Delivery",
+    "Info": "Take out / Delivery",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian Gabriel’s Italian Restaurant",
     "Maps": "216%20E%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8039033,
+      "lng": -124.1678954
+    }
   },
   {
     "Index": 56,
@@ -1437,7 +1657,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Drinks, Various Gallagher's Irish Pub",
     "Maps": "139%202nd%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8041924,
+      "lng": -124.1701207
+    }
   },
   {
     "Index": 57,
@@ -1463,7 +1687,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, Savory, Various Golden Harvest Cafe",
     "Maps": "1707%20Allard%20Ave\nEureka%2CCalifornia%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7730394,
+      "lng": -124.1911055
+    }
   },
   {
     "Index": 58,
@@ -1489,7 +1717,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Brewery, Various Gyppo Ale Mill",
     "Maps": "1661%20Upper%20Pacific%20Drive%20\nShelter%20Cove%2CCalifornia%2095589",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.0246737,
+      "lng": -124.0686686
+    }
   },
   {
     "Index": 59,
@@ -1515,7 +1747,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Donuts , Breakfast, Chinese Food , Espresso Coffee, Smoothies and much more. Happy Donuts/ Express Asian Food",
     "Maps": "2916%20Central%20Ave\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7816219,
+      "lng": -124.1808485
+    }
   },
   {
     "Index": 60,
@@ -1535,13 +1771,17 @@
       "5": "Fri 3:00 pm 9:00 pm",
       "6": "Sat 3:00 pm 9:00 pm"
     },
-    "Info": "Take out/Curbside",
+    "Info": "Take out / Curbside",
     "City": "Trinidad",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizza and Beer Headies Pizza & Pour",
     "Maps": "359%20Main%20St%20Trinidad%2CCalifornia%2095570",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 37.1675829,
+      "lng": -104.5076605
+    }
   },
   {
     "Index": 61,
@@ -1567,7 +1807,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Sandwiches Hole in the Wall",
     "Maps": "590%20G%20St\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8662983,
+      "lng": -124.0864494
+    }
   },
   {
     "Index": 62,
@@ -1593,7 +1837,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Frozen yogurt, deserts Hoppy's FroYo",
     "Maps": "1151%20Main%20St.%20Fortuna%2CCalifornia%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5979019,
+      "lng": -124.1547684
+    }
   },
   {
     "Index": 63,
@@ -1619,7 +1867,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "California/French Fusion Humboldt Bay Bistro",
     "Maps": "1436%202nd%20St.\nEureka%2CCalifornia",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8061252,
+      "lng": -124.1561348
+    }
   },
   {
     "Index": 64,
@@ -1645,7 +1897,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Coffee Humboldt Bay Coffee Company",
     "Maps": "527%203rd%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8038667,
+      "lng": -124.1657721
+    }
   },
   {
     "Index": 65,
@@ -1671,7 +1927,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Drinks Humboldt Cider Company",
     "Maps": "517%20F%20St,%20Eureka%20CA,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8015984,
+      "lng": -124.1657882
+    }
   },
   {
     "Index": 66,
@@ -1689,7 +1949,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Hotsauce HUMBOLDT HOTSAUCE - OG",
     "Maps": "",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8015985,
+      "lng": -124.1657882
+    }
   },
   {
     "Index": 67,
@@ -1715,7 +1979,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Brewery, various Humboldt Regeneration Brewery and Farm",
     "Maps": "2320%20Central%20Ave,%20Ste%20F,%20McKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9476401,
+      "lng": -124.1009996
+    }
   },
   {
     "Index": 68,
@@ -1741,7 +2009,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "BBQ Humboldt Smokehouse",
     "Maps": "310%205th%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 45.7736258,
+      "lng": -99.6175066
+    }
   },
   {
     "Index": 69,
@@ -1767,7 +2039,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Soups Humboldt Soup Company",
     "Maps": "1019%20Myrtle%20Avenue,%20Eureka,%20CA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8001099,
+      "lng": -124.1486399
+    }
   },
   {
     "Index": 70,
@@ -1793,7 +2069,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Drinks and Grill Humbrews / Humboldt Brews",
     "Maps": "856%2010th%20St\nArcata%2CCalifornia,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8702068,
+      "lng": -124.0871428
+    }
   },
   {
     "Index": 71,
@@ -1819,7 +2099,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chinese Hunan Village Restaurant",
     "Maps": "1468%20Main%20St\nFortuna,%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5982215,
+      "lng": -124.1512822
+    }
   },
   {
     "Index": 72,
@@ -1845,7 +2129,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chinese Hunan Village Restaurant",
     "Maps": "2912%20E%20St,%20Eureka,%20CA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7812861,
+      "lng": -124.1647883
+    }
   },
   {
     "Index": 73,
@@ -1865,13 +2153,17 @@
       "5": "Fri 10:00 am - 7:00 pm",
       "6": "Sat 10:00 am - 7:00 pm"
     },
-    "Info": "Taking appointments on the phone",
+    "Info": "Appointments on the phone",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Phone repair iExperts Repair",
     "Maps": "3300%20Broadway%2C\nEureka%2C%20California%2095501",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.7792963,
+      "lng": -124.1905928
+    }
   },
   {
     "Index": 74,
@@ -1897,7 +2189,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Kombucha It's Alive Kombucha",
     "Maps": "1612%20Old%20Arcata%20Rd%2C%20Bayside%2C%20CA%2095524",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8469887,
+      "lng": -124.0669272
+    }
   },
   {
     "Index": 75,
@@ -1923,7 +2219,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Seafood and Grill Jack's Seafood",
     "Maps": "4%20C%20St%20B%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8053896,
+      "lng": -124.1706249
+    }
   },
   {
     "Index": 76,
@@ -1949,7 +2249,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Asian Japhy's Soup & Noodles",
     "Maps": "1563%20G%20St%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.874182,
+      "lng": -124.0840415
+    }
   },
   {
     "Index": 77,
@@ -1975,7 +2279,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, coffee Jitten bean Coffe",
     "Maps": "4950%20Valley%20W%20Blvd%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9035527,
+      "lng": -124.0828558
+    }
   },
   {
     "Index": 78,
@@ -2001,7 +2309,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, coffee Jitten bean Coffe",
     "Maps": "1836%205th%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.803607,
+      "lng": -124.1517299
+    }
   },
   {
     "Index": 79,
@@ -2019,7 +2331,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Sporting goods store Jogg'n Shoppe",
     "Maps": "1090%20G%20St%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8702468,
+      "lng": -124.0850591
+    }
   },
   {
     "Index": 80,
@@ -2045,7 +2361,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mediterranean Kebab Cafe",
     "Maps": "5000%20Valley%20West%20Blvd%20Ste%2019%20Arcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9033254,
+      "lng": -124.0816673
+    }
   },
   {
     "Index": 81,
@@ -2071,7 +2391,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chocolate Shop Kenny's Chocolates",
     "Maps": "425%20Snug%20Alley%20suite%20b%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8049118,
+      "lng": -124.1674007
+    }
   },
   {
     "Index": 82,
@@ -2097,7 +2421,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cannabis / Hemp KISKANU Cannabis",
     "Maps": "2200%204th%20St%2CEureka%20CA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8044825,
+      "lng": -124.1477004
+    }
   },
   {
     "Index": 83,
@@ -2115,7 +2443,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Farm Market - veggies, chickes and more Kneeland Glen Farm Stand",
     "Maps": "5851%20Myrtle%20Ave%2C\nEureka%2C%20California%2095503",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.784894,
+      "lng": -124.09096
+    }
   },
   {
     "Index": 84,
@@ -2141,7 +2473,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Seafood and Grill La Patria Mariscos & Gril Restaurant",
     "Maps": "1718%204th%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8045704,
+      "lng": -124.1531737
+    }
   },
   {
     "Index": 85,
@@ -2167,7 +2503,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian La Trattoria",
     "Maps": "30%20Sunnybrae%20Ctr%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8575601,
+      "lng": -124.0716626
+    }
   },
   {
     "Index": 86,
@@ -2193,7 +2533,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Las Cazuelas Restaurant & Cantina",
     "Maps": "435%20N%20Fortuna%20Blvd\nFortuna%2CCalifornia",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5948028,
+      "lng": -124.1456198
+    }
   },
   {
     "Index": 87,
@@ -2219,7 +2563,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers Lighthouse Grill",
     "Maps": "355%20Main%20St%20\nTrinidad%2CCalifornia%2095570",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 37.1675912,
+      "lng": -104.5076427
+    }
   },
   {
     "Index": 88,
@@ -2245,7 +2593,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers, Fish and Chips, Tacos / Mexican LoCo Fish Co.",
     "Maps": "550%20S.%20G%20Street\nArcata%2CCalifornia,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8571217,
+      "lng": -124.0886848
+    }
   },
   {
     "Index": 89,
@@ -2271,7 +2623,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bagels, Cafe Los Bagels",
     "Maps": "1061%20I%20Street\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8706207,
+      "lng": -124.0875945
+    }
   },
   {
     "Index": 90,
@@ -2297,7 +2653,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various, Breakfast, Chicken Pot Pies Lost Coast Baking Company",
     "Maps": "543%20Main%20St%2CFerndale%2CCA%2095536",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.577625,
+      "lng": -124.262942
+    }
   },
   {
     "Index": 91,
@@ -2323,7 +2683,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese Masaki's | Kyoto Japanese Restaurant",
     "Maps": "320%20F%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.803122,
+      "lng": -124.1665296
+    }
   },
   {
     "Index": 92,
@@ -2349,7 +2713,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian Mazzottis",
     "Maps": "773%208th%20St,%20Arcata,%20CA,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8679224,
+      "lng": -124.0867445
+    }
   },
   {
     "Index": 93,
@@ -2375,7 +2743,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Deli, Breakfast, Bakery Meadows Cafe",
     "Maps": "1211%20Evergreen%20Rd\nRedway%2CCalifornia%2095560",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.1206958,
+      "lng": -123.7993477
+    }
   },
   {
     "Index": 94,
@@ -2401,7 +2773,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cakes Mia Bella",
     "Maps": "1041%20H%20St,%20Arcata,%20CA,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8702113,
+      "lng": -124.0864865
+    }
   },
   {
     "Index": 95,
@@ -2427,7 +2803,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Wine, Drinks Moonstone Crossing",
     "Maps": "529%20Trinity%20St%20\nTrinidad%2CCalifornia%2095570",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 37.1757061,
+      "lng": -104.5211064
+    }
   },
   {
     "Index": 96,
@@ -2453,7 +2833,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizza Mountain Mike's Pizza",
     "Maps": "3144%20Broadway%20Street%2C%20Suites%20C-3%2CC-4%2C%20C-5%2C%20Eureka%2C%20California%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7805362,
+      "lng": -124.1865477
+    }
   },
   {
     "Index": 97,
@@ -2471,7 +2855,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Northtown Books",
     "Maps": "",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8695512,
+      "lng": -124.0869153
+    }
   },
   {
     "Index": 98,
@@ -2497,7 +2885,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bar and Grill Oberon Grill",
     "Maps": "516%202nd%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8042461,
+      "lng": -124.1660477
+    }
   },
   {
     "Index": 99,
@@ -2523,7 +2915,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Coffee, Chocolates Old Town Coffee & Chocolates",
     "Maps": "211%20F%20Street%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8042204,
+      "lng": -124.1663818
+    }
   },
   {
     "Index": 100,
@@ -2549,7 +2945,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Fashion, Clothing Otto and Olive",
     "Maps": "330%202nd%20St%2C%20Eureka%2C%20CA%2095501",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8040521,
+      "lng": -124.1679471
+    }
   },
   {
     "Index": 101,
@@ -2575,7 +2975,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Pachanga Mexicana Restaurant",
     "Maps": "1802%205th%20St\nEureka%2CCalifornia,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8037149,
+      "lng": -124.1523594
+    }
   },
   {
     "Index": 102,
@@ -2601,7 +3005,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chinese Panda Cafe",
     "Maps": "1010%20Broadway\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7972742,
+      "lng": -124.1755138
+    }
   },
   {
     "Index": 103,
@@ -2627,7 +3035,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian, pizza Papa Murphy’s Take and Bake",
     "Maps": "686%20F%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8667834,
+      "lng": -124.0850562
+    }
   },
   {
     "Index": 104,
@@ -2653,7 +3065,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian, pizza Papa Murphy’s Take and Bake",
     "Maps": "407%20Henderson%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7830905,
+      "lng": -124.1643708
+    }
   },
   {
     "Index": 105,
@@ -2679,7 +3095,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Italian, pizza Papa Murphy’s Take and Bake",
     "Maps": "2015%20Central%20Ave%2C%20McKinleyville%2C%20CA%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.942136,
+      "lng": -124.1004412
+    }
   },
   {
     "Index": 106,
@@ -2705,7 +3125,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Drinks - Grill Papa Wheelies Pup",
     "Maps": "1584%20Reasor%20Rd%20\nMcKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.954016,
+      "lng": -124.1012624
+    }
   },
   {
     "Index": 107,
@@ -2731,7 +3155,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Candy Store Partrick's Candy",
     "Maps": "%20537%20F%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.801242,
+      "lng": -124.1656614
+    }
   },
   {
     "Index": 108,
@@ -2757,7 +3185,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas and Drinks Paul's Live From New York",
     "Maps": "665%20Samoa%20Blvd\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8644448,
+      "lng": -124.0869503
+    }
   },
   {
     "Index": 109,
@@ -2783,7 +3215,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "American Restaurant, Various Pepper's",
     "Maps": "719%20S%20Fortuna%20Blvd\nFortuna%2CCalifornia%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5835013,
+      "lng": -124.1461596
+    }
   },
   {
     "Index": 110,
@@ -2809,7 +3245,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Hot dogs, Steak, Sandwichs Philly Cheese Steak Shoppe",
     "Maps": "1811%20G%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8762478,
+      "lng": -124.0834057
+    }
   },
   {
     "Index": 111,
@@ -2835,7 +3275,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Hot dogs, Steak, Sandwichs Philly Cheese Steak Shoppe",
     "Maps": "3050%20Broadway%20St\nEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7809165,
+      "lng": -124.1854402
+    }
   },
   {
     "Index": 112,
@@ -2861,7 +3305,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "American, Grill, Various Plaza Grill",
     "Maps": "791%208th%20St,%20Fl%203rd\nArcata%2CCalifornia,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8681011,
+      "lng": -124.0870172
+    }
   },
   {
     "Index": 113,
@@ -2887,7 +3335,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Sandwiches Poppa Joe's",
     "Maps": "409%20Main%20St,%20Ferndale%20CA,%2095536",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.576653,
+      "lng": -124.263958
+    }
   },
   {
     "Index": 114,
@@ -2913,7 +3365,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "BBQ Porter Street Barbeque",
     "Maps": "605%20Broadway\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7997044,
+      "lng": -124.1748338
+    }
   },
   {
     "Index": 115,
@@ -2939,7 +3395,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cookies, Cupcakes, Bakery Pretty Baked",
     "Maps": "Rio%20Dell%2CCalifornia,%2095562",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.4993013,
+      "lng": -124.1064369
+    }
   },
   {
     "Index": 116,
@@ -2965,7 +3425,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Bakery and Cafe Ramone's Bakery & Cafe",
     "Maps": "2297%20Harrison%20Ave%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7872187,
+      "lng": -124.1393945
+    }
   },
   {
     "Index": 117,
@@ -2991,7 +3455,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Brewery, Drinks, Various Redwood Coast Brewing Company",
     "Maps": "%20550%20South%20G%20St.%20#4\nArcata,%20CA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8571217,
+      "lng": -124.0886848
+    }
   },
   {
     "Index": 118,
@@ -3017,7 +3485,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "French, creperie\n Renata's Creperie",
     "Maps": "1030%20G%20St%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8697619,
+      "lng": -124.0851794
+    }
   },
   {
     "Index": 119,
@@ -3043,7 +3515,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Rico's Tacos Taqueria",
     "Maps": "686%20F%20St%20D%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8667406,
+      "lng": -124.0849499
+    }
   },
   {
     "Index": 120,
@@ -3069,7 +3545,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cafe, breakfast Ridgetop Café & Coffee Barn",
     "Maps": "623%20Fernbridge%20Dr%2C%20Fortuna%2C%20CA%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.6163857,
+      "lng": -124.20127
+    }
   },
   {
     "Index": 121,
@@ -3095,7 +3575,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Rita’s Margaritas",
     "Maps": "855%208th%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8681326,
+      "lng": -124.0878752
+    }
   },
   {
     "Index": 122,
@@ -3121,7 +3605,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Rita’s Margaritas",
     "Maps": "1111%205th%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8030896,
+      "lng": -124.1590745
+    }
   },
   {
     "Index": 123,
@@ -3147,7 +3635,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Roman's Kitchen",
     "Maps": "681%20I%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.867525,
+      "lng": -124.088867
+    }
   },
   {
     "Index": 124,
@@ -3173,7 +3665,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "BBQ Sammy's BBQ & Catering",
     "Maps": "1709%205th%20Street,%20Eureka,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8040842,
+      "lng": -124.1533213
+    }
   },
   {
     "Index": 125,
@@ -3191,7 +3687,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "indoor plants and decor Sekoya Botanicals",
     "Maps": "215%20F%20Street%2C\nEureka%2C%20California%2095501",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8040961,
+      "lng": -124.1663306
+    }
   },
   {
     "Index": 126,
@@ -3217,7 +3717,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Wine, drinks Septentrio Winery",
     "Maps": "Delivery",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8040962,
+      "lng": -124.1663306
+    }
   },
   {
     "Index": 127,
@@ -3243,7 +3747,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Steak, Seafood, Pizza, Cocktails, Drinks Shamus T Bones",
     "Maps": "1911%20Truesdale%20St\nEureka%2CCalifornia",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7758333,
+      "lng": -124.193083
+    }
   },
   {
     "Index": 128,
@@ -3269,7 +3777,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizza Shenanigans",
     "Maps": "1604%204th%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8045514,
+      "lng": -124.1546055
+    }
   },
   {
     "Index": 129,
@@ -3295,7 +3807,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Thai, Asian Siam Orchid Thai Cuisine",
     "Maps": "427%20V%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8041789,
+      "lng": -124.1490465
+    }
   },
   {
     "Index": 130,
@@ -3321,7 +3837,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "American, Drinks, Various Six Rivers Brewery",
     "Maps": "1300%20Central%20Ave\nMcKinleyville%2CCalifornia%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9260124,
+      "lng": -124.1002005
+    }
   },
   {
     "Index": 131,
@@ -3347,7 +3867,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers - Pasta - Salads Sixth and E",
     "Maps": "603%20E%20St\nEureka%2CCalifornia,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8008262,
+      "lng": -124.1666439
+    }
   },
   {
     "Index": 132,
@@ -3373,7 +3897,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Sweet and Savory Pies Slice of Humbolt Pie",
     "Maps": "828%20I%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8686946,
+      "lng": -124.0877027
+    }
   },
   {
     "Index": 133,
@@ -3399,7 +3927,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers & BBQ Smokin' Barrels Burgers & BBQ",
     "Maps": "1095%20S.%20Fortuna%20Blvd.%20Ste.%20E%20Fortuna,%2095540",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5788147,
+      "lng": -124.145909
+    }
   },
   {
     "Index": 134,
@@ -3425,7 +3957,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizza Smug's Pizza",
     "Maps": "1034%20G%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8698416,
+      "lng": -124.0850435
+    }
   },
   {
     "Index": 135,
@@ -3451,7 +3987,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Snack Shack",
     "Maps": "12079%20Redwood%20Hwy%2COrick%2CCA%2095555",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 41.2858166,
+      "lng": -124.0612368
+    }
   },
   {
     "Index": 136,
@@ -3477,7 +4017,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers, Hamburgers Stars Hamburgers",
     "Maps": "1535%20G%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8739949,
+      "lng": -124.0840469
+    }
   },
   {
     "Index": 137,
@@ -3503,7 +4047,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cookies, Cupcakes, Bakery Stitches 'n' Sprinkes",
     "Maps": "95503,%20Humboldt%20Hill,%2095501,%20Eureka%20and%20nearby%20areas.",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7592627,
+      "lng": -124.1927012
+    }
   },
   {
     "Index": 138,
@@ -3529,7 +4077,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers Surfside Burger Shack",
     "Maps": "445%205th%20St,%20Eureka,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.802042,
+      "lng": -124.1663861
+    }
   },
   {
     "Index": 139,
@@ -3555,7 +4107,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese Sushi Spot Inc",
     "Maps": "1552%20City%20Center%20Rd\nMcKinleyville,%20%2095519",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.942798,
+      "lng": -124.1013466
+    }
   },
   {
     "Index": 140,
@@ -3581,7 +4137,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese Sushi Spot Inc",
     "Maps": "Suite%20101,%20670%209th%20Street,%20Arcata,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8688543,
+      "lng": -124.0852538
+    }
   },
   {
     "Index": 141,
@@ -3607,7 +4167,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese, sushi Sushi Tao",
     "Maps": "768%2018th%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8762644,
+      "lng": -124.0838131
+    }
   },
   {
     "Index": 142,
@@ -3633,7 +4197,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Chinese Szechuan Garden Restaurant Arcata",
     "Maps": "752%2018th%20St\nArcata%2CCalifornia,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8762133,
+      "lng": -124.0836623
+    }
   },
   {
     "Index": 143,
@@ -3659,7 +4227,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Indian Tandoori Bites Indian Cuisine",
     "Maps": "1735%204th%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8049175,
+      "lng": -124.1528009
+    }
   },
   {
     "Index": 144,
@@ -3685,7 +4257,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Taqueria La Barca",
     "Maps": "%205201%20Carlson%20Park%20Dr%20#%204%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9056656,
+      "lng": -124.0777119
+    }
   },
   {
     "Index": 145,
@@ -3711,7 +4287,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Taqueria La Barca Taco Truck",
     "Maps": "1434%20Myrtle%20Avenue%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7973663,
+      "lng": -124.1427729
+    }
   },
   {
     "Index": 146,
@@ -3737,7 +4317,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Hawaiian  The Banana Hut Hawaiian BBQ",
     "Maps": "621%205th%20St\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8023994,
+      "lng": -124.1644932
+    }
   },
   {
     "Index": 147,
@@ -3763,7 +4347,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cheese, meat and veggies The Boardroom Eureka",
     "Maps": "3750%20Harris%20Street,%20Suite%20G,%20Eureka,%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7799309,
+      "lng": -124.1261513
+    }
   },
   {
     "Index": 148,
@@ -3783,13 +4371,17 @@
       "5": "Fri 11:30 am - 9:00 pm",
       "6": "Sat 11:30 am - 9:00 pm"
     },
-    "Info": "Take out - Curbside - Delivery",
+    "Info": "Take out / Curbside / Delivery",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burger The Burger Joint",
     "Maps": "835%20J%20St%2CArcata%2CCA%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8689538,
+      "lng": -124.0893631
+    }
   },
   {
     "Index": 149,
@@ -3815,7 +4407,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various The Diver Bar and Grill",
     "Maps": "2834%20F%20St%20\nEureka%2CCalifornia%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7823167,
+      "lng": -124.1636809
+    }
   },
   {
     "Index": 150,
@@ -3835,13 +4431,17 @@
       "5": "Fri 8:00 am - 3:00 pm",
       "6": "Sat 9:00 am - 3:00 pm"
     },
-    "Info": "Take out/ Delivery",
+    "Info": "Take out / Delivery",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Breakfast The Greene Lily",
     "Maps": "307%202nd%20St%2CEureka%2CCA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8042735,
+      "lng": -124.1685014
+    }
   },
   {
     "Index": 151,
@@ -3859,7 +4459,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Cannabis, CBD, Smoking needs The Humboldt Corner - THC",
     "Maps": "899%20Main%20St%2C%20Fortuna%2C%20CA%2095540",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.5977551,
+      "lng": -124.157723
+    }
   },
   {
     "Index": 152,
@@ -3885,7 +4489,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas, Handpies, Chicken The Jam Arcata",
     "Maps": "915%20H%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8693219,
+      "lng": -124.0870101
+    }
   },
   {
     "Index": 153,
@@ -3905,13 +4513,17 @@
       "5": "Fri 5:00 pm 9:00 pm",
       "6": "Sat 5:00 pm 9:00 pm"
     },
-    "Info": "Trinidad -\nCurbside\nDelivery",
+    "Info": "Trinidad - \nCurbside /\nDelivery",
     "City": "Trinidad",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various The Larrupin Cafe",
     "Maps": "1658%20Patricks%20Point%20Dr\nTrinidad%2CCalifornia,%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 41.0898504,
+      "lng": -124.1514003
+    }
   },
   {
     "Index": 154,
@@ -3937,7 +4549,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Pizzas and Drinks The Madrone - Brick Fire Pizza and Taphouse",
     "Maps": "421%203rd%20st\nEureka%2CCalifornia",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8036889,
+      "lng": -124.1668374
+    }
   },
   {
     "Index": 155,
@@ -3963,7 +4579,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican The Patron Kitchen",
     "Maps": "70%20B%20Wildwood%20Ave%2CRio%20Dell%2CCA%2095562",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.493107,
+      "lng": -124.1009982
+    }
   },
   {
     "Index": 156,
@@ -3983,13 +4603,17 @@
       "5": "Fri 9:00 am - 3:00 pm",
       "6": "Sat 9:00 am - 3:00 pm"
     },
-    "Info": "Take out/Delivery",
+    "Info": "Take out / Delivery",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Vegan and Vegetarian Cuisine, Various The Wildflower Cafe & Bakery",
     "Maps": "1604%20G%20St%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8744174,
+      "lng": -124.0834492
+    }
   },
   {
     "Index": 157,
@@ -4015,7 +4639,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Used book store Tin Can Mailman",
     "Maps": "1000%20H%20St%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8699736,
+      "lng": -124.0863178
+    }
   },
   {
     "Index": 158,
@@ -4041,7 +4669,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Japanese, sushi Tomo Japanese Restaurant",
     "Maps": "708%209th%20St\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.8690392,
+      "lng": -124.0858882
+    }
   },
   {
     "Index": 159,
@@ -4067,7 +4699,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Burgers Toni's 24h Restaurant",
     "Maps": "1901%20Heindon%20Rd%20,%20Arcata%20CA,%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9028678,
+      "lng": -124.0871122
+    }
   },
   {
     "Index": 160,
@@ -4093,7 +4729,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Mexican Tres Picosos",
     "Maps": "3502%20Broadway%20St,%20Eureka,%2095503",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.7752318,
+      "lng": -124.1906899
+    }
   },
   {
     "Index": 161,
@@ -4119,7 +4759,11 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Serving Breakfast, Lunch & Dinner\n Trinidad Bay Eatery and Gallery",
     "Maps": "607%20Parker%20St%2CTrinidad%2CCA%2095570",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 41.0590652,
+      "lng": -124.1434107
+    }
   },
   {
     "Index": 162,
@@ -4139,13 +4783,17 @@
       "5": "Fri 8:00 am - 5:00 pm",
       "6": "Sat Closed"
     },
-    "Info": "Doing curbside",
+    "Info": "Curbside",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Truck repair  Trinity Diesel",
     "Maps": "%205065%20Boyd%20Rd%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.9093824,
+      "lng": -124.0730832
+    }
   },
   {
     "Index": 163,
@@ -4165,13 +4813,17 @@
       "5": "Fri Closed",
       "6": "Sat Closed"
     },
-    "Info": "Accepting online orders",
+    "Info": "Online orders",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "CBD, skincare Tulip Boutique",
     "Maps": "339%202nd%20St%2C%20Eureka%2C%20CA%2095501",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8044836,
+      "lng": -124.1678756
+    }
   },
   {
     "Index": 164,
@@ -4191,13 +4843,17 @@
       "5": "Fri 6:00 am - 10:00 pm",
       "6": "Sat 6:00 am - 10:00 pm"
     },
-    "Info": "Take out\nCurbside",
+    "Info": "Take out / \nCurbside",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Village Pantry",
     "Maps": "5000%20Valley%20West%20Blvd%20\nArcata%2CCalifornia%2095521",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.9033254,
+      "lng": -124.0816673
+    }
   },
   {
     "Index": 165,
@@ -4217,13 +4873,17 @@
       "5": "Open 24hours",
       "6": "Open 24hours"
     },
-    "Info": "Take out\nCurbside",
+    "Info": "Take out / \nCurbside",
     "City": "Eureka",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Various Village Pantry",
     "Maps": "1912%20Broadway%20St,%20Eureka,%20CA%2095501",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.790494,
+      "lng": -124.1793958
+    }
   },
   {
     "Index": 166,
@@ -4235,13 +4895,17 @@
     "Phone": "(707) 822-3300",
     "Closed": "",
     "Hours": "",
-    "Info": "Accepting orders on Etsy",
+    "Info": "Etsy orders",
     "City": "Arcata",
     "DeliveriesCities": "",
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "Fashion, Bandanas, Masks Vintage Avenger",
     "Maps": "1101%20H%20St%2C%20Arcata%2C%20CA%2095521",
-    "Business": "Other"
+    "Business": "Other",
+    "Coord": {
+      "lat": 40.8708437,
+      "lng": -124.0864304
+    }
   },
   {
     "Index": 167,
@@ -4267,6 +4931,10 @@
     "Image": "images_restaurants/sendapic.png",
     "Keywords": "waffles, breakfast, cafe Wildwood Waffles",
     "Maps": "770%20Wildwood%20Ave%2C%20Rio%20Dell%2C%20CA%2095562",
-    "Business": "Restaurants"
+    "Business": "Restaurants",
+    "Coord": {
+      "lat": 40.5012452,
+      "lng": -124.1054562
+    }
   }
 ]

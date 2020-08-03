@@ -6,6 +6,9 @@ import Header from './components/Header'
 import Search from './components/Search'
 import List from './components/List'
 import Contact from './components/Contact'
+import Map from './components/Map'
+import UserView from './components/UserView'
+
 
 import datas from "./Humboldttogo.json"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,35 +23,78 @@ const App = () => {
   const [add, setAdd] = useState(false)
   const [restaurants, setRestaurants] = useState(datas)
   const [businessType, setBusinessType] = useState("businesses")
+  const [map, setMap] = useState(false)
+  const [displayMap, setdisplayMap] = useState(styles.map)
+
+  useEffect(() => {
+    if (window.innerWidth < 767) {
+      if (map) {
+        setdisplayMap(styles.Viewmap)
+      } else {
+        setdisplayMap(styles.map)
+      }
+    } else {
+      setdisplayMap(styles.Viewmap)
+      setMap(false)
+    }
+  })
 
 
 
-
-  if (!add) {
+  if (!add && !map) {
     return (
       <Router>
         <Route path="/">
-          <div className={styles.Itsabody}>
-          <div className={styles.header}>
-            <header>
-              <Header />
-            </header>
-          </div>
-          <div className={styles.search}>
-            <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
-          </div>
-          {/* <div className={styles.login}>
-            <span> <a>For Business</a> </span>
-            <span> <a>Login</a> </span>
-            <span> <a>Register</a> </span>
-          </div> */}
-          <div className={styles.bodyApp}>
-            <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
-          </div>
+          <div className={styles.body_wrapper}>
+            <div className={styles.header_search_wrapper}>
+              <div className={styles.header}>
+                <header>
+                  <Header />
+                </header>
+              </div>
+              <div className={styles.search}>
+                <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
+              </div>
+            </div>
+            <div className={styles.user_view}>
+              <UserView maplist={setMap} m={map} />
+            </div>
+            <div className={styles.list_wrapper}>
+              <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
+              <div className={displayMap}>
+                <Map />
+              </div>
+            </div>
           </div>
         </Route>
       </Router>
     );
+  } else if (!add && map) {
+    return (
+      <Router>
+        <Route path="/">
+          <div className={styles.body_wrapper}>
+            <div className={styles.header_search_wrapper}>
+              <div className={styles.header}>
+                <header>
+                  <Header />
+                </header>
+              </div>
+              <div className={styles.search}>
+                <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
+              </div>
+            </div>
+            <div className={styles.user_view}>
+              <UserView maplist={setMap} m={map} />
+            </div>
+            <div className={styles.list_wrapper}>
+              {/* <List maplist={setMap} business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} /> */}
+              <Map />
+            </div>
+          </div>
+        </Route>
+      </Router>
+    )
   } else {
     return (
       <Router>
@@ -61,8 +107,26 @@ const App = () => {
 }
 
 const styles = {
-  Itsabody: css`
-  overflow-x: hidden;
+  body_wrapper: css`
+    // border: 3px solid purple;
+    overflow-x: hidden;
+    @media (min-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  `,
+  header_search_wrapper: css`
+    position: fixed;
+    // border: 3px solid black;
+    background-color: white;
+    width: 100vw;
+    z-index: 99;
+    @media (min-width: 767px) {
+      width: 100vw;
+      top: 0px;
+    }
   `,
   header: css`
     display: flex;
@@ -70,62 +134,62 @@ const styles = {
     flex-wrap: wrap;
 `,
   search: css`
+  // border: 3px solid green;
     display: flex;
     justify-content: left;
     align-items: left;
     margin-left: 90px;
-    // border: 3px solid green;
     @media (max-width: 450px) {
       display: flex;
       justify-content: center;
       align-items: center;
-      // margin-left: 30px;
   }
-  @media (max-width: 280px) {
-    margin-left: 30px;
+    @media (max-width: 280px) {
+      margin-left: 30px;
   }
 }
-
   `,
-  bodyApp: css`
-    margin-top: 30px;
+  user_view: css`
     display: flex;
-    width: 450px;
-    align-items: left;
-    justify-content: left;
-    margin-left: 90px;
-    overflow-x: hidden;
-    @media (max-width: 850px) {
-      width: 90%;
-      // border: 3px solid red;
-      margin-left: 30px;
-      display: flex;
-      align-items: left;
-      justify-content: left;
-      overflow-x: hidden;
-  }
-    @media (max-width: 450px) {
-      width: 98vw;
-      // border: 3px solid red;
-      margin-left: 0px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow-x: hidden;
-  }
-  @media (max-width: 280px) {
-    width: 98vw;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:0px;
+  `,
+  list_wrapper: css`
+    // border: 3px solid blue;
+    width: 100%;
+    height: 100vh;
+    margin-top: 230px;
+    @media (width: 280px) {
+      position: absolute:
+      margin-top: 0px;
+      width: 98vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left:0px;
+    }
+    @media (min-width: 767px) {
+      width: 80vw;
+      margin-top: 180px;
+      margin-left: 0px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
 }
   `,
+  map: css`
+    display: none;
+  `,
+  Viewmap: css`
+    display: flex;
+`,
   login: css`
     color: white;
-  `
-
+  `,
 }
 
 

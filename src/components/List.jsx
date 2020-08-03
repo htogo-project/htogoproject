@@ -21,7 +21,7 @@ const List = (props) => {
                             <a className={styles.restaurant_title} href={data.Website} >{data.Name}</a>
                             <h4 className={styles.restaurant_type}>{data.Type}</h4>
                             <div className={styles.restaurant_info}>{data.Info}</div>
-                            <div className={styles.today}> {data.Hours[new Date().getDay()]}</div> 
+                            <div className={styles.today}> {data.Hours[new Date().getDay()]}</div>
                             <div> <a className={styles.phone_and_address} href={`tel:${data.Phone}`}>{data.Phone}</a></div>
                             <div> <a className={styles.phone_and_address} href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </div>
                         </div>
@@ -32,7 +32,7 @@ const List = (props) => {
                         </div>
                         <div className={styles.timebox}>
                                 <div className={styles.today}> {data.Hours[new Date().getDay()]}</div>  */}
-                            {/* <ul className={styles.hours}>
+                        {/* <ul className={styles.hours}>
                                 <li>{data.Hours["0"]}</li>
                                 <li>{data.Hours["1"]}</li>
                                 <li>{data.Hours["2"]}</li>
@@ -41,7 +41,7 @@ const List = (props) => {
                                 <li>{data.Hours["5"]}</li>
                                 <li>{data.Hours["6"]}</li>
                             </ul> */}
-                        </div>
+                    </div>
                     // </div>
                 )}
                 <Add contact={props.contact} setContact={props.setContact} />
@@ -55,46 +55,40 @@ const List = (props) => {
 
 const styles = {
     showing_x_results: css`
+        // border: 3px solid yellow;
         margin-top: 100px;
         color: #322a2a;
+        width: 100%;
+        margin-left: 40px;
         font-weight: bold;
-        font-size: 24px;
-        @media (max-width: 450px) {
-            font-size: 16px;
-            margin-left: 20px
+        font-size: 16px;
+        @media (min-width: 767px) {
+            font-weight: bold;
+            margin-left: -10px;
+            font-size: 20px;
         }
-        @media (max-width: 280px) {
+        @media (min-width: 1023px) {
+            font-size: 24px;
+        }
+        @media (width: 280px) {
             font-size: 12px;
+            margin-top: 300px;
             margin-left: 40px
         }
-        @media (max-width: 320px) {
-            font-size: 14px;
-            margin-left: 20px
-        }
+        // @media (max-width: 320px) {
+        //     font-size: 14px;
+        //     margin-left: 20px
+        // }
     `,
     background: css`
+        // border: 3px solid green;
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        width: 400px;
-        // border: 3px solid green;
-        @media (max-width: 816px) {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-            margin-left:0;
-        }
-        @media (max-width: 450px) {
-            width: 80vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-            margin-left:0;
-        }
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-left: 20px;
+        // margin-right: 20px;
         @media (width: 280px) {
             width: 100%;
             display: flex;
@@ -103,32 +97,41 @@ const styles = {
             align-items: left;
             margin-left:0;
         }
+        @media (min-width: 767px) {
+            width: 40%;
+            margin-top: 10px;
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     `,
     contacts: css`
         display: flex;
-        // width: 60vw;
-        width: 100%;
-        margin-left: 0px;
-        justify-content: space-between;
+        width: 100vw;
+        margin-left: 15px;
+        // margin-right: 10px;
+        justify-content: space-around;
         // border: 3px solid yellow;
         margin-top: 30px;
-        @media (max-width: 816px) {
+        @media (min-width: 767px) {
             width: 400px;
             margin-left: 0px;
         }
-        @media (max-width: 450px) {
-            width: 88vw;
-            margin-left: 0px;
-        }
-        @media (max-width: 280px) {
-            width: 95%;
-            margin-left: 20px;
-        }
+        // @media (max-width: 450px) {
+        //     width: 100%;
+        //     margin-left: 0px;
+        // }
+        // @media (max-width: 280px) {
+        //     width: 95%;
+        //     margin-left: 20px;
+        // }
     `,
     title_type: css`
         // border: 3px solid purple;
-        width: 280px;
-        padding-left: 20px;
+        width: 50%;
+        padding-left: 10px;
         margin: 0;
         @media (max-width: 280px) {
             width: 60%;
@@ -197,7 +200,7 @@ const styles = {
         //     margin-left: 30px;
         //  }
     `,
- 
+
     hours: css`
         li { 
             text-align: left;

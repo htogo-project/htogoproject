@@ -198,9 +198,9 @@ const Search = (props) => {
                 </div>
 
                 <span className={styles.slide_open_button} onClick={openNav}>&#9776;</span>
-                <input onChange={getType} className={styles.typeSearch} placeholder={options} />
 
             </div>
+            <input onChange={getType} className={styles.typeSearch} placeholder={options} />
             {/* <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} /> */}
         </div>
     )
@@ -302,18 +302,20 @@ const styles = {
         margin-left: 10px;
     `,
     typeSearch: css`
+        // border: 3px solid brown;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: none;
         background-color: white;
         outline: none;
-        width: 500px;
+        width: 480px;
         height: 50px; 
         font-size: 15px;
-        margin-top: 50px;
+        margin-top: 40px;
         @media (max-width: 816px) {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             margin-left: -15px;
             width: 70vw;
-            margin-top: 40px;
+            margin-top: 35px;
          }
       
      `,
@@ -322,7 +324,7 @@ const styles = {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #008037; /* Black*/
@@ -350,7 +352,7 @@ const styles = {
     height: 100%; /* 100% Full-height */
     width: 250px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #008037; /* Black*/
