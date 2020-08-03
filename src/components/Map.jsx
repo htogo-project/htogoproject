@@ -76,9 +76,7 @@ function Map() {
 const styles = {
   map: css`
     position: absolute;
-    // left: 0%;
     height: 100vh;
-    // display: block;
     width: 100%;
     margin-top: 0px;
  @media (min-width: 767px) {
