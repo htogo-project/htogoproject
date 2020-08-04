@@ -8,7 +8,6 @@ const List = (props) => {
 
     return (
         <div>
-            <span className={styles.showing_x_results}> Showing {props.restaurant.length} {props.business} in {props.value}</span>
             <div className={styles.background}>
                 {props.restaurant.map((data, index) =>
                     <div key={index} className={styles.contacts}>
@@ -54,32 +53,6 @@ const List = (props) => {
 
 
 const styles = {
-    showing_x_results: css`
-        // border: 3px solid yellow;
-        margin-top: 100px;
-        color: #322a2a;
-        width: 100%;
-        margin-left: 40px;
-        font-weight: bold;
-        font-size: 16px;
-        @media (min-width: 767px) {
-            font-weight: bold;
-            margin-left: -10px;
-            font-size: 20px;
-        }
-        @media (min-width: 1023px) {
-            font-size: 24px;
-        }
-        @media (width: 280px) {
-            font-size: 12px;
-            margin-top: 300px;
-            margin-left: 40px
-        }
-        // @media (max-width: 320px) {
-        //     font-size: 14px;
-        //     margin-left: 20px
-        // }
-    `,
     background: css`
         // border: 3px solid green;
         display: flex;
@@ -109,9 +82,8 @@ const styles = {
     `,
     contacts: css`
         display: flex;
-        width: 100vw;
-        margin-left: 15px;
-        // margin-right: 10px;
+        width: 95vw;
+        margin-left: 10px;
         justify-content: space-around;
         // border: 3px solid yellow;
         margin-top: 30px;
@@ -119,10 +91,10 @@ const styles = {
             width: 400px;
             margin-left: 0px;
         }
-        // @media (max-width: 450px) {
-        //     width: 100%;
-        //     margin-left: 0px;
-        // }
+        @media (width: 320px) {
+            width: 95vw;
+            margin-left: 0px;
+        }
         // @media (max-width: 280px) {
         //     width: 95%;
         //     margin-left: 20px;
@@ -131,7 +103,8 @@ const styles = {
     title_type: css`
         // border: 3px solid purple;
         width: 50%;
-        padding-left: 10px;
+        padding-left: 3px;
+        margin-right: 6px;
         margin: 0;
         @media (max-width: 280px) {
             width: 60%;
@@ -141,7 +114,7 @@ const styles = {
     img: css`
         width: 150px;
         height: 150px;
-        @media (max-width: 280px) {
+        @media (max-width: 320px) {
             width: 100px;
             height: 100px;
             margin-left: 0px;
@@ -160,8 +133,8 @@ const styles = {
     restaurant_title: css`
         color: #322a2a;
         font-weight: bold;
-        font-size: 20px;
-        @media (max-width: 816px) {
+        font-size: 16px;
+        @media (min-width: 816px) {
             font-size: 16px;
          }
     `,

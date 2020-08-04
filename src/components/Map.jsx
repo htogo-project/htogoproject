@@ -15,8 +15,7 @@ import datas from "../Humboldttogo.json";
 
 
 
-function Map() {
-
+function Map(props) {
   const [business, setSelectedBusiness] = useState(null);
 
   useEffect(() => {
@@ -39,7 +38,7 @@ function Map() {
       onClick={(e) => console.log(e.latLng.toJSON())}
     // defaultOptions={{ styles: styles.map }}
     >
-      {datas.map(business => (
+      {props.elements.map(business => (
         <Marker
           key={datas.Index}
           position={business.Coord}
@@ -96,8 +95,8 @@ const styles = {
 const MapWrapped = withScriptjs(withGoogleMap(Map));
 const key = process.env.REACT_APP_KEY
 
-export default function App() {
-  
+export default function App(props) {
+
   return (
       <div className={styles.map}>
         <MapWrapped
@@ -105,6 +104,7 @@ export default function App() {
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
+          elements={props.restaurant}
         />
       </div>
   );

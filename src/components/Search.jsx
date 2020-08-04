@@ -310,12 +310,12 @@ const styles = {
         width: 480px;
         height: 50px; 
         font-size: 15px;
-        margin-top: 40px;
+        margin-top: 20px;
         @media (max-width: 816px) {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             margin-left: -15px;
             width: 70vw;
-            margin-top: 35px;
+            margin-top: 15px;
          }
       
      `,

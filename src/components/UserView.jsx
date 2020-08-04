@@ -32,41 +32,41 @@ const UserView = (props) => {
 
 const styles = {
     icons_wrapper: css`
-    position: fixed;
-    top: 146px;
-    padding-right: 12px;
-    // border: 3px solid pink;
-    background-color: white;
-    width: 100vw;
-    height: 50px;
-    display: flex;
-    z-index: 1;
-    justify-content: flex-end;
-     @media (min-width: 767px) {
-        display: none;
-    }
+        position: fixed;
+        top: 126px;
+        padding-right: 12px;
+        // border: 3px solid pink;
+        background-color: white;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: flex-end;
+        @media (min-width: 767px) {
+            display: none;
+        }
 
     
 `,
     icons: css`
-    width: 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: gray;
-    cursor: pointer;
-    @media (min-width: 767px) {
-        display: none;
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+        cursor: pointer;
+        @media (min-width: 767px) {
+            display: none;
 
-    }
-    @media (width: 280px) {
-        width: 20%;
-        padding: 5px;
-    }
-    @media (width: 320px) {
-        width: 20%;
-        padding: 5px;
-    }
+        }
+        @media (width: 280px) {
+            width: 20%;
+            padding: 5px;
+        }
+        @media (width: 320px) {
+            width: 20%;
+            padding: 5px;
+        }
 `,
 }
 export default UserView;

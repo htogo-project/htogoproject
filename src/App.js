@@ -8,6 +8,8 @@ import List from './components/List'
 import Contact from './components/Contact'
 import Map from './components/Map'
 import UserView from './components/UserView'
+import ListSize from './components/ListSize'
+
 
 
 import datas from "./Humboldttogo.json"
@@ -59,10 +61,13 @@ const App = () => {
             <div className={styles.user_view}>
               <UserView maplist={setMap} m={map} />
             </div>
+            <div>
+              <ListSize business={businessType} restaurant={restaurants} value={code} />
+            </div>
             <div className={styles.list_wrapper}>
               <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
               <div className={displayMap}>
-                <Map />
+                <Map restaurant={restaurants} />
               </div>
             </div>
           </div>
@@ -87,9 +92,12 @@ const App = () => {
             <div className={styles.user_view}>
               <UserView maplist={setMap} m={map} />
             </div>
+            <div>
+              <ListSize business={businessType} restaurant={restaurants} value={code} />
+            </div>
             <div className={styles.list_wrapper}>
               {/* <List maplist={setMap} business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} /> */}
-              <Map />
+              <Map restaurant={restaurants} />
             </div>
           </div>
         </Route>
