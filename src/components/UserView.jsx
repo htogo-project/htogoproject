@@ -33,7 +33,7 @@ const UserView = (props) => {
 const styles = {
     icons_wrapper: css`
     position: fixed;
-    margin-top: 340px;
+    top: 146px;
     padding-right: 12px;
     // border: 3px solid pink;
     background-color: white;
