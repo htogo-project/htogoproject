@@ -60,11 +60,11 @@ function Map(props) {
           position={business.Coord
           }
         >
-          <div>
-            <div> <img src={`../${business.Image}`} /> </div>
-            <h4>{business.Name}</h4>
-            <p>{business.Type}</p>
-            <div> <a href={`https://www.google.com/maps/search/?api=1&query=${business.Maps}`}>{business.Address}</a> </div>
+          <div className={styles.info}>
+            <div className={styles.img}> <img src={`../${business.Image}`} /> </div>
+            <h4 className={styles.title}>{business.Name}</h4>
+            <p className={styles.description}>{business.Type}</p>
+            <div className={styles.address}> <a href={`https://www.google.com/maps/search/?api=1&query=${business.Maps}`}>{business.Address}</a> </div>
           </div>
         </InfoWindow>
       )}
@@ -87,7 +87,7 @@ const styles = {
         width: 40%;
         height: 100vh;
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 1025px) {
       position: fixed;
       height: 100vh;
       width: 30%;
@@ -100,6 +100,31 @@ const styles = {
       // height: 100vh;
   }
   `,
+  img: css`
+  width: auto;
+  height: auto;
+    img{
+      width: 120px;
+      height: 120px;
+    }
+  `,
+  title: css`
+    margin-top: 30px;
+    font-size: 12px;
+  `,
+  description: css`
+
+    font-size: 9px;
+  `,
+  address: css`
+    font-size: 9px;
+  `,
+  info: css`
+    width: 140px;
+    height: 220px;
+  `
+
+  
 }
 
 
