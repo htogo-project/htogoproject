@@ -317,6 +317,9 @@ const styles = {
             width: 70vw;
             margin-top: 15px;
          }
+         @media (min-width: 1023px) {
+            margin-left: 40%;
+        }
       
      `,
     /* The side navigation menu */

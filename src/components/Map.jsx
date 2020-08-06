@@ -87,8 +87,19 @@ const styles = {
         width: 40%;
         height: 100vh;
     }
-    `,
-
+    @media (min-width: 1000px) {
+      position: fixed;
+      height: 100vh;
+      width: 30%;
+      // z-index: -2;
+      margin-top: 15%;
+      margin-right: 15%;
+      right: 0%;
+      // border: 3px solid green;
+      // width: 40%;
+      // height: 100vh;
+  }
+  `,
 }
 
 

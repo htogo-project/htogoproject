@@ -40,7 +40,7 @@ const styles = {
             font-size: 20px;
         }
         @media (min-width: 1023px) {
-            left: 50px;
+            left: 20%;
             font-size:24px;
             padding-top: 25px;
             top: 108px;

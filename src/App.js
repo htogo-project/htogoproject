@@ -187,6 +187,10 @@ const styles = {
       align-items: flex-start;
       justify-content: flex-start;
     }
+    @media (min-width: 1000px) {
+      width: 60vw;
+      height: 100vh;
+    }
 }
   `,
   map: css`
