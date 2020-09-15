@@ -1,7 +1,5 @@
 import React from 'react';
 import { css } from 'emotion'
-
-// import Logo from '../images/htg21.png'
 import Logo from '../images/htogo.png'
 
 

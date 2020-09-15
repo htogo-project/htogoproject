@@ -18,9 +18,10 @@ const Search = (props) => {
     const [showlist, setShowlist] = useState(false)
 
     const helper = (datas, city, key, delivery, type) => {
-
-
         let arr = [];
+        // if (city === "Humboldt" && key === '' || key === ' ' && !delivery && type === '') {
+        //     return arr = props.restaurant;
+        // }
 
         if (city !== 'Humboldt') {
             if (delivery) {
@@ -108,7 +109,9 @@ const Search = (props) => {
     let str = ""
     var getType = (e) => {
         str += e.currentTarget.value;
+        console.log(str)
         setKey(str)
+        
         helper(list, city, key, delivery, type)
     }
 
@@ -174,8 +177,6 @@ const Search = (props) => {
         <div>
             <div className={styles.button_slider}>
                 <div className={!classActive ? styles.sidenav : styles.sidenavClicked}>
-                {/* <div className={styles.sidenavClicked}> */}
-
                     <a className={styles.closebtn} onClick={closeNav}>&times;</a>
                     <div className={styles.wrapper}>
                         <div onClick={clicking} className={styles.dropdown}>
@@ -201,7 +202,6 @@ const Search = (props) => {
 
             </div>
             <input onChange={getType} className={styles.typeSearch} placeholder={options} />
-            {/* <Delivery iscity={city} iskey={key} res={props.restaurant} setR={props.setRestaurant} del={delivery} setDel={setDelivery} /> */}
         </div>
     )
 }
