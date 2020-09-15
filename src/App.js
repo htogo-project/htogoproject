@@ -42,76 +42,90 @@ const App = () => {
   })
 
 
-
-  if (!add && !map) {
-    return (
-      <Router>
-        <Route path="/">
-          <div className={styles.body_wrapper}>
-            <div className={styles.header_search_wrapper}>
-              <div className={styles.header}>
-                <header>
-                  <Header />
-                </header>
-              </div>
-              <div className={styles.search}>
-                <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
-              </div>
-            </div>
-            <div className={styles.user_view}>
-              <UserView maplist={setMap} m={map} />
-            </div>
-            <div>
-              <ListSize business={businessType} restaurant={restaurants} value={code} />
-            </div>
-            <div className={styles.list_wrapper}>
-              <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
-              <div className={displayMap}>
-                <Map restaurant={restaurants} />
-              </div>
-            </div>
-          </div>
-        </Route>
-      </Router>
-    );
-  } else if (!add && map) {
-    return (
-      <Router>
-        <Route path="/">
-          <div className={styles.body_wrapper}>
-            <div className={styles.header_search_wrapper}>
-              <div className={styles.header}>
-                <header>
-                  <Header />
-                </header>
-              </div>
-              <div className={styles.search}>
-                <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
-              </div>
-            </div>
-            <div className={styles.user_view}>
-              <UserView maplist={setMap} m={map} />
-            </div>
-            <div>
-              <ListSize business={businessType} restaurant={restaurants} value={code} />
-            </div>
-            <div className={styles.list_wrapper}>
-              {/* <List maplist={setMap} business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} /> */}
-              <Map restaurant={restaurants} />
-            </div>
-          </div>
-        </Route>
-      </Router>
-    )
-  } else {
-    return (
-      <Router>
+  return (
+    <Router>
+      <Route path="/">
         <div>
-          <Contact adc={add} setAdc={setAdd} />
+          <Header />
+          <Search restaurant={restaurants} setRestaurant={setRestaurants} setValue={setCode}/>
+          <UserView maplist={setMap} m={map} />
+          {/* <ListSize business={businessType} restaurant={restaurants} value={code} /> */}
+          {/* <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} /> */}
+          <Map restaurant={restaurants} />
         </div>
-      </Router>
-    )
-  }
+      </Route>
+    </Router>
+  )
+
+  //   if (!add && !map) {
+  //     return (
+  //       <Router>
+  //         <Route path="/">
+  //           <div className={styles.body_wrapper}>
+  //             <div className={styles.header_search_wrapper}>
+  //               <div className={styles.header}>
+  //                 <header>
+  //                   <Header />
+  //                 </header>
+  //               </div>
+  //               <div className={styles.search}>
+  //                 <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
+  //               </div>
+  //             </div>
+  //             <div className={styles.user_view}>
+  //               <UserView maplist={setMap} m={map} />
+  //             </div>
+  //             <div>
+  //               <ListSize business={businessType} restaurant={restaurants} value={code} />
+  //             </div>
+  //             <div className={styles.list_wrapper}>
+  //               <List business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} />
+  //               <div className={displayMap}>
+  //                 <Map restaurant={restaurants} />
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </Route>
+  //       </Router>
+  //     );
+  //   } else if (!add && map) {
+  //     return (
+  //       <Router>
+  //         <Route path="/">
+  //           <div className={styles.body_wrapper}>
+  //             <div className={styles.header_search_wrapper}>
+  //               <div className={styles.header}>
+  //                 <header>
+  //                   <Header />
+  //                 </header>
+  //               </div>
+  //               <div className={styles.search}>
+  //                 <Search setBusiness={setBusinessType} restaurant={restaurants} setRestaurant={setRestaurants} adc={add} setAdc={setAdd} setValue={setCode} value={code} />
+  //               </div>
+  //             </div>
+  //             <div className={styles.user_view}>
+  //               <UserView maplist={setMap} m={map} />
+  //             </div>
+  //             <div>
+  //               <ListSize business={businessType} restaurant={restaurants} value={code} />
+  //             </div>
+  //             <div className={styles.list_wrapper}>
+  //               {/* <List maplist={setMap} business={businessType} restaurant={restaurants} setRestaurant={setRestaurants} contact={add} setContact={setAdd} value={code} /> */}
+  //               <Map restaurant={restaurants} />
+  //             </div>
+  //           </div>
+  //         </Route>
+  //       </Router>
+  //     )
+  //   } else {
+  //     return (
+  //       <Router>
+  //         <div>
+  //           <Contact adc={add} setAdc={setAdd} />
+  //         </div>
+  //       </Router>
+  //     )
+  //   }
 }
 
 const styles = {

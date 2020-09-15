@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { css } from 'emotion'
-import Add from './Add.jsx';
+import Add from './Add';
 
 
 const List = (props) => {
@@ -24,24 +24,7 @@ const List = (props) => {
                             <div> <a className={styles.phone_and_address} href={`tel:${data.Phone}`}>{data.Phone}</a></div>
                             <div> <a className={styles.phone_and_address} href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </div>
                         </div>
-
-                        {/* <div className={styles.contact}>
-                            <div> <a className={styles.phone_and_address} href={`tel:${data.Phone}`}>{data.Phone}</a></div>
-                            <div> <a className={styles.phone_and_address} href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </div>
-                        </div>
-                        <div className={styles.timebox}>
-                                <div className={styles.today}> {data.Hours[new Date().getDay()]}</div>  */}
-                        {/* <ul className={styles.hours}>
-                                <li>{data.Hours["0"]}</li>
-                                <li>{data.Hours["1"]}</li>
-                                <li>{data.Hours["2"]}</li>
-                                <li>{data.Hours["3"]}</li>
-                                <li>{data.Hours["4"]}</li>
-                                <li>{data.Hours["5"]}</li>
-                                <li>{data.Hours["6"]}</li>
-                            </ul> */}
                     </div>
-                    // </div>
                 )}
                 <Add contact={props.contact} setContact={props.setContact} />
             </div>

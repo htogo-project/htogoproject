@@ -3,26 +3,32 @@ import { css } from 'emotion';
 import list from "../Humboldttogo.json"
 
 
+import List from './List'
+import ListSize from './ListSize'
+
 
 
 const Search = (props) => {
     const cities = ["Humboldt", "Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "Whitethorn", "Scotia", "Hydesville"]
+
+    //setting initial states
+    const [places, setPlaces] = useState(list);
+    const [displayedPlaces, setdisplayedPlaces] = useState(list);
+    const [filteredBy, setfilteredBy] = useState('');
+    const [businessType, setBusinessType] = useState("businesses");
     const [delivery, setDelivery] = useState(false)
     const [city, setCity] = useState("Humboldt")
     const [key, setKey] = useState("")
     const [type, setType] = useState("")
+
+    //setting placeholder according with type of business
     const [options, setOptions] = useState("Search type")
 
-    // classes states
-    const [classActive, setClassActive] = useState(false)
-    const [showlist, setShowlist] = useState(false)
+    //navbar classes states
+    const [showNavBar, setshowNavBar] = useState(false)
 
     const helper = (datas, city, key, delivery, type) => {
         let arr = [];
-        // if (city === "Humboldt" && key === '' || key === ' ' && !delivery && type === '') {
-        //     return arr = props.restaurant;
-        // }
-
         if (city !== 'Humboldt') {
             if (delivery) {
                 if (type.length > 1) {
@@ -95,33 +101,31 @@ const Search = (props) => {
     }
 
 
-    const handleClick = (event) => {
-        event.preventDefault()
-        const actualCity = event.target.textContent
-        setCity(event.target.textContent)
-        props.setValue(event.target.textContent)
-        setShowlist(true)
-
-        helper(list, actualCity, key, delivery, type)
+    const filterByCity = (event) => {
+        setCity(event.target.value);
+        const filtered = places.filter(el => el.City === event.target.value);
+        setfilteredBy("city");
+        return setdisplayedPlaces(filtered);
+        // event.preventDefault()
+        // const actualCity = event.target.value
+        // setCity(event.target.value)
+        // props.setValue(event.target.value)
+        // helper(list, actualCity, key, delivery, type)
     }
 
 
     let str = ""
     var getType = (e) => {
-        str += e.currentTarget.value;
-        console.log(str)
+         str += e.currentTarget.value;
+        // console.log(str)
         setKey(str)
-        
-        helper(list, city, key, delivery, type)
+        console.log(str)
+        let filtered = filteredBy.length > 0 ? places.filter(el => el.Keywords.includes(e.currentTarget.value)) : displayedPlaces.filter(el => el.Keywords.includes(e.currentTarget.value));
+        // setfilteredBy("type");
+        return setdisplayedPlaces(filtered);
+
     }
 
-    const clicking = () => {
-        if (showlist) {
-            setShowlist(false)
-        } else {
-            setShowlist(true)
-        }
-    }
 
     const isItDelivery = () => {
         if (!delivery) {
@@ -166,66 +170,46 @@ const Search = (props) => {
         helper(list, city, key, delivery, type)
     }
 
-    const openNav = () => {
-        setClassActive(true);
-    }
-    const closeNav = () => {
-        setClassActive(false);
-    }
-
     return (
         <div>
-            <div className={styles.button_slider}>
-                <div className={!classActive ? styles.sidenav : styles.sidenavClicked}>
-                    <a className={styles.closebtn} onClick={closeNav}>&times;</a>
-                    <div className={styles.wrapper}>
-                        <div onClick={clicking} className={styles.dropdown}>
-                            <button className={styles.dropbtn}>{city}</button>
-                            <div className={showlist ? styles.dropdown_clicked : styles.dropdown_unclicked}>
-                                {cities.map((city, index) =>
-                                    <a key={index} onClick={handleClick}>{city}</a>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.filter_options}>
-                        <div className={styles.filter_option} onClick={changeTypeRestaurant}>Restaurants</div>
-                        <div className={styles.filter_option} onClick={changeTypeOther}>Other</div>
-                        <div className={styles.filter_option}>
-                            <input onClick={isItDelivery} type="checkbox" name="option" value="Delivery" />
-                            <label for="Delivery" className={styles.label}> Delivery</label>
-                        </div>
-                    </div>
-                </div>
-
-                <span className={styles.slide_open_button} onClick={openNav}>&#9776;</span>
-
-            </div>
+        <div>
+            <nav className={showNavBar ? styles.sidenavClicked : styles.sidenav}>
+                <a className={styles.closebtn} onClick={()=>setshowNavBar(false)}>&times;</a>
+                <select onChange={filterByCity}>
+                    <option value="">Please choose a city</option>
+                    {cities.map((city, index) =>
+                        <option key={index} value={city}>{city}</option>
+                    )}
+                </select>
+                <ul className={styles.filter_options}>
+                    <li onClick={changeTypeRestaurant}>Restaurants</li>
+                    <li onClick={changeTypeOther}>Other</li>
+                    <li>
+                        <label> Delivery</label>
+                        <input onClick={isItDelivery} type="checkbox" name="option" value="Delivery" />
+                    </li>
+                </ul>
+            </nav>
+            <span className={styles.slide_open_button} onClick={()=>setshowNavBar(true)}>&#9776;</span>
             <input onChange={getType} className={styles.typeSearch} placeholder={options} />
+        </div>
+        <ListSize business={businessType} restaurant={displayedPlaces} value={city} />
+        <List restaurant={displayedPlaces}/>
         </div>
     )
 }
 
 
 const styles = {
-    delivery: css`
-        display: none,
-        color: black;
-        font-weight: bold;
-    `,
-    button_slider: css`
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: #FFFFFF;
-        // border: 3px solid blue;
-        @media (max-width: 800px) {
-            width: 80vw;
-         }
-         div a {
-             color: #a4a4a4;
-         }
-    `,
+    closebtn: css` 
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 25px;
+        font-size: 46px;
+        margin-left: 50px;
+        color: white;
+  `,
     dropdown: css`
         display: inline-block;
         margin-left: 0px;
@@ -243,45 +227,6 @@ const styles = {
         }
        `
     ,
-    dropbtn: css`
-        border: 1px outset white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-left: 20px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        height: 50px;
-        width: 125px;
-           button {
-            outline: none;
-        }
-        `,
-    dropdown_unclicked: css`
-        display:none;
-      a {  
-        display:none;
-        margin: 0;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-    `,
-    dropdown_clicked: css`
-        position: absolute;
-        background-color: #f9f9f9;
-        display:block;
-        text-align: center;
-        margin-left: 20px;
-        a {
-            background-color: #f9f9f9;
-            width: 125px;
-            z-index: 1;
-        } a:hover {
-            background-color: #f1f1f1;
-        } 
-
-        ,`,
-
     filter_options: css`
         // border: 3px solid white;
         color: #322a2a;
@@ -290,13 +235,13 @@ const styles = {
         margin: 20px;
         padding: 0px;
         width: 70%;
-    `,
-    filter_option: css`
-         margin-left: 10px;
-        cursor: pointer;
-        margin-top: 20px;
-        font-size: 16px;
-        // border: 3px solid white;
+        li {
+            margin-left: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            // border: 3px solid white;
+        }
     `,
     label: css`
         margin-left: 10px;
@@ -324,84 +269,39 @@ const styles = {
      `,
     /* The side navigation menu */
     sidenav: css`{
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #008037; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    &:hover {
-            color: #f1f1f1;
-          }
-          @media screen and (max-height: 450px) {
-            font-size: 18px;
-    }
-    @media screen and (max-height: 450px) {
-        padding-top: 15px;
+        height: 100%; 
+        width: 0; 
+        position: fixed;
+        z-index: 100; 
+        top: 0; 
+        left: 0;
+        background-color: #008037;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
   }`,
 
     sidenavClicked: css`{
-    height: 100%; /* 100% Full-height */
-    width: 250px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #008037; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    &:hover {
-            color: #f1f1f1;
-          }
-          @media screen and (max-height: 450px) {
-            font-size: 18px;
-    }
-    @media screen and (max-height: 450px) {
-        padding-top: 15px;
+        height: 100%;
+        width: 250px;
+        position: fixed; 
+        z-index: 100; 
+        top: 0; 
+        left: 0;
+        background-color: #008037;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
   }`,
 
-   slide_open_button: css`
+    slide_open_button: css`
         position: absolute;
         top: 0;
         left: 25px;
         font-size: 30px;
         cursor: pointer;
   `,
-    closebtn: css` {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        right: 25px;
-        font-size: 46px;
-        margin-left: 50px;
-        color: white;
-  }`,
-
-    main: css` {
-        transition: margin-left .5s;
-        padding: 20px;
-  }`,
-
-
+  
 }
 
 export default Search;
