@@ -11,87 +11,75 @@ import ListSize from './ListSize'
 const Search = (props) => {
     const cities = ["Humboldt", "Arcata", "Eureka", "Ferndale", "Fortuna", "Mckinleyville", "Carlotta", "Trinidad", "Rio Dell", "Whitethorn", "Scotia", "Hydesville"]
 
-    //setting initial states
+    //setting list initial states
     const [places, setPlaces] = useState(list);
     const [displayedPlaces, setdisplayedPlaces] = useState(list);
+
+    //setting initial states for users options
     const [businessType, setBusinessType] = useState("");
-    const [delivery, setDelivery] = useState(false)
-    const [city, setCity] = useState("Humboldt")
-    const [key, setKey] = useState("")
-    const [type, setType] = useState("")
+    const [delivery, setDelivery] = useState(false);
+    const [city, setCity] = useState("Humboldt");
+    const [keyword, setKeyword] = useState("");
 
     //setting placeholder according with type of business
     const [options, setOptions] = useState("Search type")
 
     //navbar classes states
     const [showNavBar, setshowNavBar] = useState(false)
-  
+
 
     const helper = (city, key, type, delivery) => {
-        const filtered = delivery ? places.filter(el => el.City === city).filter(el => el.Info.includes("Delivery")) : places.filter(el => el.City === city);
+        if (type === "Other") {
+            setOptions("pet shop, flowers, books...")
+        } else if (type === "Restaurant") {
+            setOptions("tacos, sushi, icecream...")
+
+        }
+        const filterCity = city !== "Humboldt" ? places.filter(el => el.City === city) : places;
+        const filtered = delivery ? filterCity.filter(el => el.Info.includes("Delivery")) : filterCity;
         const filterKey = key.length > 0 ? filtered.filter(el => el.Keywords.toLowerCase().includes(key)) : filtered;
         const filterType = type.length > 0 ? filterKey.filter(el => el.Business === type) : filterKey;
 
-        setdisplayedPlaces(filterType);       
+        return filterType;
     }
 
+    useEffect(() => {
+        setdisplayedPlaces(helper(city, keyword, businessType, delivery));
+    }, [city, keyword, businessType, delivery]);
 
-
-    const filterByCity = (event) => {
-        let actualCity = event.target.value
-        setCity(actualCity);
-       return helper(event.target.value, key, type, delivery)
-    } 
 
 
     let str = ""
-    var getType = (e) => {
-         str += e.currentTarget.value;
-        setKey(str)
-        return helper(city, key, type, delivery)
-    }
-
-
-    const isItDelivery = () => {
- 
-    }
-
-    const changeTypeOther = (e) => {
-  
-    }
-
-    const changeTypeRestaurant = (e) => {
-  
-    }
-
-    const changeTypeAll = () => {
+    var getKeyword = (e) => {
+        str += e.currentTarget.value;
+        setKeyword(str)
     }
 
     return (
         <div>
-        <div>
-            <nav className={showNavBar ? styles.sidenavClicked : styles.sidenav}>
-                <a className={styles.closebtn} onClick={()=>setshowNavBar(false)}>&times;</a>
-                <select onChange={filterByCity}>
-                    <option value="">Please choose a city</option>
-                    {cities.map((city, index) =>
-                        <option key={index} value={city}>{city}</option>
-                    )}
-                </select>
-                <ul className={styles.filter_options}>
-                    <li onClick={changeTypeRestaurant}>Restaurants</li>
-                    <li onClick={changeTypeOther}>Other</li>
-                    <li>
-                        <label> Delivery</label>
-                        <input onClick={isItDelivery} type="checkbox" name="option" value="Delivery" />
-                    </li>
-                </ul>
-            </nav>
-            <span className={styles.slide_open_button} onClick={()=>setshowNavBar(true)}>&#9776;</span>
-            <input onChange={getType} className={styles.typeSearch} placeholder={options} />
-        </div>
-        <ListSize business={businessType} restaurant={displayedPlaces} value={city} />
-        <List restaurant={displayedPlaces}/>
+            <div>
+                <nav className={showNavBar ? styles.sidenavClicked : styles.sidenav}>
+                    <a className={styles.closebtn} onClick={() => setshowNavBar(false)}>&times;</a>
+                    <select onChange={(e) => setCity(e.target.value)}>
+                        <option value="">Please choose a city</option>
+                        {cities.map((city, index) =>
+                            <option key={index} value={city}>{city}</option>
+                        )}
+                    </select>
+                    <ul className={styles.filter_options}>
+                        <li onClick={() => setBusinessType("Restaurants")}>Restaurants</li>
+                        <li onClick={() => setBusinessType("Other")}>Other</li>
+                        <li>
+                            <label> Delivery</label>
+                            <input onClick={() => delivery ? setDelivery(false) : setDelivery(true)} type="checkbox" name="option" value="Delivery" />
+                        </li>
+                    </ul>
+                </nav>
+                <span className={styles.slide_open_button} onClick={() => setshowNavBar(true)}>&#9776;</span>
+                <input onChange={getKeyword} className={styles.typeSearch} placeholder={options} />
+            </div>
+            <ListSize business={businessType} restaurant={displayedPlaces} value={city} />
+            <List restaurant={displayedPlaces} />
         </div>
     )
 }
@@ -198,7 +186,7 @@ const styles = {
         font-size: 30px;
         cursor: pointer;
   `,
-  
+
 }
 
 export default Search;
