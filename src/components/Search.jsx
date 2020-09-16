@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { css } from 'emotion';
 import list from "../Humboldttogo.json"
 
@@ -14,8 +14,7 @@ const Search = (props) => {
     //setting initial states
     const [places, setPlaces] = useState(list);
     const [displayedPlaces, setdisplayedPlaces] = useState(list);
-    const [filteredBy, setfilteredBy] = useState('');
-    const [businessType, setBusinessType] = useState("businesses");
+    const [businessType, setBusinessType] = useState("");
     const [delivery, setDelivery] = useState(false)
     const [city, setCity] = useState("Humboldt")
     const [key, setKey] = useState("")
@@ -26,148 +25,46 @@ const Search = (props) => {
 
     //navbar classes states
     const [showNavBar, setshowNavBar] = useState(false)
+  
 
-    const helper = (datas, city, key, delivery, type) => {
-        let arr = [];
-        if (city !== 'Humboldt') {
-            if (delivery) {
-                if (type.length > 1) {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery") && datas[i].Business === type) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                } else {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                }
-            } else if (!delivery) {
-                if (type.length > 1) {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Business === type) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                } else {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].City === city && datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                }
-            }
-        } else if (city === 'Humboldt') {
-            if (delivery) {
-                if (type.length > 1) {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery") && datas[i].Business === type) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                } else {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Info.includes("Delivery")) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                }
-            } else if (!delivery) {
-                if (type.length > 1) {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase()) && datas[i].Business === type) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                } else {
-                    for (var i = 0; i < datas.length; i++) {
-                        if (datas[i].Keywords.toLowerCase().includes(key.toLowerCase())) {
-                            arr.push(datas[i])
-                        }
-                    }
-                    props.setRestaurant(arr)
-                }
-            }
-        }
+    const helper = (city, key, type, delivery) => {
+        const filtered = delivery ? places.filter(el => el.City === city).filter(el => el.Info.includes("Delivery")) : places.filter(el => el.City === city);
+        const filterKey = key.length > 0 ? filtered.filter(el => el.Keywords.toLowerCase().includes(key)) : filtered;
+        const filterType = type.length > 0 ? filterKey.filter(el => el.Business === type) : filterKey;
+
+        setdisplayedPlaces(filterType);       
     }
+
 
 
     const filterByCity = (event) => {
-        setCity(event.target.value);
-        const filtered = places.filter(el => el.City === event.target.value);
-        setfilteredBy("city");
-        return setdisplayedPlaces(filtered);
-        // event.preventDefault()
-        // const actualCity = event.target.value
-        // setCity(event.target.value)
-        // props.setValue(event.target.value)
-        // helper(list, actualCity, key, delivery, type)
-    }
+        let actualCity = event.target.value
+        setCity(actualCity);
+       return helper(event.target.value, key, type, delivery)
+    } 
 
 
     let str = ""
     var getType = (e) => {
          str += e.currentTarget.value;
-        // console.log(str)
         setKey(str)
-        console.log(str)
-        let filtered = filteredBy.length > 0 ? places.filter(el => el.Keywords.includes(e.currentTarget.value)) : displayedPlaces.filter(el => el.Keywords.includes(e.currentTarget.value));
-        // setfilteredBy("type");
-        return setdisplayedPlaces(filtered);
-
+        return helper(city, key, type, delivery)
     }
 
 
     const isItDelivery = () => {
-        if (!delivery) {
-            setDelivery(true)
-            helper(list, city, key, true, type)
-        } else if (delivery) {
-            setDelivery(false)
-            helper(list, city, key, false, type)
-        }
+ 
     }
 
     const changeTypeOther = (e) => {
-        props.setBusiness("others")
-        setOptions("petshop, iphone repair, sports,...")
-        let content = e.currentTarget.textContent
-        setType(content)
-        let arr = []
-        for (var i = 0; i < list.length; i++) {
-            if (list[i].Business === "Other") {
-                arr.push(list[i])
-            }
-        }
-        helper(arr, city, key, delivery, content)
+  
     }
 
     const changeTypeRestaurant = (e) => {
-        props.setBusiness("restaurants")
-        setOptions("pizza, burgers, mexican...")
-        let content = e.currentTarget.textContent
-        setType(content)
-
-        let arr = []
-        for (var i = 0; i < list.length; i++) {
-            if (list[i].Business === "Restaurants") {
-                arr.push(list[i])
-            }
-        }
-        helper(arr, city, key, delivery, content)
+  
     }
 
     const changeTypeAll = () => {
-        helper(list, city, key, delivery, type)
     }
 
     return (
