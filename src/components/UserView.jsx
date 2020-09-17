@@ -4,28 +4,15 @@ import { css } from 'emotion'
 
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
-import { faThList } from '@fortawesome/free-solid-svg-icons'
-
 const UserView = (props) => {
-
-    const setToMap = () => {
-        props.maplist(true)
-
-    }
-
-    const setToList = () => {
-        props.maplist(false)
-
-    }
 
     return (
         <div className={styles.icons_wrapper}>
-            <div className={styles.icons}>
-                <a onClick={setToMap}><FontAwesomeIcon icon={faMapMarkedAlt} /></a>
-                <a onClick={setToList}><FontAwesomeIcon icon={faThList} /></a>
-            </div>
+            <span className={styles.showing_x_results}> Showing {props.restaurant.length} {props.business} in {props.currentCity}</span>
+            <ul className={styles.icons}>
+                <li onClick={() => props.setView(false)}>List</li>
+                <li onClick={() => props.setView(true)}>Map</li>
+            </ul>
         </div>
     )
 }
@@ -33,40 +20,49 @@ const UserView = (props) => {
 const styles = {
     icons_wrapper: css`
         position: fixed;
-        top: 126px;
-        padding-right: 12px;
+        top: 24%;
+        left: 0;
         // border: 3px solid pink;
         background-color: white;
         width: 100vw;
-        height: 50px;
+        height: 13%;
         display: flex;
-        z-index: 1;
-        justify-content: flex-end;
-        @media (min-width: 767px) {
-            display: none;
+        z-index: 100;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 767px) {
+            height: 4%;
+            width: 100vw;
+            justify-content: space-around;
         }
-
-    
 `,
     icons: css`
-        width: 12%;
+        // position: absolute;
+        width: 40%;
+        // margin-top: 0;
+        // border: 3px solid lightblue;
         display: flex;
-        justify-content: space-between;
+        height: 70%;
+        flex-direction: row;
+        justify-content:space-between;
         align-items: center;
         color: gray;
         cursor: pointer;
+        li {
+            width: 40%;
+            margin-top: 0;
+            border: 1px solid grey;
+            list-style-type: none;
+        }
         @media (min-width: 767px) {
             display: none;
-
-        }
-        @media (width: 280px) {
-            width: 20%;
-            padding: 5px;
-        }
-        @media (width: 320px) {
-            width: 20%;
-            padding: 5px;
-        }
-`,
+        }`,
+        showing_x_results: css`
+        font-weight: bold;
+        // font-size: 1.5rem;
+        color: #322a2a;
+  
+      `
 }
 export default UserView;

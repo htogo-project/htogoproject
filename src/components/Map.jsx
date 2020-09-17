@@ -74,31 +74,20 @@ function Map(props) {
 
 const styles = {
   map: css`
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     height: 100vh;
-    width: 100%;
-    margin-top: 0px;
- @media (min-width: 767px) {
-        position: fixed;
-        // z-index: -2;
-        top: 0%;
-        right: 0%;
-        // border: 3px solid green;
-        width: 40%;
-        height: 100vh;
+    width: 50%;
+    left: 50%;
+    @media (max-width: 767px) {
+      display: none;      
     }
-    @media (min-width: 1025px) {
-      position: fixed;
-      height: 100vh;
-      width: 30%;
-      // z-index: -2;
-      margin-top: 15%;
-      margin-right: 15%;
-      right: 0%;
-      // border: 3px solid green;
-      // width: 40%;
-      // height: 100vh;
-  }
+  `,
+  map2: css`
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 98%;
   `,
   img: css`
   width: auto;
@@ -134,7 +123,7 @@ const key = process.env.REACT_APP_KEY
 export default function App(props) {
 
   return (
-      <div className={styles.map}>
+      <div className={!props.view ? styles.map : styles.map2}>
         <MapWrapped
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${key}`}
           loadingElement={<div style={{ height: `100%` }} />}
@@ -142,6 +131,6 @@ export default function App(props) {
           mapElement={<div style={{ height: `100%` }} />}
           elements={props.restaurant}
         />
-      </div>
+     </div>
   );
 }

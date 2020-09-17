@@ -1,67 +1,76 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { css } from 'emotion'
+import { css, keyframes } from 'emotion'
 import Add from './Add';
 
 
 const List = (props) => {
+    console.log(props.view)
 
     return (
-        <div>
-            <div className={styles.background}>
-                {props.restaurant.map((data, index) =>
-                    <div key={index} className={styles.contacts}>
-                        <div className={styles.div_img}>
-                            <Link to={`/${data.Restaurant}`}>
-                                <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
-                            </Link>
-                        </div>
-                        <div className={styles.title_type}>
-                            <a className={styles.restaurant_title} href={data.Website} >{data.Name}</a>
-                            <h4 className={styles.restaurant_type}>{data.Type}</h4>
-                            <div className={styles.restaurant_info}>{data.Info}</div>
-                            <div className={styles.today}> {data.Hours[new Date().getDay()]}</div>
-                            <div> <a className={styles.phone_and_address} href={`tel:${data.Phone}`}>{data.Phone}</a></div>
-                            <div> <a className={styles.phone_and_address} href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </div>
-                        </div>
+        <div className={ !props.view ? styles.background : styles.background2}>
+            {props.restaurant.map((data, index) =>
+                <div key={index} className={styles.contacts}>
+                    <div className={styles.div_img}>
+                        <Link to={`/${data.Restaurant}`}>
+                            <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
+                        </Link>
                     </div>
-                )}
-                <Add contact={props.contact} setContact={props.setContact} />
-            </div>
+                    <div className={styles.title_type}>
+                        <a className={styles.restaurant_title} href={data.Website} >{data.Name}</a>
+                        <h4 className={styles.restaurant_type}>{data.Type}</h4>
+                        <div className={styles.restaurant_info}>{data.Info}</div>
+                        <div className={styles.today}> {data.Hours[new Date().getDay()]}</div>
+                        <div> <a className={styles.phone_and_address} href={`tel:${data.Phone}`}>{data.Phone}</a></div>
+                        <div> <a className={styles.phone_and_address} href={`https://www.google.com/maps/search/?api=1&query=${data.Maps}`}>{data.Address}</a> </div>
+                    </div>
+                </div>
+            )}
+            <Add contact={props.contact} setContact={props.setContact} />
         </div>
-
     )
 
 }
 
+const changeWidth = keyframes` {
+    0% {
+      opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+      }
+    80% {
+        opacity: 0.4;
+      }
+    100% {
+        opacity: 0;
+      }
+  }
+  `;
 
 const styles = {
     background: css`
         // border: 3px solid green;
+        position:absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        margin-left: 20px;
-        // margin-right: 20px;
-        @media (width: 280px) {
+        width: 50%;
+        top: 35%;
+        z-index: -99;
+        @media (max-width: 767px) {
+            top: 30%;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-            margin-left:0;
+            transition: display:none 2s
         }
-        @media (min-width: 767px) {
-            width: 40%;
-            margin-top: 10px;
-            margin-left: 100px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+    `,
+    background2: css`
+        display: none;
+
     `,
     contacts: css`
         display: flex;
