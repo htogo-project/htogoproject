@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { css, keyframes } from 'emotion'
-import Add from './Add';
+import { css } from 'emotion'
 
 
 const List = (props) => {
-    console.log(props.view)
-
     return (
         <div className={ !props.view ? styles.background : styles.background2}>
             {props.restaurant.map((data, index) =>
@@ -26,30 +23,11 @@ const List = (props) => {
                     </div>
                 </div>
             )}
-            <Add contact={props.contact} setContact={props.setContact} />
         </div>
     )
 
 }
 
-const changeWidth = keyframes` {
-    0% {
-      opacity: 1;
-    }
-    20% {
-        opacity: 0.8;
-    }
-    40% {
-        opacity: 0.6;
-      }
-    80% {
-        opacity: 0.4;
-      }
-    100% {
-        opacity: 0;
-      }
-  }
-  `;
 
 const styles = {
     background: css`
@@ -87,10 +65,6 @@ const styles = {
             width: 95vw;
             margin-left: 0px;
         }
-        // @media (max-width: 280px) {
-        //     width: 95%;
-        //     margin-left: 20px;
-        // }
     `,
     title_type: css`
         // border: 3px solid purple;

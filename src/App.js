@@ -1,17 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css'
 
 import Header from './components/Header'
-import Search from './components/Search'
-import List from './components/List'
-import Contact from './components/Contact'
-import Map from './components/Map'
 import UserView from './components/UserView'
 import Body from './components/Body'
 
-
-import { css } from 'emotion'
 
 import list from "./Humboldttogo.json"
 

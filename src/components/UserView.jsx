@@ -28,20 +28,15 @@ const styles = {
         height: 13%;
         display: flex;
         z-index: 100;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         @media (max-width: 767px) {
             height: 4%;
             width: 100vw;
             justify-content: space-around;
+            align-items: center;
         }
 `,
     icons: css`
-        // position: absolute;
         width: 40%;
-        // margin-top: 0;
-        // border: 3px solid lightblue;
         display: flex;
         height: 70%;
         flex-direction: row;
@@ -53,6 +48,7 @@ const styles = {
             width: 40%;
             margin-top: 0;
             border: 1px solid grey;
+            text-align: center;
             list-style-type: none;
         }
         @media (min-width: 767px) {
@@ -60,8 +56,11 @@ const styles = {
         }`,
         showing_x_results: css`
         font-weight: bold;
-        // font-size: 1.5rem;
         color: #322a2a;
+        @media (min-width: 767px) {
+            margin-left: 15%;
+            font-size: 28px;
+        }
   
       `
 }

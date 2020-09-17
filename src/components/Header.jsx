@@ -50,11 +50,6 @@ const styles = {
         @media (max-width: 767px) {
             height: 100%;
             width: 100%;
-            // flex-direction: colum;
-            // align-items: flex-start
-            // display: flex;
-            // justify-content: center;
-
         }
     `
 }

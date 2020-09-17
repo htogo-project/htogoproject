@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { css } from 'emotion'
 
 
 import List from './List';
 import Map from './Map';
-import ListSize from './ListSize';
-
 
 
 const Body = (props) => {
@@ -27,7 +25,6 @@ const styles = {
         width: 100%;
         justify-content: space-between;
         // border: 3px solid blue;
-        // margin-top: 220px;
     `,
 }
 

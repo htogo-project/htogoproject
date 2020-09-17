@@ -22,7 +22,7 @@ const styles = {
         // border: 2px solid black;
         position: absolute;
         list-style-type: none;
-        width: 30%;
+        width: 20%;
         left: 60%;
         top: 0;
         display: flex;
