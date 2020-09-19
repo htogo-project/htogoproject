@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { css } from 'emotion'
 
+import { ListContext } from './ListContext';
 
 const List = (props) => {
+
+    const { places } = useContext(ListContext);
+
     return (
-        <div className={ !props.view ? styles.background : styles.background2}>
-            {props.restaurant.map((data, index) =>
+        // <div className={ !props.view ? styles.background : styles.background2}>
+        <div className={styles.background}>
+            {places.map((data, index) =>
                 <div key={index} className={styles.contacts}>
                     <div className={styles.div_img}>
-                        <Link to={`/${data.Restaurant}`}>
-                            <div> <img onClick={() => { props.setContact(true) }} className={styles.img} src={`../${data.Image}`} /> </div>
-                        </Link>
+                        {/* <Link to={`/${data.Restaurant}`}> */}
+                        <div> <img className={styles.img} src={`../${data.Image}`} /> </div>
+                        {/* </Link> */}
                     </div>
                     <div className={styles.title_type}>
                         <a className={styles.restaurant_title} href={data.Website} >{data.Name}</a>

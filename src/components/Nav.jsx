@@ -22,7 +22,7 @@ const Nav = () => {
                 <div></div>
                 <div></div>
             </div> */}
-            <div className={styles.mobile_menu_container}>
+            {/* <div className={styles.mobile_menu_container}>
                 <label onClick={() => nav_mobile === styles.nav_mobile ? setNav_mobile(styles.nav_mobile_clicked) : setNav_mobile(styles.nav_mobile)}
                 for="toggle">&#9776;</label>
                 <nav className={nav_mobile}>
@@ -32,7 +32,7 @@ const Nav = () => {
                         <li>About</li>
                     </ul>
                 </nav>
-            </div>
+            </div> */}
         </div>
     )
 }

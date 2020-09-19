@@ -1,29 +1,31 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css'
 
-import Header from './components/Header'
-import UserView from './components/UserView'
-import Body from './components/Body'
+import Header from './components/Header';
+import UserView from './components/UserView';
+import Body from './components/Body';
 
-
-import list from "./Humboldttogo.json"
+import { ListContext } from './components/ListContext';
 
 
 
 const App = () => {
+  const values = useContext(ListContext);
 
-  const [displayedPlaces, setdisplayedPlaces] = useState(list);
-  const [city, setCity] = useState("Humboldt");
-  const [businessType, setBusinessType] = useState("");
-  const [userView, setUserView] = useState(false);
+  const [city, setCity] = useState(values.city);
+  const [type, setType] = useState(values.businessType);
+  const [places, setPlaces] = useState(values.displayedPlaces);
+
 
   return (
     <Router>
       <Route path="/">
-          <Header list={displayedPlaces} setList={setdisplayedPlaces} setCurrentCity={setCity} currentCity={city} business={businessType} setBusiness={setBusinessType} />
-            <UserView setView={setUserView} view={userView} business={businessType} restaurant={displayedPlaces} currentCity={city} />
-          <Body view={userView} business={businessType} restaurant={displayedPlaces} currentCity={city} />
+        <ListContext.Provider value={{ values, city, setCity, type, setType, places, setPlaces}}>
+          <Header />
+          <UserView />
+          <Body />
+        </ListContext.Provider>
       </Route>
     </Router>
   )

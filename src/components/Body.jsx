@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useContext, useMemo } from 'react';
 import { css } from 'emotion'
 
 
 import List from './List';
-import Map from './Map';
+// import Map from './Map';
 
 
-const Body = (props) => {
+
+const Body = () => {
     return (
         <div className={styles.list_wrapper}>
-            <List view={props.view} business={props.business} restaurant={props.restaurant} setRestaurant={props.setRestaurant} currentCity={props.currentCity} />
-            <Map view={props.view} restaurant={props.restaurant} />
+            {/* <List /> */}
+            {/* <Map view={props.view} places={props.places} /> */}
         </div>
     )
 }

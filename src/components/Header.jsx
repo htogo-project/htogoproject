@@ -4,16 +4,18 @@ import { css } from 'emotion'
 import Search from './Search';
 import Nav from './Nav';
 
+
 import Logo from '../images/htogo.png'
 
 
 
-const Header = (props) => {
+const Header = () => {
+
     return (
         <div className={styles.header_wrapper}>
             <div className={styles.header}>
                 <img src={Logo} />
-                <Search list={props.list} setList={props.setList} setCurrentCity={props.setCurrentCity} currentCity={props.currentCity} business={props.business} setBusiness={props.setBusiness}/>
+                    <Search />
             </div>
             <Nav />
         </div>
@@ -23,7 +25,6 @@ const Header = (props) => {
 
 const styles = {
     header_wrapper: css`
-        overflow-x: hidden;
         position: fixed;
         top: 0;
         left: 0;
@@ -33,15 +34,16 @@ const styles = {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        // border: 2px solid blue;
         @media (max-width: 767px) {
             width: 100vw;
         }
     `,
     header: css`
-        height: 130px;
+        height: 100%;
         width: 60%;
         display: flex;
-        left: 0;
         align-items: center;
         flex-direction: row;
         justify-content: space-around;

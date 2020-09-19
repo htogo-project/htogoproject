@@ -1,18 +1,23 @@
-import React from "react";
+import React, {useContext} from "react";
 
 import { css } from 'emotion'
+import { ListContext } from './ListContext';
 
 
+const UserView = () => {
+    const {city} = useContext(ListContext);
+    const {places} = useContext(ListContext);
+    const {type} = useContext(ListContext);
 
-const UserView = (props) => {
+
 
     return (
         <div className={styles.icons_wrapper}>
-            <span className={styles.showing_x_results}> Showing {props.restaurant.length} {props.business} in {props.currentCity}</span>
-            <ul className={styles.icons}>
+            <span className={styles.showing_x_results}> Showing {places.length} {type} in {city}</span>
+            {/* <ul className={styles.icons}>
                 <li onClick={() => props.setView(false)}>List</li>
                 <li onClick={() => props.setView(true)}>Map</li>
-            </ul>
+            </ul> */}
         </div>
     )
 }
@@ -20,7 +25,7 @@ const UserView = (props) => {
 const styles = {
     icons_wrapper: css`
         position: fixed;
-        top: 24%;
+        top: 27%;
         left: 0;
         // border: 3px solid pink;
         background-color: white;

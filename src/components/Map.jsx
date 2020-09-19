@@ -38,7 +38,7 @@ function Map(props) {
       onClick={(e) => console.log(e.latLng.toJSON())}
     // defaultOptions={{ styles: styles.map }}
     >
-      {props.elements.map(business => (
+      {props.places.map(business => (
         <Marker
           key={datas.Index}
           position={business.Coord}
@@ -129,7 +129,7 @@ export default function App(props) {
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
-          elements={props.restaurant}
+          elements={props.places}
         />
      </div>
   );
