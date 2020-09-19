@@ -10,7 +10,7 @@ import List from './List';
 const Body = () => {
     return (
         <div className={styles.list_wrapper}>
-            {/* <List /> */}
+            <List />
             {/* <Map view={props.view} places={props.places} /> */}
         </div>
     )

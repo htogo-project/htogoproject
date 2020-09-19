@@ -4,7 +4,7 @@ import { css } from 'emotion'
 
 import { ListContext } from './ListContext';
 
-const List = (props) => {
+const List = () => {
 
     const { places } = useContext(ListContext);
 

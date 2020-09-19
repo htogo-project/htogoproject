@@ -25,13 +25,15 @@ const UserView = () => {
 const styles = {
     icons_wrapper: css`
         position: fixed;
-        top: 27%;
+        top: 25%;
         left: 0;
         // border: 3px solid pink;
         background-color: white;
         width: 100vw;
         height: 13%;
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         z-index: 100;
         @media (max-width: 767px) {
             height: 4%;
