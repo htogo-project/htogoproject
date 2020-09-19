@@ -37,12 +37,14 @@ const List = () => {
 const styles = {
     background: css`
         // border: 3px solid green;
-        position:absolute;
+        // position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 50%;
+        height: 100%;
+        min-height: 100%;
         top: 35%;
         z-index: -99;
         @media (max-width: 767px) {

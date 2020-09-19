@@ -19,7 +19,6 @@ const Search = () => {
 
     //setting placeholder according with type of business
     const [options, setOptions] = useState("Search type");
-    const [color, setColor] = useState("white")
 
 
 
@@ -156,6 +155,7 @@ const styles = {
             align-items: center;
             justify-content: center;
             text-align: center;   
+            font-family: 'Oswald', sans-serif;
             @media (max-width: 767px) {
                 width: 80px;
             }       

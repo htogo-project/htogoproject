@@ -1,13 +1,13 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 
 import { css } from 'emotion'
 import { ListContext } from './ListContext';
 
 
 const UserView = () => {
-    const {city} = useContext(ListContext);
-    const {places} = useContext(ListContext);
-    const {type} = useContext(ListContext);
+    const { city } = useContext(ListContext);
+    const { places } = useContext(ListContext);
+    const { type } = useContext(ListContext);
 
 
 
@@ -24,17 +24,18 @@ const UserView = () => {
 
 const styles = {
     icons_wrapper: css`
-        position: fixed;
+        position: absolute;
         top: 25%;
         left: 0;
         // border: 3px solid pink;
         background-color: white;
         width: 100vw;
         height: 13%;
+        min-height: 80px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        z-index: 100;
+        // z-index: 100;
         @media (max-width: 767px) {
             height: 4%;
             width: 100vw;
@@ -61,7 +62,7 @@ const styles = {
         @media (min-width: 767px) {
             display: none;
         }`,
-        showing_x_results: css`
+    showing_x_results: css`
         font-weight: bold;
         color: #322a2a;
         @media (min-width: 767px) {

@@ -3,6 +3,8 @@ import { css } from 'emotion'
 
 import Search from './Search';
 import Nav from './Nav';
+import UserView from './UserView';
+
 
 
 import Logo from '../images/htogo.png'
@@ -12,20 +14,33 @@ import Logo from '../images/htogo.png'
 const Header = () => {
 
     return (
-        <div className={styles.header_wrapper}>
-            <div className={styles.header}>
-                <img src={Logo} />
+        <div className={styles.fixed_top}>
+            <div className={styles.header_wrapper}>
+                <div className={styles.header}>
+                    <img src={Logo} />
                     <Search />
+                </div>
+                <Nav />
             </div>
-            <Nav />
+            <UserView />
         </div>
     )
 }
 
 
 const styles = {
-    header_wrapper: css`
+    fixed_top: css`
         position: fixed;
+        height: 28%
+        z-index: 99;
+        min-height: 500px;
+        top: 0;
+        left: 0;
+        // border: 2px solid black;
+        width: 100vw;
+    `,
+    header_wrapper: css`
+        position: absolute;
         top: 0;
         left: 0;
         background-color: white;
@@ -41,6 +56,7 @@ const styles = {
         }
     `,
     header: css`
+        position: absolute;
         height: 100%;
         width: 60%;
         display: flex;
