@@ -10,6 +10,8 @@ const Search = () => {
     const { city, setCity } = useContext(ListContext);
     const { type, setType } = useContext(ListContext);
     const { places, setPlaces } = useContext(ListContext);
+    const { ready, setReady } = useContext(ListContext);
+
 
 
     const [delivery, setDelivery] = useState(false);
@@ -34,7 +36,7 @@ const Search = () => {
         const filtered = delivery ? filterCity.filter(el => el.Info.includes("Delivery")) : filterCity;
         const filterKey = key.length > 0 ? filtered.filter(el => el.Keywords.toLowerCase().includes(key)) : filtered;
         const filterType = type !== "businesses" ? filterKey.filter(el => el.Business === type) : filterKey;
-
+        setReady(true)
         return filterType;
     }
 
@@ -156,6 +158,10 @@ const styles = {
             justify-content: center;
             text-align: center;   
             font-family: 'Oswald', sans-serif;
+            background-color: white;
+            &:hover {
+                background-color: #8fbc8f;
+            }
             @media (max-width: 767px) {
                 width: 80px;
             }       

@@ -1,19 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import "react-placeholder/lib/reactPlaceholder.css";
 
-import { css } from 'emotion'
+
+import { css, keyframes} from 'emotion'
 import { ListContext } from './ListContext';
 
 
 const UserView = () => {
+    const [placeholderClass, setplaceholderClass] = useState(styles.showing_x_results)
+
     const { city } = useContext(ListContext);
     const { places } = useContext(ListContext);
     const { type } = useContext(ListContext);
 
 
 
+
+console.log(placeholderClass, placeholderClass=== styles.showing_x_results)
     return (
         <div className={styles.icons_wrapper}>
-            <span className={styles.showing_x_results}> Showing {places.length} {type} in {city}</span>
+                <span className={styles.showing_x_results}> Showing {places.length} {type} in {city}</span>
+
             {/* <ul className={styles.icons}>
                 <li onClick={() => props.setView(false)}>List</li>
                 <li onClick={() => props.setView(true)}>Map</li>
@@ -22,10 +29,12 @@ const UserView = () => {
     )
 }
 
+
+
 const styles = {
     icons_wrapper: css`
         position: absolute;
-        top: 25%;
+        top: 24%;
         left: 0;
         // border: 3px solid pink;
         background-color: white;
@@ -63,13 +72,14 @@ const styles = {
             display: none;
         }`,
     showing_x_results: css`
+        width: auto;
+        height: auto;
         font-weight: bold;
         color: #322a2a;
         @media (min-width: 767px) {
             margin-left: 15%;
             font-size: 28px;
         }
-  
-      `
+      `,
 }
 export default UserView;

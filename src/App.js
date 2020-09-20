@@ -19,12 +19,14 @@ const App = () => {
   const [city, setCity] = useState(values.city);
   const [type, setType] = useState(values.businessType);
   const [places, setPlaces] = useState(values.displayedPlaces);
+  const [ready, setReady] = useState(values.ready);
+
 
 
   return (
     <Router>
       <Route path="/">
-        <ListContext.Provider value={{ values, city, setCity, type, setType, places, setPlaces }}>
+        <ListContext.Provider value={{ values, city, setCity, type, setType, places, setPlaces, ready, setReady }}>
           <Header />
           <Body />
         </ListContext.Provider>
