@@ -40,6 +40,7 @@ const styles = {
         width: 100vw;
     `,
     header_wrapper: css`
+        border-bottom: 1px solid #EAEAEB;
         position: absolute;
         top: 0;
         left: 0;
