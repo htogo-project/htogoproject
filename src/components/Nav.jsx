@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
+
 import { css } from 'emotion';
 
 
@@ -7,7 +9,8 @@ const Nav = () => {
 
     const [nav_mobile, setNav_mobile] = useState(styles.menu)
 
-  
+    const { loginWithRedirect } = useAuth0();
+
 
     return (
             <div className={styles.nav}>
@@ -15,7 +18,7 @@ const Nav = () => {
                 <nav className={nav_mobile}>
                     <ul>
                         <li>For business</li>
-                        <li>Login </li>
+                        <li onClick={() => loginWithRedirect()}>Log in </li>
                         <li>About</li>
                     </ul>
                 </nav>

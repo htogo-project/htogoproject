@@ -15,8 +15,6 @@ const UserView = () => {
 
 
 
-
-console.log(placeholderClass, placeholderClass=== styles.showing_x_results)
     return (
         <div className={styles.icons_wrapper}>
                 <span className={styles.showing_x_results}> Showing {places.length} {type} in {city}</span>
