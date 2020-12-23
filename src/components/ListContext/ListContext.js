@@ -1,8 +1,8 @@
 import React from 'react';
 
-import list from "../Humboldttogo.json";
+import list from "../../Humboldttogo.json";
 
-const initialStates = {
+export const initialStates = {
     city: "Humboldt",
     businessType: "businesses",
     displayedPlaces: list,

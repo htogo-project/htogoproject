@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap");
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  height: 100%;
+  min-height: 150px;
+  font-family: "Oswald", sans-serif;
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+
+  min-height: 150px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
