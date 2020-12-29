@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import "react-placeholder/lib/reactPlaceholder.css"
 
-import { css, keyframes } from "emotion"
+import { css } from "emotion"
 import { ListContext } from "../ListContext"
 
 const styles = {
@@ -58,9 +58,9 @@ const styles = {
 }
 
 export const UserView = () => {
-  const [placeholderClass, setplaceholderClass] = useState(
-    styles.showing_x_results
-  )
+  // const [placeholderClass, setplaceholderClass] = useState(
+  //   styles.showing_x_results
+  // )
 
   const { city } = useContext(ListContext)
   const { places } = useContext(ListContext)

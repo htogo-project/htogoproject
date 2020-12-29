@@ -1,12 +1,12 @@
-import React from 'react';
+import { createContext } from "react"
 
-import list from "../../Humboldttogo.json";
+import list from "../../Humboldttogo.json"
 
 export const initialStates = {
-    city: "Humboldt",
-    businessType: "businesses",
-    displayedPlaces: list,
-    ready: false
+  city: "Humboldt",
+  businessType: "businesses",
+  displayedPlaces: list,
+  ready: false,
 }
 
-export const ListContext = React.createContext(initialStates);
+export const ListContext = createContext(initialStates)

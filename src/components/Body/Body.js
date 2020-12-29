@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from "react"
+import React from "react"
 import { css } from "emotion"
 
 import { List } from "../List"
@@ -10,7 +10,6 @@ const styles = {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    // border: 3px solid blue;
   `,
 }
 

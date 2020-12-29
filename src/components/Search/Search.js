@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react"
+import React, { useState, useContext, useEffect, useCallback } from "react"
 import { ListContext } from "../ListContext"
 import { css } from "emotion"
 
@@ -88,8 +88,8 @@ const styles = {
 export const Search = () => {
   const { city, setCity } = useContext(ListContext)
   const { type, setType } = useContext(ListContext)
-  const { places, setPlaces } = useContext(ListContext)
-  const { ready, setReady } = useContext(ListContext)
+  const { setPlaces } = useContext(ListContext)
+  const { setReady } = useContext(ListContext)
 
   const [delivery, setDelivery] = useState(false)
   const [keyword, setKeyword] = useState("")
@@ -136,16 +136,23 @@ export const Search = () => {
     setReady(true)
     return filterType
   }
-
-  useEffect(() => {
+  const SetPlaces = useCallback(() => {
     setPlaces(setList(city, keyword, type, delivery))
   }, [city, keyword, type, delivery])
 
-  const test = () => {
-    const finalList = setList(city, keyword, type, delivery)
-    console.log(setList(city, keyword, type, delivery))
-    setPlaces(finalList)
-  }
+  useEffect(() => {
+    SetPlaces()
+  }, [])
+
+  // useEffect(() => {
+  //   setPlaces(setList(city, keyword, type, delivery))
+  // }, [city, keyword, type, delivery])
+
+  // const test = () => {
+  //   const finalList = setList(city, keyword, type, delivery)
+  //   console.log(setList(city, keyword, type, delivery))
+  //   setPlaces(finalList)
+  // }
   let str = ""
   var getKeyword = (e) => {
     str += e.currentTarget.value

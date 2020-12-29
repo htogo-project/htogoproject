@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import { Link } from "react-router-dom"
 import { css } from "emotion"
 
 // components
@@ -156,7 +155,11 @@ export const List = () => {
             {/* <Link to={`/${data.Restaurant}`}> */}
             <div>
               {" "}
-              <img className={styles.img} src={`../${data.Image}`} />{" "}
+              <img
+                className={styles.img}
+                src={`../${data.Image}`}
+                alt=''
+              />{" "}
             </div>
             {/* </Link> */}
           </div>

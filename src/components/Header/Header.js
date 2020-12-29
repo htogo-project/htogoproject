@@ -57,7 +57,7 @@ export const Header = () => {
     <div className={styles.fixed_top}>
       <div className={styles.header_wrapper}>
         <div className={styles.header}>
-          <img src={Logo} />
+          <img src={Logo} alt='' />
           <Search />
         </div>
         <Nav />

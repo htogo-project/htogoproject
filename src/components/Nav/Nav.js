@@ -123,7 +123,7 @@ export const Nav = () => {
             : setNav_mobile(styles.menu)
         }
         className={styles.label}
-        for={"toggle"}
+        htmlFor={"toggle"}
       >
         &#9776;
       </label>
