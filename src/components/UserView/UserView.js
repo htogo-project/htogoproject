@@ -6,23 +6,13 @@ import { ListContext } from "../ListContext"
 
 const styles = {
   icons_wrapper: css`
-    position: absolute;
     top: 24%;
     left: 0;
-    // border: 3px solid pink;
     background-color: white;
-    width: 100vw;
-    height: 13%;
-    min-height: 80px;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    // z-index: 100;
-    @media (max-width: 767px) {
-      height: 4%;
-      width: 100vw;
-      justify-content: space-around;
-      align-items: center;
     }
   `,
   icons: css`
@@ -50,10 +40,8 @@ const styles = {
     height: auto;
     font-weight: bold;
     color: #322a2a;
-    @media (min-width: 767px) {
-      margin-left: 15%;
-      font-size: 28px;
-    }
+    font-size: 2rem;
+    text-align: center;
   `,
 }
 
@@ -69,7 +57,6 @@ export const UserView = () => {
   return (
     <div className={styles.icons_wrapper}>
       <span className={styles.showing_x_results}>
-        {" "}
         Showing {places.length} {type} in {city}
       </span>
 

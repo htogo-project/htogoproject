@@ -11,8 +11,22 @@ box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
+  font-size: 62.75%;
+  @media(max-width: 650px){
+    font-size: 50%;
+  }
 }
 body {
   font-family: 'Signika', sans-serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.centralizer{
+  width: 95vw;
+  max-width: 1333px;
+  margin: 0 auto;
 }
 `

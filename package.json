@@ -37,7 +37,9 @@
     "react-sidebar": "^3.0.2",
     "react-slide-menu": "^0.5.1",
     "require": "^2.4.20",
-    "smtp": "^0.1.4"
+    "smtp": "^0.1.4",
+    "styled-components": "^5.2.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

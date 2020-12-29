@@ -1,5 +1,5 @@
-import React from "react"
-import { css } from "emotion"
+import React, { useState, useEffect, useCallback, useRef } from "react"
+import styled from "styled-components"
 
 import Logo from "../../images/htogo.png"
 
@@ -8,61 +8,91 @@ import { Search } from "../Search/Search"
 import { Nav } from "../Nav"
 import { UserView } from "../UserView"
 
-const styles = {
-  fixed_top: css`
-        position: fixed;
-        height: 28%
-        z-index: 99;
-        min-height: 500px;
-        top: 0;
-        left: 0;
-        // border: 2px solid black;
-        width: 100vw;
-    `,
-  header_wrapper: css`
-    border-bottom: 1px solid #eaeaeb;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    width: 100vw;
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    // border: 2px solid blue;
-    @media (max-width: 767px) {
-      width: 100vw;
-    }
-  `,
-  header: css`
-    position: absolute;
-    height: 100%;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    // border: 2px solid purple;
-    @media (max-width: 767px) {
-      height: 100%;
-      width: 100%;
-    }
-  `,
-}
+const MainHeader = styled.header`
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  width: 100vw;
+  padding-bottom: 2rem;
+`
+const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+`
+const LogoContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: ${({ isMobileSize }) => (!isMobileSize ? "fit-content" : "100%")};
+  span {
+    display: ${({ isMobileSize }) => (!isMobileSize ? "none" : "unset")};
+  }
+`
+const InvisbleHeader = styled.div`
+  height: ${({ headerHeight }) => headerHeight + "px"};
+`
+
 export const Header = () => {
+  const maxWidthToResize = "650"
+  const headerElement = useRef()
+  const [headerHeight, setHeaderHeight] = useState()
+  const [isMobileSize, setIsMobileSize] = useState(() => {
+    const atualWindowSize = window.innerWidth
+    return atualWindowSize <= maxWidthToResize
+  })
+  const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false)
+
+  const setInvisibleHeaderHeight = useCallback(() => {
+    setHeaderHeight(headerElement.current.offsetHeight)
+  }, [setHeaderHeight])
+
+  useEffect(() => {
+    setInvisibleHeaderHeight()
+  }, [setInvisibleHeaderHeight])
+
+  const resizeFunction = useCallback(() => {
+    window.addEventListener("resize", () => {
+      const atualWindowSize = window.innerWidth
+      if (atualWindowSize <= maxWidthToResize && isMobileSize !== true) {
+        setIsMobileSize(true)
+      } else if (atualWindowSize > maxWidthToResize && isMobileSize !== false) {
+        setIsMobileSize(false)
+      }
+    })
+    setMobileNavIsOpen(false)
+  }, [isMobileSize, setIsMobileSize])
+
+  useEffect(() => {
+    resizeFunction()
+  }, [resizeFunction])
+
   return (
-    <div className={styles.fixed_top}>
-      <div className={styles.header_wrapper}>
-        <div className={styles.header}>
-          <img src={Logo} alt='' />
-          <Search />
+    <>
+      <MainHeader ref={headerElement}>
+        <div className='centralizer'>
+          <HeaderWrapper isMobileSize={isMobileSize}>
+            <LogoContent isMobileSize={isMobileSize}>
+              <img src={Logo} alt='' />
+              <span onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}>
+                &#9776;
+              </span>
+            </LogoContent>
+            <Search />
+            <Nav
+              isMobileSize={isMobileSize}
+              mobileNavIsOpen={mobileNavIsOpen}
+            />
+          </HeaderWrapper>
+          <UserView />
         </div>
-        <Nav />
-      </div>
-      <UserView />
-    </div>
+      </MainHeader>
+      <InvisbleHeader headerHeight={headerHeight} />
+    </>
   )
 }

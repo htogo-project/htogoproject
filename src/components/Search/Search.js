@@ -6,53 +6,56 @@ import list from "../../Humboldttogo.json"
 
 const styles = {
   search_wrapper: css`
-    // border: 2px solid red;
-    margin-top: 3px;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
-    height: 80%;
-    @media (max-width: 767px) {
-      margin-top: 0px;
-      width: 100%;
-      height: 50%;
+    max-width: 350px;
+    > div {
       display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  `,
-  dropdown: css`
-    width: 20%;
-    height: 40%;
-    border: none;
-    outline: none;
-    background-color: white;
-    font-size: 15px;
-    padding: 1px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
-    option {
-      text-align: center;
-      color: #322a2a;
+      flex-wrap: wrap;
+      width: 100%;
+      > input {
+        flex: 1 1 64%;
+      }
+      > select {
+        flex: 1 1 35%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5),
+          0 2px 2px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        background-color: white;
+        border: none;
+        font-size: 15px;
+        padding: 1px;
+        height: 30%;
+        ::before {
+          height: 30%;
+          margin: 0;
+        }
+        > option {
+          color: #322a2a;
+        }
+      }
     }
   `,
   filter_options: css` 
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding-top: 5px;
         background-color: white;
         width: 60%;
         height: 30%;
+        gap: 10px;
         }
         button {
+          flex: 1 1 auto;
             box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
             cursor: pointer;
             border: none;
             outline: none;
-            width: 100px;
             height: 100%;
             display: flex;
             flex-direction: row;
@@ -64,23 +67,17 @@ const styles = {
             &:hover {
                 background-color: #8fbc8f;
             }
-            @media (max-width: 767px) {
-                width: 80px;
-            }       
+   
         }
         @media (max-width: 767px) {
             width: 100%;
-            justify-content: space-around;
         } 
     `,
   typeSearch: css`
-    clear: both;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
     border: none;
     background-color: white;
     outline: none;
-    width: 70%;
-    height: 40%;
     font-size: 15px;
   `,
 }
@@ -142,7 +139,7 @@ export const Search = () => {
 
   useEffect(() => {
     SetPlaces()
-  }, [])
+  }, [SetPlaces])
 
   // useEffect(() => {
   //   setPlaces(setList(city, keyword, type, delivery))
@@ -184,22 +181,21 @@ export const Search = () => {
 
   return (
     <div className={styles.search_wrapper}>
-      <input
-        onChange={getKeyword}
-        className={styles.typeSearch}
-        placeholder={options}
-      />
-      <select
-        className={styles.dropdown}
-        onChange={(e) => setCity(e.target.value)}
-      >
-        <option value=''>City</option>
-        {cities.map((city, index) => (
-          <option key={index} value={city}>
-            {city}
-          </option>
-        ))}
-      </select>
+      <div>
+        <input
+          onChange={getKeyword}
+          className={styles.typeSearch}
+          placeholder={options}
+        />
+        <select onChange={(e) => setCity(e.target.value)}>
+          <option value=''>City</option>
+          {cities.map((city, index) => (
+            <option key={index} value={city}>
+              {city}
+            </option>
+          ))}
+        </select>
+      </div>
       <div className={styles.filter_options}>
         <button onClick={setFilter}>Restaurants</button>
         <button onClick={setFilter}>Other</button>

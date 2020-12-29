@@ -5,7 +5,6 @@ import "./index.css"
 // components
 import { Header } from "../../components/Header"
 import { Body } from "../../components/Body"
-// import { MainModal } from "../../components/MainModal"
 
 import { ListContext } from "../../components/ListContext"
 
@@ -35,7 +34,6 @@ export const Home = () => {
         >
           <Header />
           <Body />
-          {/* <MainModal /> */}
         </ListContext.Provider>
       </Route>
     </Router>
