@@ -7,8 +7,10 @@ import { CardComponent } from "../CardComponent"
 
 const PlaceListWrapper = styled.section`
   display: flex;
-  flex-direction: column;
+  flex: 0 1 400px;
+  flex-wrap: wrap;
   gap: 20px;
+  padding: 2rem 0;
 `
 
 export const List = () => {

@@ -28,8 +28,8 @@ ul{
   list-style: none;
 }
 .centralizer{
-  width: 95vw;
-  max-width: 1333px;
+  width: 1333px;
+  max-width: 95vw;
   margin: 0 auto;
 }
 `

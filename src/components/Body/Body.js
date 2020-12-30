@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { List } from "../List"
 
 const BodyWrapper = styled.section`
-  width: 100vw;
+  width: 100%;
   .centralizer {
     display: flex;
   }

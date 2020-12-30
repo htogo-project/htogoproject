@@ -1,27 +1,47 @@
 import React, { useContext, useCallback, useEffect, useState } from "react"
 import styled from "styled-components"
+import {
+  AiOutlineCheckCircle,
+  AiOutlineExclamationCircle,
+} from "react-icons/ai"
 
 // context
 import { ListContext } from "../ListContext"
 
 const Card = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: flex-start;
-  width: 400px;
+  flex: 1 1 410px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 0 black;
+`
+const CardImg = styled.div`
+  flex: 1 0 130px;
+  display: flex;
   > img {
-    width: 150px;
+    width: 100%;
   }
 `
 const CardDescription = styled.div`
   display: flex;
+  flex: 1 0 163px;
   flex-direction: column;
   gap: 5px;
+  padding: 5px;
+  height: 100%;
 `
-const CardDescriptionTitle = styled.a`
-  font-size: 1.6rem;
-  color: #322a2a;
-  font-weight: bold;
+const CardDescriptionTitle = styled.div`
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    font-size: 1.6rem;
+    color: #322a2a;
+    font-weight: bold;
+  }
 `
 const CardDescriptionText = styled.p`
   font-size: 1.2rem;
@@ -43,6 +63,7 @@ const CardDescriptionAddress = styled.a`
 export const CardComponent = ({ CardElement }) => {
   const { places } = useContext(ListContext)
   const [place, setPlace] = useState({})
+  const [cardIsClaimed, setCardIsClaimed] = useState(true)
 
   const firstPlace = useCallback(() => {
     CardElement ? setPlace(CardElement) : setPlace(places[0])
@@ -54,10 +75,17 @@ export const CardComponent = ({ CardElement }) => {
 
   return (
     <Card>
-      <img src={place.Image} alt={place.Name} />
+      <CardImg>
+        <img src={place.Image} alt={place.Name} />
+      </CardImg>
       <CardDescription>
-        <CardDescriptionTitle href={place.Website}>
-          {place.Name}
+        <CardDescriptionTitle>
+          <a href={place.Website}>{place.Name}</a>
+          {cardIsClaimed ? (
+            <AiOutlineCheckCircle color={"green"} size='2rem' />
+          ) : (
+            <AiOutlineExclamationCircle color={"red"} size='2rem' />
+          )}
         </CardDescriptionTitle>
         <CardDescriptionText>{place.Type}</CardDescriptionText>
         <CardDescriptionText>{place.Info}</CardDescriptionText>

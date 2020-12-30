@@ -13,8 +13,8 @@ const MainHeader = styled.header`
   left: 0;
   top: 0;
   background: white;
-  width: 100vw;
-  padding-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 4rem;
   box-sizing: border-box;
 `
 const HeaderWrapper = styled.div`
