@@ -3,7 +3,7 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 // components
 import { ListContext } from "../ListContext"
-import { CardComponent } from "../CardComponent"
+import { CardComponent } from "./components/CardComponent"
 
 const PlaceListWrapper = styled.section`
   display: flex;

@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai"
 
 // context
-import { ListContext } from "../ListContext"
+import { ListContext } from "../../../ListContext"
 
 const Card = styled.div`
   display: flex;
