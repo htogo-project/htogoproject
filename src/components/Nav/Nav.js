@@ -9,7 +9,8 @@ const HeaderNav = styled.nav`
   overflow: hidden;
   flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "none" : "column")};
   width: ${({ isMobileSize }) => (!isMobileSize ? "fit-content" : "100%")};
-  max-height: ${({ mobileNavIsOpen }) => (!mobileNavIsOpen ? "0" : "500px")};
+  max-height: ${({ isMobileSize, mobileNavIsOpen }) =>
+    isMobileSize && !mobileNavIsOpen ? "0" : "500px"};
   transition: max-height 0.2s;
 `
 
@@ -17,10 +18,11 @@ const HeanderNavList = styled.ul`
   display: flex;
   gap: 10px;
   cursor: default;
-  flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "row" : "column")};
+  flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "unset" : "column")};
   li {
     transition: box-shadow 0.2s;
     padding: 5px;
+    font-size: 12px;
     :hover {
       cursor: pointer;
       box-shadow: 0 0 4px 0 black;

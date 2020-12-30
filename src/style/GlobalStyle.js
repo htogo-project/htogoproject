@@ -18,6 +18,9 @@ html {
 }
 body {
   font-family: 'Signika', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
 }
 ul{
   margin: 0;

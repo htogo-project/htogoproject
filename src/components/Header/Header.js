@@ -15,6 +15,7 @@ const MainHeader = styled.header`
   background: white;
   width: 100vw;
   padding-bottom: 2rem;
+  box-sizing: border-box;
 `
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -35,6 +36,7 @@ const LogoContent = styled.div`
   }
 `
 const InvisbleHeader = styled.div`
+  width: 100%;
   height: ${({ headerHeight }) => headerHeight + "px"};
 `
 
@@ -48,13 +50,13 @@ export const Header = () => {
   })
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false)
 
-  const setInvisibleHeaderHeight = useCallback(() => {
-    setHeaderHeight(headerElement.current.offsetHeight)
-  }, [setHeaderHeight])
+  // const setInvisibleHeaderHeight = useCallback(() => {
+  //   setHeaderHeight(headerElement.current.offsetHeight)
+  // }, [setHeaderHeight])
 
-  useEffect(() => {
-    setInvisibleHeaderHeight()
-  }, [setInvisibleHeaderHeight])
+  // useEffect(() => {
+  //   setInvisibleHeaderHeight()
+  // }, [setInvisibleHeaderHeight])
 
   const resizeFunction = useCallback(() => {
     window.addEventListener("resize", () => {
@@ -65,8 +67,9 @@ export const Header = () => {
         setIsMobileSize(false)
       }
     })
+    setHeaderHeight(headerElement.current.offsetHeight)
     setMobileNavIsOpen(false)
-  }, [isMobileSize, setIsMobileSize])
+  }, [isMobileSize, setIsMobileSize, setHeaderHeight])
 
   useEffect(() => {
     resizeFunction()
