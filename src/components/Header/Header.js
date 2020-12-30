@@ -50,14 +50,6 @@ export const Header = () => {
   })
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false)
 
-  // const setInvisibleHeaderHeight = useCallback(() => {
-  //   setHeaderHeight(headerElement.current.offsetHeight)
-  // }, [setHeaderHeight])
-
-  // useEffect(() => {
-  //   setInvisibleHeaderHeight()
-  // }, [setInvisibleHeaderHeight])
-
   const resizeFunction = useCallback(() => {
     window.addEventListener("resize", () => {
       const atualWindowSize = window.innerWidth
@@ -66,11 +58,14 @@ export const Header = () => {
       } else if (atualWindowSize > maxWidthToResize && isMobileSize !== false) {
         setIsMobileSize(false)
       }
+      setHeaderHeight(headerElement.current.offsetHeight)
     })
-    setHeaderHeight(headerElement.current.offsetHeight)
     setMobileNavIsOpen(false)
   }, [isMobileSize, setIsMobileSize, setHeaderHeight])
 
+  useEffect(() => {
+    setHeaderHeight(headerElement.current.offsetHeight)
+  }, [])
   useEffect(() => {
     resizeFunction()
   }, [resizeFunction])

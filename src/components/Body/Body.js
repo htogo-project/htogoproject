@@ -1,23 +1,22 @@
 import React from "react"
-import { css } from "emotion"
+import styled from "styled-components"
 
+// components
 import { List } from "../List"
-// import Map from './Map';
 
-const styles = {
-  list_wrapper: css`
+const BodyWrapper = styled.section`
+  width: 100vw;
+  .centralizer {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-  `,
-}
+  }
+`
 
 export const Body = () => {
   return (
-    <div className={styles.list_wrapper}>
-      <List />
-      {/* <Map view={props.view} places={props.places} /> */}
-    </div>
+    <BodyWrapper>
+      <div className='centralizer'>
+        <List />
+      </div>
+    </BodyWrapper>
   )
 }
