@@ -16,6 +16,7 @@ const MainHeader = styled.header`
   width: 100%;
   padding-bottom: 4rem;
   box-sizing: border-box;
+  z-index: 500;
 `
 const HeaderWrapper = styled.div`
   width: 100%;

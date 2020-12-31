@@ -1,12 +1,11 @@
 import React, { useContext, useCallback, useEffect, useState } from "react"
 import styled from "styled-components"
-import {
-  AiOutlineCheckCircle,
-  AiOutlineExclamationCircle,
-} from "react-icons/ai"
 
 // context
 import { ListContext } from "../../../ListContext"
+
+// components
+import { ClaimButton, ClaimedButton } from "../ClaimedButtons"
 
 const Card = styled.div`
   display: flex;
@@ -63,7 +62,7 @@ const CardDescriptionAddress = styled.a`
 export const CardComponent = ({ CardElement }) => {
   const { places } = useContext(ListContext)
   const [place, setPlace] = useState({})
-  const [cardIsClaimed, setCardIsClaimed] = useState(true)
+  const cardIsClaimed = false
 
   const firstPlace = useCallback(() => {
     CardElement ? setPlace(CardElement) : setPlace(places[0])
@@ -81,11 +80,7 @@ export const CardComponent = ({ CardElement }) => {
       <CardDescription>
         <CardDescriptionTitle>
           <a href={place.Website}>{place.Name}</a>
-          {cardIsClaimed ? (
-            <AiOutlineCheckCircle color={"green"} size='2rem' />
-          ) : (
-            <AiOutlineExclamationCircle color={"red"} size='2rem' />
-          )}
+          {cardIsClaimed ? <ClaimButton /> : <ClaimedButton />}
         </CardDescriptionTitle>
         <CardDescriptionText>{place.Type}</CardDescriptionText>
         <CardDescriptionText>{place.Info}</CardDescriptionText>

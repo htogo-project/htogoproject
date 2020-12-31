@@ -10,7 +10,7 @@ const PlaceListWrapper = styled.section`
   flex: 0 1 400px;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 2rem 0;
+  padding: 3.5rem 0;
 `
 
 export const List = () => {
