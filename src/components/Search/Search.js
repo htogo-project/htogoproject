@@ -5,82 +5,92 @@ import { css } from "emotion"
 import list from "../../Humboldttogo.json"
 
 const styles = {
-  search_wrapper: css`
-    margin: 0 auto;
+
+
+  typeSearch: css`
+    height: 100%;
+    width: 30%;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    -webkit-appearance: none;
+    background-color: white;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 70%;`,
+    
+  search_input_box: css`
+    height: 30%;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 350px;
-    > div {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      > input {
-        flex: 1 1 64%;
-      }
-      > select {
-        flex: 1 1 35%;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5),
-          0 2px 2px 0 rgba(0, 0, 0, 0.19);
-        outline: none;
-        background-color: white;
-        border: none;
-        font-size: 15px;
-        padding: 1px;
-        height: 30%;
-        ::before {
-          height: 30%;
-          margin: 0;
-        }
-        > option {
-          color: #322a2a;
-        }
-      }
-    }
-  `,
+    justify-content: space-between;
+    `,
+
+
+  cities: css`
+    height: 100%;
+    width: 28%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 15px;
+    align-text: center;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    `,
+
   filter_options: css` 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    gap: 10px;
+  }
+    button {
+      flex: 1 1 auto;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-top: 5px;
+        text-align: center;   
+        font-family: 'Oswald', sans-serif;
         background-color: white;
-        width: 60%;
-        height: 30%;
-        gap: 10px;
+        &:hover {
+            background-color: #8fbc8f;
         }
-        button {
-          flex: 1 1 auto;
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
-            cursor: pointer;
-            border: none;
-            outline: none;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            text-align: center;   
-            font-family: 'Oswald', sans-serif;
-            background-color: white;
-            &:hover {
-                background-color: #8fbc8f;
-            }
-   
-        }
-        @media (max-width: 767px) {
-            width: 100%;
-        } 
-    `,
-  typeSearch: css`
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
-    border: none;
-    background-color: white;
-    outline: none;
-    font-size: 15px;
+
+    }
+    @media (max-width: 767px) {
+      margin: auto;
+        width: 100%;
+    } 
   `,
+
+  search_wrapper: css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 350px;
+    height: 150px;
+    margin: auto;
+  `,
+    
+
 }
+
 
 export const Search = () => {
   const { city, setCity } = useContext(ListContext)
@@ -181,14 +191,14 @@ export const Search = () => {
 
   return (
     <div className={styles.search_wrapper}>
-      <div>
+      <div className={styles.search_input_box}>
         <input
           onChange={getKeyword}
           className={styles.typeSearch}
           placeholder={options}
         />
-        <select onChange={(e) => setCity(e.target.value)}>
-          <option value=''>City</option>
+        <select onChange={(e) => setCity(e.target.value)} className={styles.cities}>
+          <option className={styles.option} value=''>City</option>
           {cities.map((city, index) => (
             <option key={index} value={city}>
               {city}
