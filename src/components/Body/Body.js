@@ -1,11 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-// components
-import { List } from "../List"
+import { List } from "../List";
 
 const BodyWrapper = styled.section`
+  /* border: 3px solid black; */
   width: 100%;
+  display: flex;
+  justify-content: space-around;
   .centralizer {
     display: flex;
   }
@@ -14,9 +16,9 @@ const BodyWrapper = styled.section`
 export const Body = () => {
   return (
     <BodyWrapper>
-      <div className='centralizer'>
+      {/* <div className='centralizer'> */}
         <List />
-      </div>
+      {/* </div> */}
     </BodyWrapper>
   )
 }

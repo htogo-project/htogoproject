@@ -1,14 +1,14 @@
-import React, { useState, useContext, useEffect, useCallback } from "react"
-import { ListContext } from "../ListContext"
-import { css } from "emotion"
+import React, { useState, useContext, useEffect, useCallback } from "react";
+import { ListContext } from "../ListContext";
+import { css } from "emotion";
 
-import list from "../../Humboldttogo.json"
+import list from "../../Humboldttogo.json";
 
 const styles = {
 
 
   typeSearch: css`
-    height: 100%;
+    /* height: 100%; */
     width: 30%;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
     border: none;
@@ -17,15 +17,17 @@ const styles = {
     outline: none;
     font-size: 15px;
     box-sizing: border-box;
-    width: 70%;`,
+    width: 70%;
+    `,
     
   search_input_box: css`
-    height: 30%;
+    /* height: 30%; */
     width: 100%;
+    margin-bottom: 5px;
+    /* border: 3px solid green; */
     display: flex;
     justify-content: space-between;
     `,
-
 
   cities: css`
     height: 100%;
@@ -47,10 +49,12 @@ const styles = {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
+    /* padding-top: 5px; */
     background-color: white;
+    /* border: 3px solid purple; */
+
     width: 100%;
-    height: 30%;
+    /* height: 30%; */
     gap: 10px;
   }
     button {
@@ -59,7 +63,7 @@ const styles = {
         cursor: pointer;
         border: none;
         outline: none;
-        height: 100%;
+        /* height: 100%; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -82,10 +86,14 @@ const styles = {
     display: flex;
     justify-content: center;
     align-items: center;
+    top:0;
     flex-wrap: wrap;
-    max-width: 350px;
-    height: 150px;
-    margin: auto;
+    width: 410px;
+        /* border: 3px solid purple; */
+
+    max-width: 410px;
+    /* height: 150px; */
+
   `,
     
 
@@ -145,7 +153,7 @@ export const Search = () => {
   }
   const SetPlaces = useCallback(() => {
     setPlaces(setList(city, keyword, type, delivery))
-  }, [city, keyword, type, delivery])
+  }, [])
 
   useEffect(() => {
     SetPlaces()

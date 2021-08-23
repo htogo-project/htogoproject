@@ -7,35 +7,57 @@ import { ListContext } from "../../../ListContext"
 // components
 import { ClaimButton, ClaimedButton } from "../ClaimedButtons"
 
+
+var is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
+// console.log(is_mobile)
+var percentageWidth = is_mobile ? '80%' : '100%';
+var height = is_mobile ? '120px' : '60%';
+var isMobileTransform = is_mobile ? 'none' : 'translateX(-10%) translateY(-10%)';
+
 const Card = styled.div`
+  display: -webkit-flex;
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  flex: 1 1 410px;
-  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;;
+  width: ${percentageWidth};
+  height: ${height};
+  margin: 3% auto 5px auto;
   box-sizing: border-box;
   box-shadow: 0 0 5px 0 black;
+  -webkit-transform: ${isMobileTransform};
+  -moz-transform: ${isMobileTransform};
+  transform: ${isMobileTransform};
 `
 const CardImg = styled.div`
-  flex: 1 0 130px;
+  display: -webkit-flex;
   display: flex;
+  /* margin: auto; */
+  justify-content: center;
+  align-items:center;
+  width: 40%;
   > img {
-    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: 0 4px;
+    width: 200px;
+    height: 120px;
   }
 `
 const CardDescription = styled.div`
+  display: -webkit-flex;
   display: flex;
   flex: 1 0 163px;
   flex-direction: column;
-  gap: 5px;
-  padding: 5px;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 `
 const CardDescriptionTitle = styled.div`
+display: -webkit-flex;
   display: flex;
-  gap: 5px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   a {
     font-size: 1.6rem;
     color: #322a2a;
@@ -62,7 +84,7 @@ const CardDescriptionAddress = styled.a`
 export const CardComponent = ({ CardElement }) => {
   const { places } = useContext(ListContext)
   const [place, setPlace] = useState({})
-  const cardIsClaimed = false
+  const cardIsClaimed = true
 
   const firstPlace = useCallback(() => {
     CardElement ? setPlace(CardElement) : setPlace(places[0])
@@ -79,8 +101,8 @@ export const CardComponent = ({ CardElement }) => {
       </CardImg>
       <CardDescription>
         <CardDescriptionTitle>
+        {cardIsClaimed ? <ClaimButton /> : <ClaimedButton />}
           <a href={place.Website}>{place.Name}</a>
-          {cardIsClaimed ? <ClaimButton /> : <ClaimedButton />}
         </CardDescriptionTitle>
         <CardDescriptionText>{place.Type}</CardDescriptionText>
         <CardDescriptionText>{place.Info}</CardDescriptionText>

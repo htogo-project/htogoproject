@@ -6,23 +6,25 @@ import { ListContext } from "../ListContext"
 
 const styles = {
   icons_wrapper: css`
-    top: 24%;
-    left: 0;
+s    // margin: auto;
+    margin: 10px 0 30px 0;
     background-color: white;
-    width: 100%;
+    // width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    // border-color: black;
     }
   `,
   icons: css`
-    width: 40%;
     display: flex;
     height: 70%;
+    margin: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: gray;
+    border: 3px solid blue;
     cursor: pointer;
     li {
       width: 40%;
@@ -36,12 +38,15 @@ const styles = {
     }
   `,
   showing_x_results: css`
-    width: auto;
     height: auto;
     font-weight: bold;
     color: #322a2a;
     font-size: 2rem;
     text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    width: 100%;
   `,
 }
 

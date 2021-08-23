@@ -10,10 +10,12 @@ const ButtonContent = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  width: 22px;
+  cursor: pointer;
   span {
     display: none;
     position: absolute;
-    width: 300px;
+    width: 250px;
     font-size: 1.2rem;
     text-align: center;
     bottom: 120%;
@@ -36,7 +38,7 @@ export const ClaimButton = () => {
   )
 }
 export const ClaimedButton = () => {
-  const buttonMessage = `Do you own this company? Create a profile and verify the company information`
+  const buttonMessage = `Do you own this company? Verify this info here!`
   return (
     <ButtonContent cursor={"pointer"}>
       <span>{buttonMessage}</span>

@@ -1,14 +1,14 @@
-import React from "react"
-// import { useAuth0 } from "@auth0/auth0-react"
+import React from "react";
 
-import styled from "styled-components"
+import styled from "styled-components";
 
 const HeaderNav = styled.nav`
   display: flex;
   height: fit-content;
   overflow: hidden;
+  /* border: 2px solid purple; */
   flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "none" : "column")};
-  width: ${({ isMobileSize }) => (!isMobileSize ? "fit-content" : "100%")};
+  width: ${({ isMobileSize }) => (!isMobileSize ? "10%" : "100%")};
   max-height: ${({ isMobileSize, mobileNavIsOpen }) =>
     isMobileSize && !mobileNavIsOpen ? "0" : "500px"};
   transition: max-height 0.2s;
@@ -16,13 +16,14 @@ const HeaderNav = styled.nav`
 
 const HeanderNavList = styled.ul`
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
   cursor: default;
-  flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "unset" : "column")};
+  /* margin:auto; */
+  width:  ${({ isMobileSize }) => (!isMobileSize ? "100%" : "60%")};
+  flex-direction: ${({ isMobileSize }) => (!isMobileSize ? "unset" : "row")};
   li {
     transition: box-shadow 0.2s;
-    padding: 5px;
-    font-size: 12px;
+    font-size: 16px;
     :hover {
       cursor: pointer;
       box-shadow: 0 0 4px 0 black;

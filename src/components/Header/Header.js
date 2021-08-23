@@ -10,30 +10,32 @@ import { UserView } from "../UserView"
 
 const MainHeader = styled.header`
   position: fixed;
-  left: 0;
-  top: 0;
   background: white;
   width: 100%;
-  padding-bottom: 4rem;
   box-sizing: border-box;
+  /* border: 2px solid orange; */
   z-index: 500;
+  margin-bottom: 30px;
 `
 const HeaderWrapper = styled.div`
+  /* height: 60%; */
+  /* border: 2px solid green; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 5px;
   align-items: center;
-  gap: 2rem;
 `
 const LogoContent = styled.div`
   display: flex;
+  /* gap: 20px; */
   justify-content: space-between;
-  align-items: center;
-  font-size: 2rem;
+  /* border: 3px solid green; */
   width: ${({ isMobileSize }) => (!isMobileSize ? "fit-content" : "100%")};
   span {
     display: ${({ isMobileSize }) => (!isMobileSize ? "none" : "unset")};
+    font-size: 22px;
   }
 `
 const InvisbleHeader = styled.div`
@@ -59,7 +61,7 @@ export const Header = () => {
       } else if (atualWindowSize > maxWidthToResize && isMobileSize !== false) {
         setIsMobileSize(false)
       }
-      setHeaderHeight(headerElement.current.offsetHeight)
+      setHeaderHeight(headerElement.current.offsetHeight - 100)
     })
     setMobileNavIsOpen(false)
   }, [isMobileSize, setIsMobileSize, setHeaderHeight])
@@ -74,7 +76,6 @@ export const Header = () => {
   return (
     <>
       <MainHeader ref={headerElement}>
-        <div className='centralizer'>
           <HeaderWrapper isMobileSize={isMobileSize}>
             <LogoContent isMobileSize={isMobileSize}>
               <img src={Logo} alt='' />
@@ -89,7 +90,6 @@ export const Header = () => {
             />
           </HeaderWrapper>
           <UserView />
-        </div>
       </MainHeader>
       <InvisbleHeader headerHeight={headerHeight} />
     </>
